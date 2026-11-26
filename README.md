@@ -1,4 +1,4 @@
-# MBSI Official Website â€” Static Website
+# MBSI Official Website - Static Website
 
 > This is MBSI's website publishing repository. It contains the static website output prepared for GitHub Pages, rather than the working WordPress application.
 
@@ -12,7 +12,7 @@ Website address: **https://mbsi-ph.github.io/**. Availability depends on GitHub 
 
 - Responsive layouts, appearance controls, navigation, and loading animations from the exported website.
 
-- `.nojekyll` for direct static publishing and `.gitignore` for common private-file exclusions.
+- `.nojekyll` for direct static publishing and `.gitignore` for local export exclusions.
 
 The `wp-content/` and `wp-includes/` names may appear because the assets originate from WordPress. PHP, the WordPress dashboard, and the database do not run here.
 
@@ -34,9 +34,7 @@ Export links must use the root path `/`, not `/MBSI-Website/`.
 
 2. Generate a static export for the root website address.
 
-3. Exclude applications, credentials, database exports, test pages, and local backup files.
-
-4. Test the export and store an approved snapshot in the the static export backup repository.
+4. Test the export and store an approved snapshot in the static export backup repository.
 
 5. Publish the reviewed static files here, preserving `.git`, this README, `.gitignore`, and `.nojekyll`.
 
@@ -58,4 +56,4 @@ Project-specific work and permitted reuse remain subject to applicable agreement
 
 ## Contact
 
-Use the official MBSI contact channels listed on the company website for company-related questions. Send sensitive maintenance or security information through approved channels.
+Use the official MBSI contact channels listed on the company website for company-related questions.
