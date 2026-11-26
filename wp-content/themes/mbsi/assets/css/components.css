@@ -1,7 +1,7 @@
 /* MBSI components; shared asset registry: mbsi-asset-styles.php. */
 .about-modern .mission-panel {
   background: linear-gradient(135deg, rgba(0, 31, 85, 0.96), rgba(21, 95, 168, 0.92)),
-    url("/MBSI-Website/wp-content/themes/mbsi/assets/img/office-building.jpg") center / cover no-repeat !important;
+    url("/wp-content/themes/mbsi/assets/img/office-building.jpg") center / cover no-repeat !important;
 }
 
 .fa {

@@ -30,7 +30,7 @@
     width: 100% !important;
     height: 100% !important;
     border: 0 !important;
-    background: center / 100% 100% no-repeat url("/MBSI-Website/wp-content/themes/mbsi/assets/img/workflow-option-b.optimized.webp") !important;
+    background: center / 100% 100% no-repeat url("/wp-content/themes/mbsi/assets/img/workflow-option-b.optimized.webp") !important;
     -webkit-mask-image: linear-gradient(to right, #000 0%, #000 84%, transparent 100%) !important;
     mask-image: linear-gradient(to right, #000 0%, #000 84%, transparent 100%) !important;
     pointer-events: none !important;

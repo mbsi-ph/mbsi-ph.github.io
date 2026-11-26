@@ -629,7 +629,7 @@ html[data-mbsi-theme=dark] body.home-page #top:is(#mbsi-theme-text-priority,*) .
 
 html[data-mbsi-theme=dark] body.home-page #top .hero {
   /* Keep the photo in layer three so shared cover sizing and mobile positioning apply. */
-  background-image: linear-gradient(transparent,transparent),linear-gradient(90deg,rgba(1,4,9,.97) 0%,rgba(1,4,9,.92) 46%,rgba(1,4,9,.84) 76%,rgba(1,4,9,.78) 100%),url('/MBSI-Website/wp-content/uploads/2026/MBSI_Building/MBSI_Building_Fit.optimized.webp')!important;
+  background-image: linear-gradient(transparent,transparent),linear-gradient(90deg,rgba(1,4,9,.97) 0%,rgba(1,4,9,.92) 46%,rgba(1,4,9,.84) 76%,rgba(1,4,9,.78) 100%),url('/wp-content/uploads/2026/MBSI_Building/MBSI_Building_Fit.optimized.webp')!important;
 }
 
 html[data-mbsi-theme=dark] body #primary:is(#mbsi-theme-text-priority,*) :is(.consultation-card,.cta-section,.mbsi-service-contact) :is(a.elementor-button,a.btn) {

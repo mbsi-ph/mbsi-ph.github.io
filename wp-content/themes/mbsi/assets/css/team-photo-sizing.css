@@ -20,7 +20,7 @@ body #primary.mbsi-team-profile .bpo-profile-photo-wrap:has(img[src*="OurTeam_Fu
 }
 
 body #primary.mbsi-team-profile a.mbsi-outline-btn[href="/our-team/"]::after,
-body #primary.mbsi-team-profile a.mbsi-outline-btn[href="/MBSI-Website/our-team/"]::after {
+body #primary.mbsi-team-profile a.mbsi-outline-btn[href="/our-team/"]::after {
   content: none !important;
   display: none !important;
 }

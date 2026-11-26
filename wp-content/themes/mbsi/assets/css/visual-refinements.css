@@ -458,13 +458,13 @@ body:has(.service-detail) .detail-card-grid > .detail-card > .mbsi-check-list {
 }
 
 .affiliate-section--partners .affiliate-logo--ksearch {
-  background: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/ksearch-logo.png") center / contain no-repeat;
+  background: url("/wp-content/themes/mbsi/assets/img/ksearch-logo.png") center / contain no-repeat;
 }
 
 .affiliate-section--partners .affiliate-logo--leading {
   background: #290029;
-  -webkit-mask: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/leading-edge-logo.png") center / contain no-repeat;
-  mask: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/leading-edge-logo.png") center / contain no-repeat;
+  -webkit-mask: url("/wp-content/themes/mbsi/assets/img/leading-edge-logo.png") center / contain no-repeat;
+  mask: url("/wp-content/themes/mbsi/assets/img/leading-edge-logo.png") center / contain no-repeat;
 }
 
 .affiliate-section--partners .affiliate-card h3 {

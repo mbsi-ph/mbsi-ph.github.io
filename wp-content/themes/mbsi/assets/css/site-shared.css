@@ -472,7 +472,7 @@ a {
   border-radius: 0;
   color: #fff;
   background: linear-gradient(90deg, rgba(0, 27, 73, 0.96), rgba(0, 31, 85, 0.78) 46%, rgba(0, 31, 85, 0.3)),
-    url("/MBSI-Website/wp-content/themes/mbsi/assets/img/office-building.jpg") center / cover no-repeat;
+    url("/wp-content/themes/mbsi/assets/img/office-building.jpg") center / cover no-repeat;
   overflow: hidden;
   box-shadow: var(--shadow);
 }
@@ -789,7 +789,7 @@ h3 {
   width: 100%;
   padding: 78px 0;
   background: linear-gradient(135deg, rgba(0, 27, 73, 0.96), rgba(21, 95, 168, 0.92)),
-    url("/MBSI-Website/wp-content/themes/mbsi/assets/img/office-building.jpg") center / cover no-repeat;
+    url("/wp-content/themes/mbsi/assets/img/office-building.jpg") center / cover no-repeat;
 }
 
 .proof-panel {
@@ -1928,7 +1928,7 @@ h3 {
   border-radius: 8px;
   color: #fff;
   background: linear-gradient(135deg, rgba(0, 31, 85, 0.96), rgba(21, 95, 168, 0.9)),
-    url("/MBSI-Website/wp-content/themes/mbsi/assets/img/office-building.jpg") center / cover no-repeat;
+    url("/wp-content/themes/mbsi/assets/img/office-building.jpg") center / cover no-repeat;
   box-shadow: var(--shadow);
 }
 
@@ -2076,7 +2076,7 @@ h3 {
 .contact-hero > div:first-child {
   color: #fff;
   background: linear-gradient(135deg, rgba(0, 31, 85, 0.96), rgba(21, 95, 168, 0.88)),
-    url("/MBSI-Website/wp-content/themes/mbsi/assets/img/office-building.jpg") center / cover no-repeat;
+    url("/wp-content/themes/mbsi/assets/img/office-building.jpg") center / cover no-repeat;
 }
 
 .contact-hero h1 {
@@ -2931,7 +2931,7 @@ h3 {
   padding: clamp(30px, 4.5vw, 54px);
   overflow: hidden;
   background: linear-gradient(135deg, rgba(0, 27, 73, 0.96), rgba(0, 31, 85, 0.9) 48%, rgba(21, 95, 168, 0.94)),
-    url("/MBSI-Website/wp-content/themes/mbsi/assets/img/office-building.jpg") center / cover no-repeat;
+    url("/wp-content/themes/mbsi/assets/img/office-building.jpg") center / cover no-repeat;
 }
 
 .about-cta::before {
@@ -3041,7 +3041,7 @@ h3 {
   padding-top: clamp(52px, 7vw, 92px);
   padding-bottom: clamp(46px, 6vw, 78px);
   background: linear-gradient(90deg, rgba(0, 27, 73, 0.96), rgba(0, 31, 85, 0.82) 48%, rgba(21, 95, 168, 0.45)),
-    var(--resource-hero-image, url("/MBSI-Website/wp-content/themes/mbsi/assets/img/office-building.jpg")) center / cover no-repeat;
+    var(--resource-hero-image, url("/wp-content/themes/mbsi/assets/img/office-building.jpg")) center / cover no-repeat;
 }
 
 .resource-post-hero::after {
@@ -4557,7 +4557,7 @@ body:has(.mbsi-resource-listing) .page-hero h1 {
 .contact-hero > div:first-child,
 .about-hero > div {
   background: linear-gradient(135deg, rgba(0, 31, 85, 0.96), rgba(21, 95, 168, 0.9)),
-    url("/MBSI-Website/wp-content/themes/mbsi/assets/img/office-building.jpg") center / cover no-repeat;
+    url("/wp-content/themes/mbsi/assets/img/office-building.jpg") center / cover no-repeat;
 }
 
 .page-hero h1,
@@ -4959,7 +4959,7 @@ body:has(.mbsi-resource-listing) .page-hero h1 {
   padding: clamp(170px, 18vh, 215px) max(32px, calc((100vw - var(--max)) / 2)) clamp(44px, 7vh, 72px);
   background: radial-gradient(circle at 82% 40%, rgba(21, 95, 168, 0.18), transparent 34%),
     linear-gradient(90deg, rgba(1, 18, 54, 0.98) 0%, rgba(1, 18, 54, 0.94) 46%, rgba(1, 18, 54, 0.82) 76%, rgba(1, 18, 54, 0.68) 100%),
-    url("/MBSI-Website/wp-content/themes/mbsi/assets/img/office-building.jpg") center / cover no-repeat;
+    url("/wp-content/themes/mbsi/assets/img/office-building.jpg") center / cover no-repeat;
   box-shadow: inset 0 -18px 38px rgba(255, 255, 255, 0.08);
 }
 
@@ -7737,7 +7737,7 @@ body:has(.service-detail) .service-other-card a,
 .about-modern .mission-panel {
   color: #ffffff !important;
   background: linear-gradient(135deg, rgba(0, 31, 85, 0.96), rgba(21, 95, 168, 0.92)),
-    url("/MBSI-Website/assets/images/139-building-mbsi.jpg") center/cover no-repeat !important;
+    url("/assets/images/139-building-mbsi.jpg") center/cover no-repeat !important;
   box-shadow: 0 18px 45px rgba(0, 43, 96, 0.14) !important;
 }
 
@@ -8023,7 +8023,7 @@ body:has(.service-detail) .detail-side-card .mbsi-check-list li::before,
 /* MBSI components; shared asset registry: mbsi-asset-styles.php. */
 .about-modern .mission-panel {
   background: linear-gradient(135deg, rgba(0, 31, 85, 0.96), rgba(21, 95, 168, 0.92)),
-    url("/MBSI-Website/wp-content/themes/mbsi/assets/img/office-building.jpg") center / cover no-repeat !important;
+    url("/wp-content/themes/mbsi/assets/img/office-building.jpg") center / cover no-repeat !important;
 }
 
 .fa {
@@ -9168,13 +9168,13 @@ body:has(.service-detail) .detail-card-grid > .detail-card > .mbsi-check-list {
 }
 
 .affiliate-section--partners .affiliate-logo--ksearch {
-  background: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/ksearch-logo.png") center / contain no-repeat;
+  background: url("/wp-content/themes/mbsi/assets/img/ksearch-logo.png") center / contain no-repeat;
 }
 
 .affiliate-section--partners .affiliate-logo--leading {
   background: #290029;
-  -webkit-mask: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/leading-edge-logo.png") center / contain no-repeat;
-  mask: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/leading-edge-logo.png") center / contain no-repeat;
+  -webkit-mask: url("/wp-content/themes/mbsi/assets/img/leading-edge-logo.png") center / contain no-repeat;
+  mask: url("/wp-content/themes/mbsi/assets/img/leading-edge-logo.png") center / contain no-repeat;
 }
 
 .affiliate-section--partners .affiliate-card h3 {
@@ -11816,7 +11816,7 @@ body.mbsi-banner-financial-services .page-hero::after {
   transform: none !important;
   border: 0 !important;
   border-radius: 0 !important;
-  background: var(--mbsi-elementor-banner-photo, url("/MBSI-Website/wp-content/themes/mbsi/assets/img/financial-reporting-banner-clean.optimized.webp")) 79% 52% / cover no-repeat !important;
+  background: var(--mbsi-elementor-banner-photo, url("/wp-content/themes/mbsi/assets/img/financial-reporting-banner-clean.optimized.webp")) 79% 52% / cover no-repeat !important;
   box-shadow: none !important;
   content: "" !important;
   opacity: 1 !important;
@@ -11825,55 +11825,55 @@ body.mbsi-banner-financial-services .page-hero::after {
 }
 
 body.mbsi-banner-accounting-services {
-  --mbsi-inner-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-accounting.webp");
+  --mbsi-inner-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-accounting.webp");
 }
 
 body.mbsi-banner-payroll-processing {
-  --mbsi-inner-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-payroll.webp");
+  --mbsi-inner-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-payroll.webp");
 }
 
 body.mbsi-banner-xero-services {
-  --mbsi-inner-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-xero.webp");
+  --mbsi-inner-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-xero.webp");
 }
 
 body.mbsi-banner-about-us {
-  --mbsi-inner-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-about.webp");
+  --mbsi-inner-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-about.webp");
 }
 
 body.mbsi-banner-our-team {
-  --mbsi-inner-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-team.webp");
+  --mbsi-inner-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-team.webp");
 }
 
 body.mbsi-banner-careers {
-  --mbsi-inner-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-careers.webp");
+  --mbsi-inner-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-careers.webp");
 }
 
 body.mbsi-banner-contact-us {
-  --mbsi-inner-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-contact.webp");
+  --mbsi-inner-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-contact.webp");
 }
 
 body.mbsi-banner-resources {
-  --mbsi-inner-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-resources.webp");
+  --mbsi-inner-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-resources.webp");
 }
 
 body.mbsi-banner-payroll-guides {
-  --mbsi-inner-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-resource-payroll.webp");
+  --mbsi-inner-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-resource-payroll.webp");
 }
 
 body.mbsi-banner-accounting-compliance-updates {
-  --mbsi-inner-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-resource-compliance.webp");
+  --mbsi-inner-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-resource-compliance.webp");
 }
 
 body.mbsi-banner-government-deadlines {
-  --mbsi-inner-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-resource-deadlines.webp");
+  --mbsi-inner-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-resource-deadlines.webp");
 }
 
 body.mbsi-banner-faqs {
-  --mbsi-inner-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-resource-faqs.webp");
+  --mbsi-inner-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-resource-faqs.webp");
 }
 
 body.mbsi-banner-news {
-  --mbsi-inner-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-resource-news.webp");
+  --mbsi-inner-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-resource-news.webp");
 }
 
 body:is(
@@ -13992,7 +13992,7 @@ body:not(.home-page):has(.team-layout--showcase) #primary .team-showcase-card:is
     width: 100% !important;
     height: 100% !important;
     border: 0 !important;
-    background: center / 100% 100% no-repeat url("/MBSI-Website/wp-content/themes/mbsi/assets/img/workflow-option-b.optimized.webp") !important;
+    background: center / 100% 100% no-repeat url("/wp-content/themes/mbsi/assets/img/workflow-option-b.optimized.webp") !important;
     -webkit-mask-image: linear-gradient(to right, #000 0%, #000 84%, transparent 100%) !important;
     mask-image: linear-gradient(to right, #000 0%, #000 84%, transparent 100%) !important;
     pointer-events: none !important;

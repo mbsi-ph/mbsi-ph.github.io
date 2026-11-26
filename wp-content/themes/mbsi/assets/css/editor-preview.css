@@ -27,7 +27,7 @@
   display: block;
   width: 58%;
   height: 100%;
-  background: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-resource-faqs.webp") 79% 52% / cover no-repeat;
+  background: url("/wp-content/themes/mbsi/assets/img/inner-banner-resource-faqs.webp") 79% 52% / cover no-repeat;
   content: "";
   opacity: 1;
   pointer-events: none;
@@ -68,59 +68,59 @@
 }
 
 .editor-styles-wrapper .mbsi-editor-page-accounting-services {
-  --mbsi-editor-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-accounting.webp");
+  --mbsi-editor-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-accounting.webp");
 }
 
 .editor-styles-wrapper .mbsi-editor-page-payroll-processing {
-  --mbsi-editor-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-payroll.webp");
+  --mbsi-editor-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-payroll.webp");
 }
 
 .editor-styles-wrapper .mbsi-editor-page-financial-services {
-  --mbsi-editor-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/financial-reporting-banner-clean.optimized.webp");
+  --mbsi-editor-banner-photo: url("/wp-content/themes/mbsi/assets/img/financial-reporting-banner-clean.optimized.webp");
 }
 
 .editor-styles-wrapper .mbsi-editor-page-xero-services {
-  --mbsi-editor-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-xero.webp");
+  --mbsi-editor-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-xero.webp");
 }
 
 .editor-styles-wrapper .mbsi-editor-page-about-us {
-  --mbsi-editor-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-about.webp");
+  --mbsi-editor-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-about.webp");
 }
 
 .editor-styles-wrapper .mbsi-editor-page-our-team {
-  --mbsi-editor-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-team.webp");
+  --mbsi-editor-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-team.webp");
 }
 
 .editor-styles-wrapper .mbsi-editor-page-careers {
-  --mbsi-editor-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-careers.webp");
+  --mbsi-editor-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-careers.webp");
 }
 
 .editor-styles-wrapper .mbsi-editor-page-contact-us {
-  --mbsi-editor-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-contact.webp");
+  --mbsi-editor-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-contact.webp");
 }
 
 .editor-styles-wrapper .mbsi-editor-page-resources {
-  --mbsi-editor-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-resources.webp");
+  --mbsi-editor-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-resources.webp");
 }
 
 .editor-styles-wrapper .mbsi-editor-page-payroll-guides {
-  --mbsi-editor-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-resource-payroll.webp");
+  --mbsi-editor-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-resource-payroll.webp");
 }
 
 .editor-styles-wrapper .mbsi-editor-page-accounting-compliance-updates {
-  --mbsi-editor-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-resource-compliance.webp");
+  --mbsi-editor-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-resource-compliance.webp");
 }
 
 .editor-styles-wrapper .mbsi-editor-page-government-deadlines {
-  --mbsi-editor-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-resource-deadlines.webp");
+  --mbsi-editor-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-resource-deadlines.webp");
 }
 
 .editor-styles-wrapper .mbsi-editor-page-faqs {
-  --mbsi-editor-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-resource-faqs.webp");
+  --mbsi-editor-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-resource-faqs.webp");
 }
 
 .editor-styles-wrapper .mbsi-editor-page-news {
-  --mbsi-editor-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-resource-news.webp");
+  --mbsi-editor-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-resource-news.webp");
 }
 
 .editor-styles-wrapper .mbsi-editor-container:is(

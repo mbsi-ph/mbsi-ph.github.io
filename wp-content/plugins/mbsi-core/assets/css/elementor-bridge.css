@@ -1366,23 +1366,23 @@ body:not(.elementor-editor-active) .about-cta .consultation-card.mbsi-native-con
 
 /* Keep the approved photo banner visible in the editor iframe. */
 :is(.elementor-editor-active, .elementor-editor-preview).elementor-page-49 {
-	--mbsi-elementor-editor-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-accounting.webp");
+	--mbsi-elementor-editor-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-accounting.webp");
 }
 
 :is(.elementor-editor-active, .elementor-editor-preview).elementor-page-50 {
-	--mbsi-elementor-editor-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/financial-reporting-banner-clean.optimized.webp");
+	--mbsi-elementor-editor-banner-photo: url("/wp-content/themes/mbsi/assets/img/financial-reporting-banner-clean.optimized.webp");
 }
 
 :is(.elementor-editor-active, .elementor-editor-preview).elementor-page-51 {
-	--mbsi-elementor-editor-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-payroll.webp");
+	--mbsi-elementor-editor-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-payroll.webp");
 }
 
 :is(.elementor-editor-active, .elementor-editor-preview).elementor-page-52 {
-	--mbsi-elementor-editor-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-xero.webp");
+	--mbsi-elementor-editor-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-xero.webp");
 }
 
 :is(.elementor-editor-active, .elementor-editor-preview, body.elementor-page-49) :is(.page-hero, .elementor-element-36a34572) {
-	--mbsi-elementor-editor-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-accounting.webp");
+	--mbsi-elementor-editor-banner-photo: url("/wp-content/themes/mbsi/assets/img/inner-banner-accounting.webp");
 	position: relative !important;
 	isolation: isolate;
 	display: flex !important;
@@ -1399,7 +1399,7 @@ body:not(.elementor-editor-active) .about-cta .consultation-card.mbsi-native-con
 	background: linear-gradient(118deg, #002b68 0%, #003c8f 58%, #155fa8 100%) !important;
 	background-image:
 		linear-gradient(90deg, rgba(0, 43, 104, 0.99) 0%, rgba(0, 60, 143, 0.94) 42%, rgba(0, 43, 104, 0.62) 67%, rgba(0, 43, 104, 0.28) 100%),
-		url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-accounting.webp") !important;
+		url("/wp-content/themes/mbsi/assets/img/inner-banner-accounting.webp") !important;
 	background-position: center, right center !important;
 	background-repeat: no-repeat !important;
 	background-size: 100% 100%, 58% 100% !important;
