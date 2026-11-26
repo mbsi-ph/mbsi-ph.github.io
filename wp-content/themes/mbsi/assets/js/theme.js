@@ -700,3 +700,8 @@ if (privacyModal) {
 
 
 
+
+// Equalize name and role rows separately across all team cards after fonts/resizing.
+(()=>{const groups=[...document.querySelectorAll('.team-showcase-grid')];if(!groups.length)return;let frame;
+const balance=()=>{cancelAnimationFrame(frame);frame=requestAnimationFrame(()=>{const cards=groups.flatMap(g=>[...g.querySelectorAll('.leadership-copy')]);let name=0,role=0;cards.forEach(c=>{const n=c.querySelector('h3'),r=c.querySelector('.role');if(n)name=Math.max(name,n.getBoundingClientRect().height);if(r)role=Math.max(role,r.getBoundingClientRect().height);});groups.forEach(g=>{g.style.setProperty('--mbsi-team-name-height',Math.ceil(name)+'px');g.style.setProperty('--mbsi-team-role-height',Math.ceil(role)+'px');});});};
+window.addEventListener('resize',balance);document.fonts?.ready.then(balance);balance();})();

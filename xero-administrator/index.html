@@ -5,6 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script id="mbsi-theme-bootstrap">(()=>{let theme='light';try{if(localStorage.getItem('mbsi-theme')==='dark')theme='dark';}catch{}document.documentElement.dataset.mbsiTheme=theme;})();</script>
 <style id="mbsi-page-loading-style">
+/* Reserve an opaque loading surface before any page content can paint. */
+html.mbsi-page-loading-active::before{content:"";position:fixed;inset:0;z-index:2147482899;background:#001437;pointer-events:none;}
+html.mbsi-page-loading-active body :is(main,.site-header,.site-footer),html.mbsi-brand-splash-pending body :is(main,.site-header,.site-footer){visibility:hidden!important;}
+html.mbsi-page-loading-active .mbsi-page-loading{transition:none!important;}
+
 .mbsi-page-loading{position:fixed;inset:0;z-index:2147482900;display:grid;place-items:center;background:rgba(0,20,55,.86);color:#fff;opacity:0;visibility:hidden;pointer-events:none;transition:opacity 180ms ease,visibility 180ms ease;backdrop-filter:blur(4px)}
 html.mbsi-page-loading-active .mbsi-page-loading{opacity:1;visibility:visible;pointer-events:auto;transition:opacity 180ms ease}
 .mbsi-page-loading-content{display:grid;justify-items:center;gap:18px;font:600 15px/1.5 Arial,sans-serif;letter-spacing:.02em}

@@ -317,3 +317,6 @@ html.mbsi-brand-splash-running .mbsi-brand-splash__logo-wrap {
     animation: none!important;
   }
 }
+
+/* Start opaque: fading in the overlay exposes the page before the intro. */
+@keyframes mbsi-brand-splash-lifecycle{0%,86%{opacity:1;clip-path:inset(0);visibility:visible;}100%{opacity:0;clip-path:inset(0 0 100% 0);visibility:hidden;}}

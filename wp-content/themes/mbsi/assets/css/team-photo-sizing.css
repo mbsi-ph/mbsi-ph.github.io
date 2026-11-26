@@ -243,3 +243,12 @@ body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card
     transition: none!important;
   }
 }
+
+/* Balance names and roles independently, without truncating longer text. */
+body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card .leadership-copy {
+ display:grid!important;grid-template-rows:var(--mbsi-team-name-height,2.6em) var(--mbsi-team-role-height,2.8em)!important;align-content:start!important;justify-content:stretch!important;align-items:start!important;height:auto!important;min-height:132px!important;gap:8px!important;
+}
+body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card .leadership-copy h3,
+body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card .leadership-copy .role {
+ display:block!important;align-self:start!important;overflow-wrap:anywhere;white-space:normal!important;min-width:0;width:100%;
+}
