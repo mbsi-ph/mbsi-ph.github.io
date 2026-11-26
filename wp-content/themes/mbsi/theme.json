@@ -1,0 +1,79 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "760px",
+      "wideSize": "1180px"
+    },
+    "color": {
+      "custom": false,
+      "defaultPalette": false,
+      "palette": [
+        { "slug": "navy", "name": "MBSI Navy", "color": "#001f55" },
+        { "slug": "blue", "name": "MBSI Blue", "color": "#155fa8" },
+        { "slug": "sky", "name": "MBSI Sky", "color": "#2d9cdb" },
+        { "slug": "gold", "name": "MBSI Gold", "color": "#d29a2e" },
+        { "slug": "ink", "name": "Ink", "color": "#172033" },
+        { "slug": "soft", "name": "Soft", "color": "#f4f7fb" },
+        { "slug": "white", "name": "White", "color": "#ffffff" }
+      ]
+    },
+    "spacing": {
+      "units": ["px", "rem", "%", "vw", "vh"]
+    },
+    "typography": {
+      "customFontSize": false,
+      "fluid": true,
+      "fontFamilies": [
+        {
+          "fontFamily": "Arial, Helvetica, \"Segoe UI\", sans-serif",
+          "name": "MBSI Sans",
+          "slug": "mbsi-sans"
+        },
+        {
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "name": "MBSI Serif",
+          "slug": "mbsi-serif"
+        }
+      ],
+      "fontSizes": [
+        { "slug": "small", "size": "0.875rem", "name": "Small" },
+        { "slug": "medium", "size": "1.0625rem", "name": "Body" },
+        { "slug": "large", "size": "1.25rem", "name": "Lead" },
+        { "slug": "card", "size": "1.5rem", "name": "Card Heading" },
+        { "slug": "x-large", "size": "2.875rem", "name": "Section Heading" },
+        { "slug": "display", "size": "4.25rem", "name": "Display" }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#ffffff",
+      "text": "#172033"
+    },
+    "spacing": {
+      "blockGap": "1.25rem"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--mbsi-sans)",
+      "fontSize": "1.0625rem",
+      "lineHeight": "1.7"
+    },
+    "elements": {
+      "heading": {
+        "color": { "text": "#003c8f" },
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--mbsi-sans)",
+          "fontWeight": "700",
+          "lineHeight": "1.12"
+        }
+      },
+      "link": {
+        "color": { "text": "#003c8f" }
+      }
+    }
+  }
+}
+

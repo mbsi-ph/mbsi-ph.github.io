@@ -1,0 +1,45 @@
+/* MBSI mbsi-service-cinema; shared asset registry: mbsi-asset-styles.php. */
+body.home-page #top .service-feature.service-cinema {
+  view-timeline-name: --mbsi-service-view;
+  view-timeline-axis: block;
+  perspective: 1200px;
+}
+
+body.home-page #top .service-cinema .service-cinema-image {
+  backface-visibility: hidden;
+  transform-origin: center;
+}
+
+@keyframes mbsi-service-image-reveal{from {clip-path:inset(8% 6% 8% 6% round 24px);translate:var(--cinema-shift,36px) 28px;rotate:y var(--cinema-tilt,-5deg);scale:.94;filter:blur(3px);}to {clip-path:inset(0 round 12px);translate:0 0;rotate:y 0deg;scale:1;filter:blur(0);}}
+
+@keyframes mbsi-service-copy-reveal{from {opacity:.15;translate:0 24px;filter:blur(4px);}to {opacity:1;translate:0 0;filter:blur(0);}}
+
+@supports(animation-timeline:view()) {
+  body.home-page #top .service-cinema .service-cinema-image {
+    animation: mbsi-service-image-reveal 1s linear both;
+    animation-timeline: --mbsi-service-view;
+    animation-range: entry 0% entry 78%;
+  }
+
+  body.home-page #top .service-cinema .service-cinema-copy {
+    animation: mbsi-service-copy-reveal 1s linear both;
+    animation-timeline: --mbsi-service-view;
+    animation-range: entry var(--cinema-start,15%) entry var(--cinema-end,75%);
+  }
+}
+
+@media(max-width:800px) {
+  @keyframes mbsi-service-image-reveal{from {clip-path:inset(5% round 20px);translate:0 18px;scale:.97;filter:blur(1px);}to {clip-path:inset(0 round 12px);translate:0 0;scale:1;filter:blur(0);}}
+}
+
+@media(prefers-reduced-motion:reduce) {
+  body.home-page #top .service-cinema :is(.service-cinema-image,.service-cinema-copy) {
+    animation: none!important;
+    translate: none!important;
+    rotate: none!important;
+    scale: none!important;
+    clip-path: none!important;
+    filter: none!important;
+    opacity: 1!important;
+  }
+}

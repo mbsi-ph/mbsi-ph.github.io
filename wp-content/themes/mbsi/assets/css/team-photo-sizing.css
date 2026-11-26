@@ -1,0 +1,245 @@
+/* MBSI team-photo-sizing; shared asset registry: mbsi-asset-styles.php. */
+body #primary.mbsi-team-profile .wp-content .mbsi-profile-intro img[src*="OurTeam_Full/"] {
+  display: block !important;
+  width: min(100%, 470px) !important;
+  height: clamp(360px, 75vw, 590px) !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: none !important;
+}
+
+body #primary.mbsi-team-profile .bpo-profile-photo-wrap:has(img[src*="OurTeam_Full/"]) {
+  width: min(100%, 470px) !important;
+  height: auto !important;
+  max-height: none !important;
+  aspect-ratio: auto !important;
+  overflow: visible !important;
+}
+
+body #primary.mbsi-team-profile a.mbsi-outline-btn[href="/our-team/"]::after,
+body #primary.mbsi-team-profile a.mbsi-outline-btn[href="/MBSI-Website/our-team/"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card {
+  position: relative!important;
+  padding: 0!important;
+  overflow: hidden!important;
+  border: 1px solid #dbe4ef!important;
+  border-radius: 16px!important;
+  background: #fff!important;
+  box-shadow: 0 6px 20px rgba(0,35,85,.07)!important;
+  transform: none!important;
+}
+
+body #primary:is(#mbsi-team-card-priority,*) .leadership-card .team-profile-link {
+  display: flex!important;
+  flex-direction: column!important;
+  width: 100%!important;
+  height: 100%!important;
+  text-decoration: none!important;
+  color: inherit!important;
+}
+
+body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card .leadership-photo {
+  display: block!important;
+  width: 100%!important;
+  min-height: 0!important;
+  max-height: none!important;
+  margin: 0!important;
+  padding: 0!important;
+  overflow: hidden!important;
+  background: #edf2f7!important;
+}
+
+body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card .leadership-photo img,
+body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card:is(:hover,:focus-within) .leadership-photo img {
+  display: block!important;
+  width: 100%!important;
+  max-width: 100%!important;
+  height: 100%!important;
+  margin: 0!important;
+  padding: 0!important;
+  object-fit: cover!important;
+  object-position: center 20%!important;
+  transform: none!important;
+  opacity: 1!important;
+}
+
+body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card .leadership-copy {
+  display: flex!important;
+  flex-direction: column!important;
+  align-items: center!important;
+  justify-content: center!important;
+  gap: 8px!important;
+  box-sizing: border-box!important;
+  width: 100%!important;
+  margin: 0!important;
+  background: #fff!important;
+  text-align: center!important;
+}
+
+body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card h3 {
+  margin: 0!important;
+  font-size: 19px!important;
+  line-height: 1.3!important;
+  color: #003c8f!important;
+}
+
+body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card .role {
+  margin: 0!important;
+  font-size: 14px!important;
+  line-height: 1.4!important;
+  color: #526175!important;
+}
+
+body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card:is(:hover,:focus-within) {
+  transform: none!important;
+  border-color: #003c8f!important;
+  box-shadow: 0 8px 24px rgba(0,35,85,.14)!important;
+}
+
+body #primary:is(#mbsi-team-card-priority,*) .team-profile-link:focus-visible {
+  outline: 3px solid #d29a2e!important;
+  outline-offset: -3px!important;
+}
+
+@media(max-width:600px) {
+  body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card .leadership-photo {
+    height: 280px!important;
+  }
+}
+
+body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card .leadership-photo img {
+  transform-origin: center 35%!important;
+}
+
+@media(hover:hover) and (prefers-reduced-motion:no-preference) {
+
+}
+
+@media(prefers-reduced-motion:reduce) {
+
+}
+
+body #primary:is(#mbsi-team-card-priority,*) .team-showcase-heading {
+  margin-bottom: 24px!important;
+  padding-bottom: 0!important;
+}
+
+body #primary:is(#mbsi-team-card-priority,*) .team-showcase-heading .section-kicker {
+  margin-bottom: 8px!important;
+}
+
+body #primary:is(#mbsi-team-card-priority,*) .team-showcase-group {
+  padding-top: 32px!important;
+  padding-bottom: 32px!important;
+}
+
+body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card .team-profile-link {
+  gap: 0!important;
+  padding: 0!important;
+  margin: 0!important;
+}
+
+body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card .leadership-photo {
+  border: 0!important;
+  border-radius: 0!important;
+  box-shadow: none!important;
+}
+
+body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card .leadership-copy {
+  border: 0!important;
+  border-radius: 0!important;
+  box-shadow: none!important;
+  margin: 0!important;
+}
+
+body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card .leadership-photo {
+  height: auto!important;
+  aspect-ratio: 1 / 1!important;
+}
+
+body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card .leadership-photo img {
+  object-position: center!important;
+}
+
+@media(hover:hover) and (prefers-reduced-motion:no-preference) {
+  body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card:hover .leadership-photo img {
+    transform: scale(1.02)!important;
+  }
+}
+
+body #primary:is(#mbsi-team-card-priority,*) .team-showcase-grid--executives {
+  width: 100%!important;
+  max-width: 680px!important;
+  margin-inline: auto!important;
+}
+
+body #primary:is(#mbsi-team-card-priority,*) .team-showcase-grid--heads {
+  width: 100%!important;
+  max-width: 1000px!important;
+  margin-inline: auto!important;
+}
+
+body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card .leadership-copy {
+  height: 104px!important;
+  min-height: 104px!important;
+  padding: 14px!important;
+}
+
+body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card .leadership-photo {
+  position: relative;
+}
+
+body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card .leadership-photo.is-image-loading img {
+  opacity: 0!important;
+}
+
+body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card .leadership-photo img {
+  transition: opacity 250ms ease,transform 420ms cubic-bezier(.2,.65,.3,1)!important;
+}
+
+.leadership-photo.is-image-loading::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(100deg,#e5ebf3 25%,#f8fafc 45%,#e5ebf3 65%);
+  background-size: 250% 100%;
+  animation: mbsi-team-image-shimmer 1.35s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes mbsi-team-image-shimmer{from {background-position:100% 0;}to {background-position:-100% 0;}}
+
+.leadership-photo.is-image-error::after {
+  content: 'Photo unavailable';
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: #52647b;
+  background: #edf2f7;
+  font: 14px Arial,sans-serif;
+}
+
+@media(max-width:600px) {
+  body #primary:is(#mbsi-team-card-priority,*) .team-showcase-grid--executives,body #primary:is(#mbsi-team-card-priority,*) .team-showcase-grid--heads {
+    max-width: 320px!important;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .leadership-photo.is-image-loading::after {
+    animation: none;
+  }
+
+  body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card .leadership-photo img {
+    transition: none!important;
+  }
+}

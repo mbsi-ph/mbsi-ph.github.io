@@ -1,0 +1,246 @@
+/* MBSI mbsi-brand-foundation; shared asset registry: mbsi-asset-styles.php. */
+:root {
+  --mbsi-brand-blue: #003c8f;
+  --mbsi-brand-ink: #162940;
+  --mbsi-brand-muted: #526078;
+  --mbsi-brand-line: #dce5ef;
+  --mbsi-brand-gold: #b68b3c;
+  --mbsi-brand-radius: 16px;
+  --mbsi-brand-font: Arial,Helvetica,'Segoe UI',sans-serif;
+  --mbsi-brand-h1: clamp(30px,3.2vw,40px);
+  --mbsi-brand-h2: clamp(26px,2.7vw,34px);
+  --mbsi-brand-h3: 21px;
+}
+
+html body :is(#primary,#top) :is(h1,h2,h3,h4) {
+  font-family: var(--mbsi-brand-font)!important;
+  font-style: normal!important;
+  font-weight: 700!important;
+  letter-spacing: -.025em!important;
+}
+
+html body:not(.home-page) #primary h1 {
+  font-size: var(--mbsi-brand-h1)!important;
+  line-height: 1.15!important;
+}
+
+html body :is(#primary,#top) h2 {
+  font-size: var(--mbsi-brand-h2)!important;
+  line-height: 1.25!important;
+}
+
+html body :is(#primary,#top) h3 {
+  font-size: var(--mbsi-brand-h3)!important;
+  line-height: 1.3!important;
+}
+
+html body :is(#primary,#top) h4 {
+  font-size: 18px!important;
+  line-height: 1.35!important;
+}
+
+html body :is(#primary,#top) :is(p,li) {
+  font-family: var(--mbsi-brand-font)!important;
+  line-height: 1.7;
+}
+
+html body :is(#primary,#top) p:not(:is(.section-kicker,.eyebrow,.mbsi-kicker,.mbsi-not-found__code,.role,.hero-text)) {
+  font-size: 16px;
+}
+
+html body :is(#primary,#top) :is(.section-kicker,.eyebrow,.mbsi-kicker) {
+  font-family: var(--mbsi-brand-font)!important;
+  font-size: 12px!important;
+  font-weight: 700!important;
+  letter-spacing: .12em!important;
+  line-height: 1.5!important;
+}
+
+html body :is(#primary,#top) :is(.elementor-button,.btn,.mbsi-gold-btn) {
+  font-family: var(--mbsi-brand-font)!important;
+  font-size: 14px;
+  font-weight: 700!important;
+  line-height: 1.4;
+}
+
+html body #primary :is(.service-card,.resource-card,.consultation-card,.affiliate-card) {
+  border-color: var(--mbsi-brand-line)!important;
+  border-radius: var(--mbsi-brand-radius)!important;
+  box-shadow: 0 8px 24px rgba(0,43,104,.045)!important;
+}
+
+html body #primary :is(.service-card,.resource-card,.consultation-card,.affiliate-card) h3 {
+  color: var(--mbsi-brand-blue)!important;
+}
+
+html body #primary .cta-section {
+  border-radius: var(--mbsi-brand-radius)!important;
+  background: linear-gradient(110deg,#002b68,#155fa8)!important;
+  color: #fff!important;
+}
+
+html body #primary .cta-section :is(h2,p) {
+  color: #fff!important;
+}
+
+html body #primary .cta-section :is(a.elementor-button,a.btn) {
+  border: 1px solid #fff!important;
+  border-radius: 999px!important;
+  background: #fff!important;
+  color: var(--mbsi-brand-blue)!important;
+  box-shadow: none!important;
+}
+
+@media(max-width:600px) {
+  :root {
+    --mbsi-brand-h3: 20px;
+  }
+
+  html body #primary .cta-section {
+    padding: 26px!important;
+    gap: 24px!important;
+  }
+}
+
+html body :is(#primary,#top) :is(.section-kicker,.eyebrow,.mbsi-kicker),
+html body.mbsi-service-page #primary .detail-intro > .mbsi-native-container:first-child > .elementor-widget:first-child p {
+  font-family: var(--mbsi-brand-font)!important;
+  font-size: 13px!important;
+  font-weight: 800!important;
+  line-height: 1.5!important;
+  letter-spacing: .15em!important;
+  text-transform: uppercase!important;
+  color: #172033!important;
+  margin-bottom: 14px!important;
+}
+
+html body :is(#primary,#top) :is(.page-hero,.hero,.cta-section,.mbsi-service-contact) :is(.section-kicker,.eyebrow,.mbsi-kicker) {
+  color: #e4edf8!important;
+}
+
+html body.page-id-28 #primary .stats-story > .elementor-widget-heading h2,
+html body #primary.mbsi-job-detail .mbsi-job-copy h2 {
+  font-family: var(--mbsi-brand-font)!important;
+  font-size: var(--mbsi-brand-h2)!important;
+  font-weight: 700!important;
+  line-height: 1.25!important;
+}
+
+html body #primary .mbsi-resource-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 24px 0 56px;
+  padding: 56px 28px;
+  border: 1px solid var(--mbsi-brand-line);
+  border-radius: 16px;
+  background: linear-gradient(180deg,#f2f7fd,#fff 68%);
+  box-shadow: 0 10px 30px rgba(0,43,104,.045);
+  text-align: center;
+}
+
+.mbsi-resource-empty__icon {
+  display: grid;
+  place-items: center;
+  width: 68px;
+  height: 68px;
+  margin: 0 0 22px;
+  border: 1px solid #d8e6f5;
+  border-radius: 18px;
+  background: #e9f2fc;
+  color: #07468e;
+}
+
+.mbsi-resource-empty__icon svg {
+  width: 34px;
+  height: 34px;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+html body #primary .mbsi-resource-empty .section-kicker {
+  margin: 0 0 12px!important;
+  color: #526078!important;
+  text-align: center!important;
+}
+
+html body #primary .mbsi-resource-empty h2 {
+  margin: 0 0 16px!important;
+  color: #003c8f!important;
+  font: 700 clamp(25px,2.6vw,32px)/1.25 var(--mbsi-brand-font)!important;
+  text-align: center!important;
+}
+
+html body #primary .mbsi-resource-empty .mbsi-resource-empty__description {
+  max-width: 550px;
+  margin: 0!important;
+  color: #526078!important;
+  font-size: 16px!important;
+  line-height: 1.7!important;
+  letter-spacing: normal!important;
+  word-spacing: normal!important;
+  text-align: center!important;
+}
+
+.mbsi-resource-empty__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+html body #primary .mbsi-resource-empty__actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 46px;
+  padding: 12px 20px;
+  border: 1px solid #07468e;
+  border-radius: 9px;
+  font: 700 14px/1.4 var(--mbsi-brand-font);
+  text-decoration: none;
+}
+
+html body #primary .mbsi-resource-empty__primary {
+  background: #07468e;
+  color: #fff;
+}
+
+html body #primary .mbsi-resource-empty__secondary {
+  background: #fff;
+  color: #07468e;
+}
+
+html body #primary .mbsi-resource-empty__primary:hover {
+  background: #002b68;
+}
+
+html body #primary .mbsi-resource-empty__secondary:hover {
+  background: #edf4fc;
+}
+
+html body #primary .mbsi-resource-empty__actions a:focus-visible {
+  outline: 3px solid #b68b3c;
+  outline-offset: 4px;
+}
+
+@media(max-width:560px) {
+  html body #primary .mbsi-resource-empty {
+    padding: 36px 22px;
+    margin-bottom: 36px;
+  }
+
+  .mbsi-resource-empty__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .mbsi-resource-empty__actions a {
+    width: 100%;
+  }
+}

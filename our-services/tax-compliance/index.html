@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script id="mbsi-theme-bootstrap">(()=>{let theme='light';try{if(localStorage.getItem('mbsi-theme')==='dark')theme='dark';}catch{}document.documentElement.dataset.mbsiTheme=theme;})();</script>
+<style id="mbsi-page-loading-style">
+.mbsi-page-loading{position:fixed;inset:0;z-index:2147482900;display:grid;place-items:center;background:rgba(0,20,55,.86);color:#fff;opacity:0;visibility:hidden;pointer-events:none;transition:opacity 180ms ease,visibility 180ms ease;backdrop-filter:blur(4px)}
+html.mbsi-page-loading-active .mbsi-page-loading{opacity:1;visibility:visible;pointer-events:auto;transition:opacity 180ms ease}
+.mbsi-page-loading-content{display:grid;justify-items:center;gap:18px;font:600 15px/1.5 Arial,sans-serif;letter-spacing:.02em}
+.mbsi-loading-mark{position:relative;display:grid;justify-items:center;gap:20px;width:180px;padding:20px 12px 0}
+.mbsi-loading-mark img{display:block;width:128px;height:52px;object-fit:contain;filter:brightness(0) invert(1);animation:mbsi-mark-breathe 2s ease-in-out infinite}
+.mbsi-loading-ledger{display:flex;align-items:flex-end;justify-content:center;gap:8px;height:44px;width:144px;border-bottom:1px solid rgba(153,194,244,.35);padding-bottom:7px}
+.mbsi-loading-ledger i{display:block;width:15px;height:var(--bar);border-radius:4px 4px 1px 1px;background:linear-gradient(0deg,#1260b5,#8ac9ff);transform-origin:bottom;animation:mbsi-ledger-wave 1.4s ease-in-out infinite;animation-delay:var(--delay);box-shadow:0 0 14px rgba(53,147,244,.2)}
+.mbsi-loading-ledger i:last-child{background:linear-gradient(0deg,#c99424,#f1cb72)}
+@keyframes mbsi-ledger-wave{0%,100%{transform:scaleY(.38);opacity:.45}50%{transform:scaleY(1);opacity:1}}
+@keyframes mbsi-mark-breathe{0%,100%{opacity:.72;transform:translateY(0)}50%{opacity:1;transform:translateY(-3px)}}
+@media(prefers-reduced-motion:reduce){.mbsi-page-loading{transition:none}.mbsi-loading-mark img,.mbsi-loading-ledger i{animation:none}}
+</style>
+<script id="mbsi-page-loading-bootstrap">
+(()=>{try{const key='mbsiPendingNavigation',pending=JSON.parse(sessionStorage.getItem(key)||'null');sessionStorage.removeItem(key);if(pending&&Date.now()-pending.time<15000&&pending.target===location.pathname+location.search){document.documentElement.classList.add('mbsi-page-loading-active');if(typeof pending.label==='string')document.documentElement.dataset.mbsiLoadingLabel=pending.label;}}catch{}})();
+</script>
+<title>Tax Compliance – Millennium Business Services, Inc.</title>
+<meta name="robots" content="max-image-preview:large">
+ <style id="mbsi-theme-logo-artwork">
+ html:is(#mbsi-logo-render-priority,*) body :is(.brand-logo-widget img,.site-header .brand img,.brand-logo,.mbsi-drawer-logo,.mbsi-brand-splash__logo) {content:url("/MBSI-Website/wp-content/uploads/2026/10/mbsi-brand-uppercase/mbsi-logo-uppercase-blue.webp?v=1794557507")!important;filter:none!important;}
+ html[data-mbsi-theme=dark]:is(#mbsi-logo-render-priority,*) body :is(.brand-logo-widget img,.site-header .brand img,.brand-logo,.mbsi-drawer-logo,.mbsi-brand-splash__logo) {content:url("/MBSI-Website/wp-content/uploads/2026/10/mbsi-brand-uppercase/mbsi-logo-uppercase-white.webp?v=1794557508")!important;filter:none!important;}
+ html:is(#mbsi-logo-render-priority,*) body.home-page .site-header:not(.is-scrolled):not(:focus-within) :is(.brand-logo-widget img,.brand img,.brand-logo) {content:url("/MBSI-Website/wp-content/uploads/2026/10/mbsi-brand-uppercase/mbsi-logo-uppercase-white.webp?v=1794557508")!important;}
+ html:is(#mbsi-logo-render-priority,*) body .mbsi-brand-splash__logo:is(#mbsi-splash-logo-priority,*) {content:url("/MBSI-Website/wp-content/uploads/2026/10/mbsi-brand-uppercase/mbsi-logo-uppercase-white.webp?v=1794557508")!important;}
+ </style>
+ <script id="mbsi-theme-logo-bootstrap">
+ window.mbsiLogoAssets={"blue":"\/MBSI-Website\/wp-content\/uploads\/2026\/10\/mbsi-brand-uppercase\/mbsi-logo-uppercase-blue.webp?v=1794557507","white":"\/MBSI-Website\/wp-content\/uploads\/2026\/10\/mbsi-brand-uppercase\/mbsi-logo-uppercase-white.webp?v=1794557508"};
+ window.mbsiSyncBrandLogos=()=>{const dark=document.documentElement.dataset.mbsiTheme==='dark';document.querySelectorAll(':is(.brand-logo-widget img,.site-header .brand img,.brand-logo,.mbsi-drawer-logo,.mbsi-brand-splash__logo)').forEach(img=>{const header=img.closest('.site-header');const heroHeader=header&&document.body.classList.contains('home-page')&&!header.classList.contains('is-scrolled')&&!header.matches(':focus-within');const src=dark||heroHeader||img.classList.contains('mbsi-brand-splash__logo')?window.mbsiLogoAssets.white:window.mbsiLogoAssets.blue;img.removeAttribute('srcset');img.removeAttribute('sizes');if(img.getAttribute('src')!==src)img.src=src;});};
+ document.addEventListener('DOMContentLoaded',window.mbsiSyncBrandLogos);
+ new MutationObserver(window.mbsiSyncBrandLogos).observe(document.documentElement,{attributes:true,attributeFilter:['data-mbsi-theme']});
+ const mbsiLogoPreload=document.createElement('link');mbsiLogoPreload.rel='preload';mbsiLogoPreload.as='image';mbsiLogoPreload.href=document.body?.classList.contains('home-page')||location.pathname==='/'||document.documentElement.dataset.mbsiTheme==='dark'?window.mbsiLogoAssets.white:window.mbsiLogoAssets.blue;document.head.append(mbsiLogoPreload);
+ </script>
+ <link rel="canonical" href="/MBSI-Website/our-services/tax-compliance/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tax Compliance">
+<meta property="og:url" content="/MBSI-Website/our-services/tax-compliance/">
+<meta property="og:site_name" content="Millennium Business Services, Inc.">
+<meta property="og:image" content="/MBSI-Website/wp-content/uploads/2026/07/MBSI_LOGO_10152026/MBSI_LOGO_DEFAULT_REVISED_10152026.png?v=1793256979">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1254">
+<meta property="og:image:height" content="1254">
+<meta property="og:image:alt" content="Millennium Business Services, Inc. blue logo — Value, Quality &amp; Integrity">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Tax Compliance">
+<meta name="twitter:image" content="/MBSI-Website/wp-content/uploads/2026/07/MBSI_LOGO_10152026/MBSI_LOGO_DEFAULT_REVISED_10152026.png?v=1793256979">
+<meta name="twitter:image:alt" content="Millennium Business Services, Inc. blue logo — Value, Quality &amp; Integrity">
+
+
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--navy: #001f55;--wp--preset--color--blue: #155fa8;--wp--preset--color--sky: #2d9cdb;--wp--preset--color--gold: #d29a2e;--wp--preset--color--ink: #172033;--wp--preset--color--soft: #f4f7fb;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.698), 20px);--wp--preset--font-size--large: clamp(22.041px, 1.378rem + ((1vw - 3.2px) * 1.623), 36px);--wp--preset--font-size--x-large: clamp(25.014px, 1.563rem + ((1vw - 3.2px) * 1.975), 42px);--wp--preset--font-size--card: clamp(0.984rem, 0.984rem + ((1vw - 0.2rem) * 0.96), 1.5rem);--wp--preset--font-size--display: clamp(2.31rem, 2.31rem + ((1vw - 0.2rem) * 3.609), 4.25rem);--wp--preset--font-family--mbsi-sans: Arial, Helvetica, "Segoe UI", sans-serif;--wp--preset--font-family--mbsi-serif: Georgia, "Times New Roman", serif;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:root { --wp--style--global--content-size: 760px;--wp--style--global--wide-size: 1180px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 1.25rem; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 1.25rem; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 1.25rem;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 1.25rem;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 1.25rem;}:root :where(.is-layout-grid){gap: 1.25rem;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{background-color: #ffffff;color: #172033;font-family: var(--wp--preset--font-family--mbsi-sans);font-size: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.35), 1.063rem);line-height: 1.7;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){color: #003c8f;}h1, h2, h3, h4, h5, h6{color: #003c8f;font-family: var(--wp--preset--font-family--mbsi-sans);font-weight: 700;line-height: 1.12;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-navy-color{color: var(--wp--preset--color--navy) !important;}.has-blue-color{color: var(--wp--preset--color--blue) !important;}.has-sky-color{color: var(--wp--preset--color--sky) !important;}.has-gold-color{color: var(--wp--preset--color--gold) !important;}.has-ink-color{color: var(--wp--preset--color--ink) !important;}.has-soft-color{color: var(--wp--preset--color--soft) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-navy-background-color{background-color: var(--wp--preset--color--navy) !important;}.has-blue-background-color{background-color: var(--wp--preset--color--blue) !important;}.has-sky-background-color{background-color: var(--wp--preset--color--sky) !important;}.has-gold-background-color{background-color: var(--wp--preset--color--gold) !important;}.has-ink-background-color{background-color: var(--wp--preset--color--ink) !important;}.has-soft-background-color{background-color: var(--wp--preset--color--soft) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-navy-border-color{border-color: var(--wp--preset--color--navy) !important;}.has-blue-border-color{border-color: var(--wp--preset--color--blue) !important;}.has-sky-border-color{border-color: var(--wp--preset--color--sky) !important;}.has-gold-border-color{border-color: var(--wp--preset--color--gold) !important;}.has-ink-border-color{border-color: var(--wp--preset--color--ink) !important;}.has-soft-border-color{border-color: var(--wp--preset--color--soft) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-card-font-size{font-size: var(--wp--preset--font-size--card) !important;}.has-display-font-size{font-size: var(--wp--preset--font-size--display) !important;}.has-mbsi-sans-font-family{font-family: var(--wp--preset--font-family--mbsi-sans) !important;}.has-mbsi-serif-font-family{font-family: var(--wp--preset--font-family--mbsi-serif) !important;}
+:root :where(.wp-block-icon svg){width: 24px;}
+:root :where(.wp-block-pullquote){font-size: clamp(0.984em, 0.984rem + ((1vw - 0.2em) * 0.96), 1.5em);line-height: 1.6;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link rel="stylesheet" id="dashicons-css" href="/MBSI-Website/wp-includes/css/dashicons.min.css?ver=7.1.4" media="all">
+<link rel="stylesheet" id="mbsi-legacy-css" href="/MBSI-Website/wp-content/themes/mbsi/assets/css/site-shared.css?ver=1792135825" media="all">
+<link rel="stylesheet" id="mbsi-elementor-bridge-css" href="/MBSI-Website/wp-content/plugins/mbsi-core/assets/css/elementor-bridge.css?ver=1.3.84" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="/MBSI-Website/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.3.4" media="all">
+<style id="elementor-frontend-inline-css">
+.elementor-kit-422{--e-global-color-primary:#003C8F;--e-global-color-secondary:#0B2F5B;--e-global-color-text:#172033;--e-global-color-accent:#C58B1F;--e-global-typography-primary-font-family:"Arial";--e-global-typography-primary-font-weight:700;--e-global-typography-secondary-font-family:"Georgia";--e-global-typography-secondary-font-weight:600;--e-global-typography-text-font-family:"Arial";--e-global-typography-text-font-weight:400;--e-global-typography-accent-font-family:"Arial";--e-global-typography-accent-font-weight:700;}.elementor-kit-422 e-page-transition{background-color:#FFBC7D;}.elementor-section.elementor-section-boxed > .elementor-container{max-width:1140px;}.e-con{--container-max-width:1140px;}.elementor-widget:not(:last-child){margin-block-end:20px;}.elementor-element{--widgets-spacing:20px 20px;--widgets-spacing-row:20px;--widgets-spacing-column:20px;}{}h1.entry-title{display:var(--page-title-display);}@media(max-width:1024px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:1024px;}.e-con{--container-max-width:1024px;}}@media(max-width:767px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:767px;}.e-con{--container-max-width:767px;}}
+.elementor-855 .elementor-element.elementor-element-8673864d{--display:flex;}.elementor-855 .elementor-element.elementor-element-87d11fec{--display:flex;}.elementor-widget-heading .elementor-heading-title{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );color:var( --e-global-color-primary );}.elementor-widget-text-editor{font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );color:var( --e-global-color-text );}.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:var( --e-global-color-primary );}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap, .elementor-widget-text-editor.elementor-drop-cap-view-default .elementor-drop-cap{color:var( --e-global-color-primary );border-color:var( --e-global-color-primary );}.elementor-855 .elementor-element.elementor-element-86c6ea17{--display:flex;}.elementor-855 .elementor-element.elementor-element-e4b8f69b{--display:flex;}.elementor-855 .elementor-element.elementor-element-006228e5{--display:flex;}.elementor-855 .elementor-element.elementor-element-720f59b9{--display:flex;}.elementor-widget-icon-list .elementor-icon-list-item:not(:last-child):after{border-color:var( --e-global-color-text );}.elementor-widget-icon-list .elementor-icon-list-icon i{color:var( --e-global-color-primary );}.elementor-widget-icon-list .elementor-icon-list-icon svg{fill:var( --e-global-color-primary );}.elementor-widget-icon-list .elementor-icon-list-item > .elementor-icon-list-text, .elementor-widget-icon-list .elementor-icon-list-item > a{font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-widget-icon-list .elementor-icon-list-text{color:var( --e-global-color-secondary );}.elementor-855 .elementor-element.elementor-element-31534d25 .elementor-icon-list-icon i{transition:color 0.3s;}.elementor-855 .elementor-element.elementor-element-31534d25 .elementor-icon-list-icon svg{transition:fill 0.3s;}.elementor-855 .elementor-element.elementor-element-31534d25{--e-icon-list-icon-size:14px;--icon-vertical-offset:0px;}.elementor-855 .elementor-element.elementor-element-31534d25 .elementor-icon-list-text{transition:color 0.3s;}.elementor-855 .elementor-element.elementor-element-taxcards{--display:flex;}.elementor-855 .elementor-element.elementor-element-28176629{--display:flex;}.elementor-855 .elementor-element.elementor-element-88135b7a .elementor-icon-list-icon i{transition:color 0.3s;}.elementor-855 .elementor-element.elementor-element-88135b7a .elementor-icon-list-icon svg{transition:fill 0.3s;}.elementor-855 .elementor-element.elementor-element-88135b7a{--e-icon-list-icon-size:14px;--icon-vertical-offset:0px;}.elementor-855 .elementor-element.elementor-element-88135b7a .elementor-icon-list-text{transition:color 0.3s;}.elementor-855 .elementor-element.elementor-element-d0c1f8c4{--display:flex;}.elementor-855 .elementor-element.elementor-element-529378c4 .elementor-icon-list-icon i{transition:color 0.3s;}.elementor-855 .elementor-element.elementor-element-529378c4 .elementor-icon-list-icon svg{transition:fill 0.3s;}.elementor-855 .elementor-element.elementor-element-529378c4{--e-icon-list-icon-size:14px;--icon-vertical-offset:0px;}.elementor-855 .elementor-element.elementor-element-529378c4 .elementor-icon-list-text{transition:color 0.3s;}.elementor-855 .elementor-element.elementor-element-7ad93b1e{--display:flex;}.elementor-855 .elementor-element.elementor-element-e1bbd7c6 .elementor-icon-list-icon i{transition:color 0.3s;}.elementor-855 .elementor-element.elementor-element-e1bbd7c6 .elementor-icon-list-icon svg{transition:fill 0.3s;}.elementor-855 .elementor-element.elementor-element-e1bbd7c6{--e-icon-list-icon-size:14px;--icon-vertical-offset:0px;}.elementor-855 .elementor-element.elementor-element-e1bbd7c6 .elementor-icon-list-text{transition:color 0.3s;}.elementor-855 .elementor-element.elementor-element-92f3f5b4{--display:flex;}.elementor-855 .elementor-element.elementor-element-a19c70fe .elementor-icon-list-icon i{transition:color 0.3s;}.elementor-855 .elementor-element.elementor-element-a19c70fe .elementor-icon-list-icon svg{transition:fill 0.3s;}.elementor-855 .elementor-element.elementor-element-a19c70fe{--e-icon-list-icon-size:14px;--icon-vertical-offset:0px;}.elementor-855 .elementor-element.elementor-element-a19c70fe .elementor-icon-list-text{transition:color 0.3s;}.elementor-855 .elementor-element.elementor-element-ce89fbce{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;}.elementor-855 .elementor-element.elementor-element-599c1530{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;}.elementor-855 .elementor-element.elementor-element-10ee3721 .elementor-heading-title{font-family:"Arial", Sans-serif;font-weight:700;}.elementor-855 .elementor-element.elementor-element-85c3dd2a{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;}.elementor-855 .elementor-element.elementor-element-1dec23e2{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;}.elementor-widget-icon.elementor-view-stacked .elementor-icon{background-color:var( --e-global-color-primary );}.elementor-widget-icon.elementor-view-framed .elementor-icon, .elementor-widget-icon.elementor-view-default .elementor-icon{color:var( --e-global-color-primary );border-color:var( --e-global-color-primary );}.elementor-widget-icon.elementor-view-framed .elementor-icon, .elementor-widget-icon.elementor-view-default .elementor-icon svg{fill:var( --e-global-color-primary );}.elementor-855 .elementor-element.elementor-element-c97acc26 .elementor-icon-wrapper{text-align:center;}.elementor-855 .elementor-element.elementor-element-c97acc26.elementor-view-stacked .elementor-icon{background-color:#07468e;}.elementor-855 .elementor-element.elementor-element-c97acc26.elementor-view-framed .elementor-icon, .elementor-855 .elementor-element.elementor-element-c97acc26.elementor-view-default .elementor-icon{color:#07468e;border-color:#07468e;}.elementor-855 .elementor-element.elementor-element-c97acc26.elementor-view-framed .elementor-icon, .elementor-855 .elementor-element.elementor-element-c97acc26.elementor-view-default .elementor-icon svg{fill:#07468e;}.elementor-855 .elementor-element.elementor-element-c97acc26 .elementor-icon{font-size:21px;}.elementor-855 .elementor-element.elementor-element-c97acc26 .elementor-icon svg{height:21px;}.elementor-855 .elementor-element.elementor-element-a5c23767 .elementor-heading-title{font-family:"Arial", Sans-serif;font-weight:700;}.elementor-widget-button .elementor-button{background-color:var( --e-global-color-accent );font-family:var( --e-global-typography-accent-font-family ), Sans-serif;font-weight:var( --e-global-typography-accent-font-weight );}.elementor-855 .elementor-element.elementor-element-9e4d417b .elementor-button-content-wrapper{flex-direction:row-reverse;}.elementor-855 .elementor-element.elementor-element-9e4d417b .elementor-button .elementor-button-content-wrapper{gap:8px;}.elementor-855 .elementor-element.elementor-element-13cf5f2e{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;}.elementor-855 .elementor-element.elementor-element-490df8b6 .elementor-icon-wrapper{text-align:center;}.elementor-855 .elementor-element.elementor-element-490df8b6.elementor-view-stacked .elementor-icon{background-color:#07468e;}.elementor-855 .elementor-element.elementor-element-490df8b6.elementor-view-framed .elementor-icon, .elementor-855 .elementor-element.elementor-element-490df8b6.elementor-view-default .elementor-icon{color:#07468e;border-color:#07468e;}.elementor-855 .elementor-element.elementor-element-490df8b6.elementor-view-framed .elementor-icon, .elementor-855 .elementor-element.elementor-element-490df8b6.elementor-view-default .elementor-icon svg{fill:#07468e;}.elementor-855 .elementor-element.elementor-element-490df8b6 .elementor-icon{font-size:21px;}.elementor-855 .elementor-element.elementor-element-490df8b6 .elementor-icon svg{height:21px;}.elementor-855 .elementor-element.elementor-element-b41bcb40 .elementor-heading-title{font-family:"Arial", Sans-serif;font-weight:700;}.elementor-855 .elementor-element.elementor-element-8566d99a .elementor-button-content-wrapper{flex-direction:row-reverse;}.elementor-855 .elementor-element.elementor-element-8566d99a .elementor-button .elementor-button-content-wrapper{gap:8px;}.elementor-855 .elementor-element.elementor-element-2c1f12c8{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;}.elementor-855 .elementor-element.elementor-element-4ad38497 .elementor-icon-wrapper{text-align:center;}.elementor-855 .elementor-element.elementor-element-4ad38497.elementor-view-stacked .elementor-icon{background-color:#07468e;}.elementor-855 .elementor-element.elementor-element-4ad38497.elementor-view-framed .elementor-icon, .elementor-855 .elementor-element.elementor-element-4ad38497.elementor-view-default .elementor-icon{color:#07468e;border-color:#07468e;}.elementor-855 .elementor-element.elementor-element-4ad38497.elementor-view-framed .elementor-icon, .elementor-855 .elementor-element.elementor-element-4ad38497.elementor-view-default .elementor-icon svg{fill:#07468e;}.elementor-855 .elementor-element.elementor-element-4ad38497 .elementor-icon{font-size:21px;}.elementor-855 .elementor-element.elementor-element-4ad38497 .elementor-icon svg{height:21px;}.elementor-855 .elementor-element.elementor-element-cdffdb28 .elementor-heading-title{font-family:"Arial", Sans-serif;font-weight:700;}.elementor-855 .elementor-element.elementor-element-0dea42d3 .elementor-button-content-wrapper{flex-direction:row-reverse;}.elementor-855 .elementor-element.elementor-element-0dea42d3 .elementor-button .elementor-button-content-wrapper{gap:8px;}.elementor-855 .elementor-element.elementor-element-5ef85084{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;}.elementor-855 .elementor-element.elementor-element-009adf80 .elementor-icon-wrapper{text-align:center;}.elementor-855 .elementor-element.elementor-element-009adf80.elementor-view-stacked .elementor-icon{background-color:#07468e;}.elementor-855 .elementor-element.elementor-element-009adf80.elementor-view-framed .elementor-icon, .elementor-855 .elementor-element.elementor-element-009adf80.elementor-view-default .elementor-icon{color:#07468e;border-color:#07468e;}.elementor-855 .elementor-element.elementor-element-009adf80.elementor-view-framed .elementor-icon, .elementor-855 .elementor-element.elementor-element-009adf80.elementor-view-default .elementor-icon svg{fill:#07468e;}.elementor-855 .elementor-element.elementor-element-009adf80 .elementor-icon{font-size:21px;}.elementor-855 .elementor-element.elementor-element-009adf80 .elementor-icon svg{height:21px;}.elementor-855 .elementor-element.elementor-element-95259553 .elementor-heading-title{font-family:"Arial", Sans-serif;font-weight:700;}.elementor-855 .elementor-element.elementor-element-3b2f444f .elementor-button-content-wrapper{flex-direction:row-reverse;}.elementor-855 .elementor-element.elementor-element-3b2f444f .elementor-button .elementor-button-content-wrapper{gap:8px;}.elementor-855 .elementor-element.elementor-element-ab0d241e{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;}.elementor-855 .elementor-element.elementor-element-bffebb09{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;}.elementor-855 .elementor-element.elementor-element-2736e19f .elementor-heading-title{font-family:"Arial", Sans-serif;font-weight:700;}
+/*# sourceURL=elementor-frontend-inline-css */
+</style>
+<link rel="stylesheet" id="widget-heading-css" href="/MBSI-Website/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=4.3.4" media="all">
+<link rel="stylesheet" id="widget-icon-list-css" href="/MBSI-Website/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=4.3.4" media="all">
+<link rel="stylesheet" id="mbsi-navigation-refinements-css" href="/MBSI-Website/wp-content/mu-plugins/mbsi-navigation.css?ver=1792131440" media="all">
+<link rel="stylesheet" id="mbsi-footer-readability-css" href="/MBSI-Website/wp-content/mu-plugins/mbsi-footer-ui.css?ver=1792131440" media="all">
+<link rel="stylesheet" id="mbsi-tax-ui-css" href="/MBSI-Website/wp-content/mu-plugins/mbsi-tax-ui.css?ver=1792131554" media="all">
+<link rel="stylesheet" id="mbsi-mobile-drawer-css" href="/MBSI-Website/wp-content/mu-plugins/mbsi-mobile-drawer.css?ver=1792131440" media="all">
+<link rel="stylesheet" id="mbsi-mobile-bottom-nav-css" href="/MBSI-Website/wp-content/mu-plugins/mbsi-mobile-bottom-nav.css?ver=1792131440" media="all">
+<link rel="stylesheet" id="mbsi-brand-foundation-css" href="/MBSI-Website/wp-content/mu-plugins/mbsi-brand-foundation.css?ver=1792131440" media="all">
+<link rel="stylesheet" id="mbsi-service-design-css" href="/MBSI-Website/wp-content/mu-plugins/mbsi-service-design.css?ver=1792382455" media="all">
+<link rel="stylesheet" id="mbsi-dark-mode-css" href="/MBSI-Website/wp-content/mu-plugins/mbsi-dark-mode.css?ver=1792136617" media="all">
+<script id="jquery-core-js" src="/MBSI-Website/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="/MBSI-Website/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+
+<meta name="generator" content="WordPress 7.1.4">
+<link rel="canonical" href="/MBSI-Website/our-services/tax-compliance/">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["Organization","ProfessionalService"],"@id":"/MBSI-Website/#organization","name":"Millennium Business Services, Inc.","alternateName":"MBSI","slogan":"Built for reliable outsourcing services, where capability meets dependability.","url":"/MBSI-Website/","logo":"/MBSI-Website/wp-content/uploads/2026/07/MBSI_LOGO_10152026/MBSI_LOGO_DEFAULT_REVISED_10152026.png?v=1793256979","telephone":"+63 2 8818 9492","email":"inquire@mbsi.com.ph","address":{"@type":"PostalAddress","streetAddress":"22/F 139 Corporate Center, 139 Valero Street, Salcedo Village","addressLocality":"Makati City","postalCode":"1227","addressCountry":"PH"},"sameAs":["https://www.linkedin.com/company/millennium-business-services-inc-","https://www.facebook.com/people/Millennium-Business-Services-Inc/61590805417221/"]},{"@type":"BreadcrumbList","@id":"/MBSI-Website/our-services/tax-compliance#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"/MBSI-Website/"},{"@type":"ListItem","position":2,"name":"Tax Compliance","item":"/MBSI-Website/our-services/tax-compliance/"}]}]}</script>
+<link rel="icon" href="/MBSI-Website/wp-content/uploads/2026/07/mbsi-logo-final-150x150.png" sizes="32x32">
+<link rel="icon" href="/MBSI-Website/wp-content/uploads/2026/07/mbsi-logo-final-300x300.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/MBSI-Website/wp-content/uploads/2026/07/mbsi-logo-final-300x300.png">
+<meta name="msapplication-TileImage" content="/MBSI-Website/wp-content/uploads/2026/07/mbsi-logo-final-300x300.png">
+</head>
+<body class="wp-singular page-template-default page page-id-855 page-child parent-pageid-32 wp-custom-logo wp-embed-responsive wp-theme-mbsi mbsi-service-page mbsi-banner-tax-compliance mbsi-imported-content elementor-default elementor-kit-422 elementor-page elementor-page-855">
+<div class="mbsi-page-loading" aria-hidden="true"><div class="mbsi-page-loading-content"><span class="mbsi-loading-mark" aria-hidden="true"><img src="/MBSI-Website/wp-content/uploads/2026/07/MBSI_LOGO_10152026/MBSI_LOGO_DEFAULT_PROPOSED_10152026.optimized.webp" alt="" width="128" height="52" loading="eager"><span class="mbsi-loading-ledger"><i style="--bar:14px;--delay:0s"></i><i style="--bar:21px;--delay:.12s"></i><i style="--bar:28px;--delay:.24s"></i><i style="--bar:35px;--delay:.36s"></i><i style="--bar:42px;--delay:.48s"></i></span></span><span>Loading page…</span></div></div><script>(()=>{const label=document.querySelector('.mbsi-page-loading-content > span:last-child'),text=document.documentElement.dataset.mbsiLoadingLabel;if(label&&text)label.textContent=text;})();</script>
+<div class="scroll-progress" data-scroll-progress aria-hidden="true"></div>
+<a class="skip-link screen-reader-text" href="#primary">Skip to content</a>
+<style id="elementor-post-713">.elementor-713 .elementor-element.elementor-element-c684540f{--display:flex;}.elementor-713 .elementor-element.elementor-element-0d986485{--display:flex;}.elementor-713 .elementor-element.elementor-element-f6450197{--display:flex;}.elementor-widget-image .widget-image-caption{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-713 .elementor-element.elementor-element-94cf8c6a{--display:flex;}.elementor-widget-text-editor{font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );color:var( --e-global-color-text );}.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:var( --e-global-color-primary );}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap, .elementor-widget-text-editor.elementor-drop-cap-view-default .elementor-drop-cap{color:var( --e-global-color-primary );border-color:var( --e-global-color-primary );}:root{--page-title-display:none;}</style><div class="mbsi-elementor-site-part mbsi-elementor-site-part--header">		<div data-elementor-type="page" data-elementor-id="713" class="elementor elementor-713" data-elementor-post-type="elementor_library">
+				<div class="mbsi-site-part-root elementor-element elementor-element-c684540f e-con-full e-flex e-con e-child" data-id="c684540f" data-element_type="container" data-e-type="container">
+		<header class="site-header mbsi-elementor-site-header elementor-element elementor-element-0d986485 e-con-full e-flex e-con e-child" data-header=" " data-id="0d986485" data-element_type="container" data-e-type="container">
+		<a class="brand elementor-element elementor-element-f6450197 e-con-full e-flex e-con e-child" href="/MBSI-Website/" aria-label="Millennium Business Services, Inc. home Millennium Business Services, Inc. home" data-id="f6450197" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-bbbdfa79 brand-logo-widget elementor-widget elementor-widget-image" data-id="bbbdfa79" data-element_type="widget" data-e-type="widget" data-logo-light="/MBSI-Website/wp-content/uploads/2026/10/mbsi-brand-uppercase/mbsi-logo-uppercase-white.webp" data-logo-dark="/MBSI-Website/wp-content/uploads/2026/10/mbsi-brand-uppercase/mbsi-logo-uppercase-blue.webp" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img src="/MBSI-Website/wp-content/uploads/2026/10/mbsi-brand-uppercase/mbsi-logo-uppercase-blue.webp" title="" alt="Millennium Business Services, Inc." loading="lazy">															</div>
+				</div>
+		<div class="brand-copy elementor-element elementor-element-94cf8c6a e-con-full e-flex e-con e-child" data-id="94cf8c6a" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-75fa7a60 brand-name elementor-widget elementor-widget-text-editor" data-id="75fa7a60" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<strong>Millennium Business Services, Inc.</strong>								</div>
+				</div>
+				<div class="elementor-element elementor-element-df617525 brand-tagline elementor-widget elementor-widget-text-editor" data-id="df617525" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<small>Accounting, Payroll &amp; Finance Outsourcing</small>								</div>
+				</div>
+				</div>
+				</a>
+				<div class="elementor-element elementor-element-557d0574 mbsi-header-toggle-widget elementor-widget elementor-widget-html" data-id="557d0574" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle><span></span><span></span><span></span></button>				</div>
+				</div>
+				<div class="elementor-element elementor-element-fd5e3ce4 mbsi-header-nav-widget elementor-widget elementor-widget-shortcode" data-id="fd5e3ce4" data-element_type="widget" data-e-type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-shortcode">		<nav class="site-nav" aria-label="Primary navigation" data-nav>
+												<div class="nav-item">
+						<button type="button" data-dropdown-trigger>Services</button>
+						<div class="dropdown-panel">
+							<div><span class="dropdown-kicker">Services</span><strong>Core support areas</strong><p>Choose the finance, payroll, reporting, or Xero support your team needs.</p></div>
+															<a href="/MBSI-Website/our-services/accounting-services/">Accounting &amp; Bookkeeping</a>
+															<a href="/MBSI-Website/our-services/payroll-processing/">Payroll Management</a>
+															<a href="/MBSI-Website/our-services/financial-services/">Financial Reporting</a>
+															<a href="/MBSI-Website/our-services/tax-compliance/">Tax Compliance</a>
+															<a href="/MBSI-Website/our-services/xero-services/">Xero Services</a>
+													</div>
+					</div>
+																<div class="nav-item">
+						<button type="button" data-dropdown-trigger>Company</button>
+						<div class="dropdown-panel">
+							<div><span class="dropdown-kicker">Company</span><strong>People, story, and standards</strong><p>Learn about the firm, our leadership, and how to reach our team.</p></div>
+															<a href="/MBSI-Website/about-us/">About Us</a>
+															<a href="/MBSI-Website/our-team/">Our Team</a>
+															<a href="/MBSI-Website/contact-us/">Contact Us</a>
+													</div>
+					</div>
+																<div class="nav-item">
+						<button type="button" data-dropdown-trigger>Resources</button>
+						<div class="dropdown-panel">
+							<div><span class="dropdown-kicker">Resources</span><strong>Guides and updates</strong><p>Helpful references for payroll, compliance, deadlines, and client questions.</p></div>
+															<a href="/MBSI-Website/resources/payroll-guides/">Payroll Guides</a>
+															<a href="/MBSI-Website/resources/accounting-compliance-updates/">Compliance Updates</a>
+															<a href="/MBSI-Website/resources/government-deadlines/">Government Deadlines</a>
+															<a href="/MBSI-Website/resources/faqs/">FAQs</a>
+															<a href="/MBSI-Website/news/">News &amp; Updates</a>
+													</div>
+					</div>
+																<a href="/MBSI-Website/careers/">Careers</a>
+										<a class="nav-cta" href="/MBSI-Website/contact-us/">Contact Us</a>
+		</nav>
+		</div>
+						</div>
+				</div>
+				</header>
+				</div>
+				</div>
+		</div>
+<main id="primary" class="content-page content-page-page">
+			<div data-elementor-type="wp-page" data-elementor-id="855" class="elementor elementor-855" data-elementor-post-type="page">
+				<div class="mbsi-elementor-root mbsi-native-elementor-root elementor-element elementor-element-8673864d e-con-full e-flex e-con e-parent" data-id="8673864d" data-element_type="container" data-e-type="container">
+		<section class="mbsi-native-container page-hero elementor-element elementor-element-87d11fec e-con-full e-flex e-con e-child" data-id="87d11fec" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-a7a34b01 mbsi-native-text mbsi-native-tag-h1 elementor-widget elementor-widget-heading" data-id="a7a34b01" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h1 class="elementor-heading-title elementor-size-default">Tax Compliance</h1>				</div>
+				</div>
+				<div class="elementor-element elementor-element-0ebd2ede mbsi-native-text mbsi-native-tag-p elementor-widget elementor-widget-text-editor" data-id="0ebd2ede" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Practical support for organized tax records, filing preparation, and recurring compliance workflows.</p>								</div>
+				</div>
+				</section>
+		<article class="mbsi-native-container wp-content service-detail elementor-element elementor-element-86c6ea17 e-con-full e-flex e-con e-child" data-id="86c6ea17" data-element_type="container" data-e-type="container">
+		<section class="mbsi-native-container detail-intro elementor-element elementor-element-e4b8f69b e-con-full e-flex e-con e-child" data-id="e4b8f69b" data-element_type="container" data-e-type="container">
+		<div class="mbsi-native-container elementor-element elementor-element-006228e5 e-con-full e-flex e-con e-child" data-id="006228e5" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-9219ab11 mbsi-native-text mbsi-native-tag-p elementor-widget elementor-widget-text-editor" data-id="9219ab11" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Tax Compliance Support</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-74d1c794 mbsi-native-text mbsi-native-tag-h2 elementor-widget elementor-widget-heading" data-id="74d1c794" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Keep your tax compliance work organized and on track.</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-7db712dd mbsi-native-text mbsi-native-tag-p elementor-widget elementor-widget-text-editor" data-id="7db712dd" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>MBSI helps businesses organize the accounting records and supporting documents needed for tax compliance activities.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-770f8265 mbsi-native-text mbsi-native-tag-p elementor-widget elementor-widget-text-editor" data-id="770f8265" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Our team works with your finance personnel to prepare information, reconcile records, and coordinate recurring compliance tasks based on your agreed service scope.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-9e512f7b mbsi-native-text mbsi-native-tag-p elementor-widget elementor-widget-text-editor" data-id="9e512f7b" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Contact us to discuss your requirements and the support appropriate for your business.</p>								</div>
+				</div>
+				</div>
+		<aside class="mbsi-native-container detail-side-card elementor-element elementor-element-720f59b9 e-con-full e-flex e-con e-child" data-id="720f59b9" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-abb45e76 mbsi-native-text mbsi-native-tag-h3 elementor-widget elementor-widget-heading" data-id="abb45e76" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">This service helps with</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-31534d25 elementor-icon-list--layout-traditional mbsi-native-list mbsi-check-list elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="31534d25" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Tax Reporting and Submission</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Tax Assessment Assistance</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Tax Planning</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Tax Computation</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Tax compliance coordination</span>
+									</li>
+						</ul>
+						</div>
+				</div>
+				</aside>
+				</section>
+				<div class="elementor-element elementor-element-5d9da66d mbsi-native-text mbsi-native-tag-h2 elementor-widget elementor-widget-heading" data-id="5d9da66d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Tax compliance services</h2>				</div>
+				</div>
+		<section class="mbsi-native-container detail-card-grid elementor-element elementor-element-taxcards e-con-full e-flex e-con e-parent" data-id="taxcards" data-element_type="container" data-e-type="container">
+		<div class="mbsi-native-container detail-card elementor-element elementor-element-28176629 e-con-full e-flex e-con e-child" data-id="28176629" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-c051a2df mbsi-native-text mbsi-native-tag-span detail-icon dashicons dashicons-media-spreadsheet elementor-widget elementor-widget-text-editor" data-id="c051a2df" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<span aria-hidden="true" class="detail-icon dashicons dashicons-media-spreadsheet"></span>								</div>
+				</div>
+				<div class="elementor-element elementor-element-594eb63a mbsi-native-text mbsi-native-tag-h3 elementor-widget elementor-widget-heading" data-id="594eb63a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Tax Reporting and Submission</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-f31bfbe8 mbsi-native-text mbsi-native-tag-p elementor-widget elementor-widget-text-editor" data-id="f31bfbe8" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Preparation and filing support for recurring tax returns and related documentation required by businesses.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-88135b7a elementor-icon-list--layout-traditional mbsi-native-list mbsi-check-list elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="88135b7a" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Monthly, quarterly, semi-annual, and annual income tax support</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">VAT, percentage tax, and fringe benefit tax coordination</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Withholding tax and documentary stamp tax support</span>
+									</li>
+						</ul>
+						</div>
+				</div>
+				</div>
+		<div class="mbsi-native-container detail-card elementor-element elementor-element-d0c1f8c4 e-con-full e-flex e-con e-child" data-id="d0c1f8c4" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-ce429763 mbsi-native-text mbsi-native-tag-span detail-icon dashicons dashicons-search elementor-widget elementor-widget-text-editor" data-id="ce429763" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<span aria-hidden="true" class="detail-icon dashicons dashicons-search"></span>								</div>
+				</div>
+				<div class="elementor-element elementor-element-7275a936 mbsi-native-text mbsi-native-tag-h3 elementor-widget elementor-widget-heading" data-id="7275a936" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Tax Assessment Assistance</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-89c9f93e mbsi-native-text mbsi-native-tag-p elementor-widget elementor-widget-text-editor" data-id="89c9f93e" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Support during tax examinations and assessments, including review of assessment validity and required supporting documents.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-529378c4 elementor-icon-list--layout-traditional mbsi-native-list mbsi-check-list elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="529378c4" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Assessment review assistance</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Document and analysis preparation support</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Coordination of responses and supporting schedules</span>
+									</li>
+						</ul>
+						</div>
+				</div>
+				</div>
+		<div class="mbsi-native-container detail-card elementor-element elementor-element-7ad93b1e e-con-full e-flex e-con e-child" data-id="7ad93b1e" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-8057bb00 mbsi-native-text mbsi-native-tag-span detail-icon dashicons dashicons-chart-line elementor-widget elementor-widget-text-editor" data-id="8057bb00" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<span aria-hidden="true" class="detail-icon dashicons dashicons-chart-line"></span>								</div>
+				</div>
+				<div class="elementor-element elementor-element-082e3bf5 mbsi-native-text mbsi-native-tag-h3 elementor-widget elementor-widget-heading" data-id="082e3bf5" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Tax Planning</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1ab8d9e1 mbsi-native-text mbsi-native-tag-p elementor-widget elementor-widget-text-editor" data-id="1ab8d9e1" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Review of procedures and practices that may create tax exposure, with recommendations for more tax-efficient policies and processes.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-e1bbd7c6 elementor-icon-list--layout-traditional mbsi-native-list mbsi-check-list elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="e1bbd7c6" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Tax exposure review</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Policy and procedure recommendations</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Tax minimization strategy support</span>
+									</li>
+						</ul>
+						</div>
+				</div>
+				</div>
+		<div class="mbsi-native-container detail-card elementor-element elementor-element-92f3f5b4 e-con-full e-flex e-con e-child" data-id="92f3f5b4" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-70fe7873 mbsi-native-text mbsi-native-tag-span detail-icon dashicons dashicons-money-alt elementor-widget elementor-widget-text-editor" data-id="70fe7873" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<span aria-hidden="true" class="detail-icon dashicons dashicons-money-alt"></span>								</div>
+				</div>
+				<div class="elementor-element elementor-element-d66779f3 mbsi-native-text mbsi-native-tag-h3 elementor-widget elementor-widget-heading" data-id="d66779f3" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Tax Computation</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-b6e3d735 mbsi-native-text mbsi-native-tag-p elementor-widget elementor-widget-text-editor" data-id="b6e3d735" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Support for recurring payroll tax computations, including withholding taxes and other statutory taxes. MBSI helps keep the underlying payroll records and supporting schedules organized for each processing cycle.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-a19c70fe mbsi-native-list mbsi-check-list mbsi-tax-computation-scope elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="a19c70fe" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Payroll withholding tax computation support</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Review of payroll tax inputs and supporting records</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Recurring tax schedules and computation summaries</span>
+									</li>
+						</ul>
+						</div>
+				</div>
+				</div>
+				</section>
+		<div class="mbsi-native-container mbsi-service-shared-blocks elementor-element elementor-element-ce89fbce e-con-full e-flex e-con e-child" data-id="ce89fbce" data-element_type="container" data-e-type="container">
+		<section class="mbsi-native-container mbsi-related-services elementor-element elementor-element-599c1530 e-con-full e-flex e-con e-child" aria-labelledby="related-services-title related-services-title" data-id="599c1530" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-10ee3721 mbsi-native-text mbsi-native-tag-h2 elementor-widget elementor-widget-heading" data-id="10ee3721" data-element_type="widget" data-e-type="widget" id="related-services-title" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Explore other services</h2>				</div>
+				</div>
+		<div class="mbsi-native-container mbsi-related-grid elementor-element elementor-element-85c3dd2a e-con-full e-flex e-con e-child" data-id="85c3dd2a" data-element_type="container" data-e-type="container">
+		<article class="mbsi-native-container mbsi-related-card elementor-element elementor-element-1dec23e2 e-con-full e-flex e-con e-child" data-id="1dec23e2" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-c97acc26 mbsi-related-icon elementor-view-default elementor-widget elementor-widget-icon" data-id="c97acc26" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<svg aria-hidden="true" class="e-font-icon-svg e-fas-calculator" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 0H48C22.4 0 0 22.4 0 48v416c0 25.6 22.4 48 48 48h352c25.6 0 48-22.4 48-48V48c0-25.6-22.4-48-48-48zM128 435.2c0 6.4-6.4 12.8-12.8 12.8H76.8c-6.4 0-12.8-6.4-12.8-12.8v-38.4c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4zm0-128c0 6.4-6.4 12.8-12.8 12.8H76.8c-6.4 0-12.8-6.4-12.8-12.8v-38.4c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4zm128 128c0 6.4-6.4 12.8-12.8 12.8h-38.4c-6.4 0-12.8-6.4-12.8-12.8v-38.4c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4zm0-128c0 6.4-6.4 12.8-12.8 12.8h-38.4c-6.4 0-12.8-6.4-12.8-12.8v-38.4c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4zm128 128c0 6.4-6.4 12.8-12.8 12.8h-38.4c-6.4 0-12.8-6.4-12.8-12.8V268.8c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v166.4zm0-256c0 6.4-6.4 12.8-12.8 12.8H76.8c-6.4 0-12.8-6.4-12.8-12.8V76.8C64 70.4 70.4 64 76.8 64h294.4c6.4 0 12.8 6.4 12.8 12.8v102.4z"></path></svg>			</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-a5c23767 mbsi-native-text mbsi-native-tag-h3 elementor-widget elementor-widget-heading" data-id="a5c23767" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Accounting &amp; Bookkeeping</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-14249a61 mbsi-native-text mbsi-native-tag-p elementor-widget elementor-widget-text-editor" data-id="14249a61" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Organized bookkeeping, reconciliations, and financial records.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-9e4d417b mbsi-related-link elementor-widget elementor-widget-button" data-id="9e4d417b" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/MBSI-Website/our-services/accounting-services/">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-arrow-right" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>			</span>
+									<span class="elementor-button-text">Learn more</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</article>
+		<article class="mbsi-native-container mbsi-related-card elementor-element elementor-element-13cf5f2e e-con-full e-flex e-con e-child" data-id="13cf5f2e" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-490df8b6 mbsi-related-icon elementor-view-default elementor-widget elementor-widget-icon" data-id="490df8b6" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<svg aria-hidden="true" class="e-font-icon-svg e-fas-id-card" viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M528 32H48C21.5 32 0 53.5 0 80v16h576V80c0-26.5-21.5-48-48-48zM0 432c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V128H0v304zm352-232c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16zm0 64c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16zm0 64c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16zM176 192c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zM67.1 396.2C75.5 370.5 99.6 352 128 352h8.2c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h8.2c28.4 0 52.5 18.5 60.9 44.2 3.2 9.9-5.2 19.8-15.6 19.8H82.7c-10.4 0-18.8-10-15.6-19.8z"></path></svg>			</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-b41bcb40 mbsi-native-text mbsi-native-tag-h3 elementor-widget elementor-widget-heading" data-id="b41bcb40" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Payroll Management</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-21650e2e mbsi-native-text mbsi-native-tag-p elementor-widget elementor-widget-text-editor" data-id="21650e2e" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Payroll processing, statutory deductions, and employee records.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-8566d99a mbsi-related-link elementor-widget elementor-widget-button" data-id="8566d99a" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/MBSI-Website/our-services/payroll-processing/">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-arrow-right" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>			</span>
+									<span class="elementor-button-text">Learn more</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</article>
+		<article class="mbsi-native-container mbsi-related-card elementor-element elementor-element-2c1f12c8 e-con-full e-flex e-con e-child" data-id="2c1f12c8" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-4ad38497 mbsi-related-icon elementor-view-default elementor-widget elementor-widget-icon" data-id="4ad38497" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<svg aria-hidden="true" class="e-font-icon-svg e-fas-chart-bar" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M332.8 320h38.4c6.4 0 12.8-6.4 12.8-12.8V172.8c0-6.4-6.4-12.8-12.8-12.8h-38.4c-6.4 0-12.8 6.4-12.8 12.8v134.4c0 6.4 6.4 12.8 12.8 12.8zm96 0h38.4c6.4 0 12.8-6.4 12.8-12.8V76.8c0-6.4-6.4-12.8-12.8-12.8h-38.4c-6.4 0-12.8 6.4-12.8 12.8v230.4c0 6.4 6.4 12.8 12.8 12.8zm-288 0h38.4c6.4 0 12.8-6.4 12.8-12.8v-70.4c0-6.4-6.4-12.8-12.8-12.8h-38.4c-6.4 0-12.8 6.4-12.8 12.8v70.4c0 6.4 6.4 12.8 12.8 12.8zm96 0h38.4c6.4 0 12.8-6.4 12.8-12.8V108.8c0-6.4-6.4-12.8-12.8-12.8h-38.4c-6.4 0-12.8 6.4-12.8 12.8v198.4c0 6.4 6.4 12.8 12.8 12.8zM496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"></path></svg>			</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-cdffdb28 mbsi-native-text mbsi-native-tag-h3 elementor-widget elementor-widget-heading" data-id="cdffdb28" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Financial Reporting</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-c7efb357 mbsi-native-text mbsi-native-tag-p elementor-widget elementor-widget-text-editor" data-id="c7efb357" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Financial reports and analysis for informed business decisions.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-0dea42d3 mbsi-related-link elementor-widget elementor-widget-button" data-id="0dea42d3" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/MBSI-Website/our-services/financial-services/">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-arrow-right" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>			</span>
+									<span class="elementor-button-text">Learn more</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</article>
+		<article class="mbsi-native-container mbsi-related-card elementor-element elementor-element-5ef85084 e-con-full e-flex e-con e-child" data-id="5ef85084" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-009adf80 mbsi-related-icon elementor-view-default elementor-widget elementor-widget-icon" data-id="009adf80" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<svg aria-hidden="true" class="e-font-icon-svg e-fas-cloud" viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="M537.6 226.6c4.1-10.7 6.4-22.4 6.4-34.6 0-53-43-96-96-96-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32c-88.4 0-160 71.6-160 160 0 2.7.1 5.4.2 8.1C40.2 219.8 0 273.2 0 336c0 79.5 64.5 144 144 144h368c70.7 0 128-57.3 128-128 0-61.9-44-113.6-102.4-125.4z"></path></svg>			</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-95259553 mbsi-native-text mbsi-native-tag-h3 elementor-widget elementor-widget-heading" data-id="95259553" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Xero Services</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-539446e3 mbsi-native-text mbsi-native-tag-p elementor-widget elementor-widget-text-editor" data-id="539446e3" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Cloud accounting setup, training, and ongoing support.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-3b2f444f mbsi-related-link elementor-widget elementor-widget-button" data-id="3b2f444f" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/MBSI-Website/our-services/xero-services/">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-arrow-right" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>			</span>
+									<span class="elementor-button-text">Learn more</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</article>
+				</div>
+				</section>
+		<section class="mbsi-native-container mbsi-service-contact elementor-element elementor-element-ab0d241e e-con-full e-flex e-con e-child" aria-labelledby="service-contact-title service-contact-title" data-id="ab0d241e" data-element_type="container" data-e-type="container">
+		<div class="mbsi-native-container mbsi-service-contact-copy elementor-element elementor-element-bffebb09 e-con-full e-flex e-con e-child" data-id="bffebb09" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-2736e19f mbsi-native-text mbsi-native-tag-h2 elementor-widget elementor-widget-heading" data-id="2736e19f" data-element_type="widget" data-e-type="widget" id="service-contact-title" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Let’s discuss your tax compliance needs.</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-5229f186 mbsi-native-text mbsi-native-tag-p elementor-widget elementor-widget-text-editor" data-id="5229f186" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Tell us about your business and the support your team needs.</p>								</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-d1fdc109 mbsi-service-contact-action elementor-widget elementor-widget-button" data-id="d1fdc109" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/MBSI-Website/contact-us/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Talk to MBSI</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</section>
+				</div>
+				</article>
+				</div>
+				</div>
+		</main>
+<style id="elementor-post-714">.elementor-714 .elementor-element.elementor-element-eb596ef0{--display:flex;}.elementor-714 .elementor-element.elementor-element-648dd43b{--display:flex;}.elementor-714 .elementor-element.elementor-element-4518eceb{--display:flex;}.elementor-714 .elementor-element.elementor-element-e96f30ef{--display:flex;}.elementor-widget-text-editor{font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );color:var( --e-global-color-text );}.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:var( --e-global-color-primary );}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap, .elementor-widget-text-editor.elementor-drop-cap-view-default .elementor-drop-cap{color:var( --e-global-color-primary );border-color:var( --e-global-color-primary );}.elementor-714 .elementor-element.elementor-element-29f4f3ac{--display:flex;}.elementor-widget-heading .elementor-heading-title{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );color:var( --e-global-color-primary );}.elementor-714 .elementor-element.elementor-element-362b126b{--display:flex;}.elementor-714 .elementor-element.elementor-element-7bcd109a{--display:flex;}.elementor-714 .elementor-element.elementor-element-48aaa0c2{--display:flex;}:root{--page-title-display:none;}</style><div class="mbsi-elementor-site-part mbsi-elementor-site-part--footer">		<div data-elementor-type="page" data-elementor-id="714" class="elementor elementor-714" data-elementor-post-type="elementor_library">
+				<div class="mbsi-site-part-root elementor-element elementor-element-eb596ef0 e-con-full e-flex e-con e-child" data-id="eb596ef0" data-element_type="container" data-e-type="container">
+		<footer class="site-footer mbsi-elementor-site-footer elementor-element elementor-element-648dd43b e-con-full e-flex e-con e-child" data-id="648dd43b" data-element_type="container" data-e-type="container">
+		<div class="footer-grid elementor-element elementor-element-4518eceb e-con-full e-flex e-con e-child" data-id="4518eceb" data-element_type="container" data-e-type="container">
+		<div class="footer-brand elementor-element elementor-element-e96f30ef e-con-full e-flex e-con e-child" data-id="e96f30ef" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-9c8dc74c mbsi-footer-brand-name elementor-widget elementor-widget-text-editor" data-id="9c8dc74c" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<strong>Millennium Business Services, Inc.</strong><small>Accounting, Payroll &amp; Finance Outsourcing</small>								</div>
+				</div>
+				<div class="elementor-element elementor-element-22e6ef0f mbsi-footer-brand-copy elementor-widget elementor-widget-text-editor" data-id="22e6ef0f" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Helping businesses simplify financial operations through accurate, compliant, and scalable outsourcing solutions.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-59e34981 mbsi-footer-social elementor-widget elementor-widget-text-editor" data-id="59e34981" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<div class="footer-social" aria-label="Social links"><a href="https://www.linkedin.com/company/millennium-business-services-inc-" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">in</a><a href="https://www.facebook.com/people/Millennium-Business-Services-Inc/61590805417221/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">f</a></div>								</div>
+				</div>
+				</div>
+		<nav class="footer-column footer-services elementor-element elementor-element-29f4f3ac e-con-full e-flex e-con e-child" aria-label="Footer services Footer services" data-id="29f4f3ac" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-d67f4336 elementor-widget elementor-widget-heading" data-id="d67f4336" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Services</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-ae0aaa00 mbsi-footer-menu-widget elementor-widget elementor-widget-shortcode" data-id="ae0aaa00" data-element_type="widget" data-e-type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-shortcode"><li id="menu-item-83" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83"><a href="/MBSI-Website/our-services/accounting-services/">Accounting &amp; Bookkeeping</a></li>
+<li id="menu-item-84" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-84"><a href="/MBSI-Website/our-services/payroll-processing/">Payroll Management</a></li>
+<li id="menu-item-85" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-85"><a href="/MBSI-Website/our-services/financial-services/">Financial Reporting</a></li>
+<li id="menu-item-857" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-855 current_page_item menu-item-857"><a href="/MBSI-Website/our-services/tax-compliance/" aria-current="page">Tax Compliance</a></li>
+<li id="menu-item-86" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-86"><a href="/MBSI-Website/our-services/xero-services/">Xero Services</a></li>
+</div>
+						</div>
+				</div>
+				</nav>
+		<nav class="footer-column footer-resources elementor-element elementor-element-362b126b e-con-full e-flex e-con e-child" aria-label="Footer resources Footer resources" data-id="362b126b" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-e55e0546 elementor-widget elementor-widget-heading" data-id="e55e0546" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Resources</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-319688f3 mbsi-footer-menu-widget elementor-widget elementor-widget-shortcode" data-id="319688f3" data-element_type="widget" data-e-type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-shortcode"><li id="menu-item-87" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-87"><a href="/MBSI-Website/resources/payroll-guides/">Payroll Guides</a></li>
+<li id="menu-item-88" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-88"><a href="/MBSI-Website/resources/accounting-compliance-updates/">Compliance Updates</a></li>
+<li id="menu-item-89" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-89"><a href="/MBSI-Website/resources/government-deadlines/">Government Deadlines</a></li>
+<li id="menu-item-90" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-90"><a href="/MBSI-Website/resources/faqs/">FAQs</a></li>
+<li id="menu-item-91" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91"><a href="/MBSI-Website/news/">News &amp; Updates</a></li>
+</div>
+						</div>
+				</div>
+				</nav>
+		<div class="footer-column footer-contact elementor-element elementor-element-7bcd109a e-con-full e-flex e-con e-child" data-id="7bcd109a" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-4006bfa0 elementor-widget elementor-widget-heading" data-id="4006bfa0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Contact Us</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-d1859fd8 elementor-widget elementor-widget-text-editor" data-id="d1859fd8" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><strong>Office</strong><span class="footer-address-lines">22/F 139 Corporate Center<br><span class="footer-address-line-two">139 Valero Street, Salcedo Village</span><br>Makati City 1227, Philippines</span></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-ea0ce731 elementor-widget elementor-widget-text-editor" data-id="ea0ce731" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><strong>Phone</strong><a href="tel:+63288189492">+63 2 8818 9492</a></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-2101f7f8 elementor-widget elementor-widget-text-editor" data-id="2101f7f8" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><strong>Email</strong><a href="mailto:central@mbsi.com.ph">central@mbsi.com.ph</a><br><a href="mailto:inquire@mbsi.com.ph">inquire@mbsi.com.ph</a></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-2b710704 elementor-widget elementor-widget-text-editor" data-id="2b710704" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p class="footer-office-hours"><strong>Office Hours</strong><span class="footer-office-hours-lines">Mon–Thu, 8:30 AM – 6:30 PM<br>Fri, 8:30 AM – 5:30 PM</span></p>								</div>
+				</div>
+				</div>
+				</div>
+		<div class="footer-bottom elementor-element elementor-element-48aaa0c2 e-con-full e-flex e-con e-child" data-id="48aaa0c2" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-aabb4669 mbsi-footer-copyright elementor-widget elementor-widget-text-editor" data-id="aabb4669" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<span>© 2026 Millennium Business Services, Inc. All Rights Reserved.</span>								</div>
+				</div>
+				<div class="elementor-element elementor-element-eb8e330a mbsi-footer-privacy elementor-widget elementor-widget-text-editor" data-id="eb8e330a" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<span><a class="mbsi-privacy-modal-trigger" href="/MBSI-Website/privacy-policy/" data-mbsi-privacy-open>Privacy Policy</a></span>								</div>
+				</div>
+				</div>
+				</footer>
+				</div>
+				</div>
+		</div><style id="elementor-post-3">.elementor-3 .elementor-element.elementor-element-d5acd242{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;}.elementor-3 .elementor-element.elementor-element-e5881bff{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;}.elementor-widget-text-editor{font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );color:var( --e-global-color-text );}.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:var( --e-global-color-primary );}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap, .elementor-widget-text-editor.elementor-drop-cap-view-default .elementor-drop-cap{color:var( --e-global-color-primary );border-color:var( --e-global-color-primary );}.elementor-widget-heading .elementor-heading-title{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );color:var( --e-global-color-primary );}.elementor-3 .elementor-element.elementor-element-637f7fd5{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;}</style>	<div class="mbsi-privacy-modal" data-mbsi-privacy-modal hidden aria-hidden="true">
+		<div class="mbsi-privacy-modal__backdrop" data-mbsi-privacy-close></div>
+		<section class="mbsi-privacy-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="mbsi-privacy-modal-title" tabindex="-1">
+			<header class="mbsi-privacy-modal__header">
+				<h2 id="mbsi-privacy-modal-title">Privacy Policy</h2>
+				<button class="mbsi-privacy-modal__close" type="button" data-mbsi-privacy-close aria-label="Close Privacy Policy">
+					<span aria-hidden="true">×</span>
+				</button>
+			</header>
+			<div class="mbsi-privacy-modal__content" tabindex="0">
+						<div data-elementor-type="wp-page" data-elementor-id="3" class="elementor elementor-3" data-elementor-post-type="page">
+				<div class="elementor-element elementor-element-d5acd242 mbsi-elementor-root mbsi-privacy-native-root e-con-full e-flex e-con e-parent" data-id="d5acd242" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-e5881bff privacy-page-header privacy-native-header e-con-full e-flex e-con e-child" data-id="e5881bff" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-207604c9 privacy-native-eyebrow elementor-widget elementor-widget-text-editor" data-id="207604c9" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p class="eyebrow">Privacy</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-a1778186 privacy-native-title elementor-widget elementor-widget-heading" data-id="a1778186" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">MBSI Website Privacy Notice</h2>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-637f7fd5 wp-content privacy-policy-native-content e-con-full e-flex e-con e-child" data-id="637f7fd5" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-49549eaa privacy-native-text elementor-widget elementor-widget-text-editor" data-id="49549eaa" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><em>Last updated: August 27, 2026.</em></p>
+	<p>Millennium Business Services, Inc. respects your privacy and processes personal data in accordance with Republic Act No. 10173, or the Data Privacy Act of 2012, its Implementing Rules and Regulations, and applicable issuances of the National Privacy Commission.</p>
+	<p>This Notice explains how we process personal data collected through the MBSI website.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-cbf0bb84 privacy-native-section-title elementor-widget elementor-widget-heading" data-id="cbf0bb84" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Information We Collect</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-3d48f396 privacy-native-text elementor-widget elementor-widget-text-editor" data-id="3d48f396" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Depending on how you use our website, we may collect:</p>
+	<ul>
+		<li><strong>Service and general inquiries:</strong> name, company, email address, telephone number, service of interest, and information contained in your message.</li>
+		<li><strong>Job applications:</strong> name, contact details, employment and educational information, position or area of interest, application message, résumé or curriculum vitae, and other information you voluntarily provide.</li>
+		<li><strong>Website updates:</strong> email address and subscription or consent records.</li>
+		<li><strong>Website security and administration:</strong> limited technical information such as IP address, browser or device information, access logs, and form activity where necessary for website operation and security.</li>
+	</ul>
+	<p>We generally obtain this information directly from you when you complete a form, submit an application, subscribe to updates, or communicate with us through the website. Certain technical information may be collected automatically through our website and security systems.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-b2ee94f2 privacy-native-section-title elementor-widget elementor-widget-heading" data-id="b2ee94f2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">How and Why We Use Personal Data</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-c91aef52 privacy-native-text elementor-widget elementor-widget-text-editor" data-id="c91aef52" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>MBSI may process personal data to:</p>
+	<ul>
+		<li>respond to inquiries and requests regarding our services;</li>
+		<li>communicate with prospective clients and business contacts;</li>
+		<li>evaluate and administer employment applications;</li>
+		<li>provide updates you have requested;</li>
+		<li>operate, maintain, and secure our website;</li>
+		<li>maintain appropriate business and recruitment records;</li>
+		<li>comply with legal and regulatory requirements; and</li>
+		<li>establish, exercise, or defend legal claims where necessary.</li>
+	</ul>
+	<p>Processing may be based on your consent, steps requested by you before entering into a contract, contractual necessity, compliance with legal obligations, or other lawful grounds permitted under the Data Privacy Act.</p>
+	<p>Where sensitive personal information is involved, MBSI will process such information only where permitted by applicable law.</p>
+	<p>MBSI does not use personal data collected through this website for automated decision-making or profiling that produces legal or similarly significant effects on an individual.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-fbb2b723 privacy-native-section-title elementor-widget elementor-widget-heading" data-id="fbb2b723" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Who May Receive Your Personal Data</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-b4a8bc05 privacy-native-text elementor-widget elementor-widget-text-editor" data-id="b4a8bc05" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Personal data may be accessed by authorized MBSI personnel who require it for legitimate business, recruitment, administrative, security, or compliance purposes.</p>
+	<p>Where necessary, MBSI may engage service providers supporting website hosting, information technology, email, data storage, security, or recruitment. Personal data may also be disclosed to government authorities, regulators, courts, professional advisers, or other parties where required or permitted by law.</p>
+	<p>MBSI does not sell personal data collected through this website.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-108b299b privacy-native-section-title elementor-widget elementor-widget-heading" data-id="108b299b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Retention and Security</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-c23efb13 privacy-native-text elementor-widget elementor-widget-text-editor" data-id="c23efb13" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>MBSI retains personal data only for as long as necessary for the purpose for which it was collected and for such additional period as may be required or permitted by applicable law, contractual obligations, legitimate business requirements, or the establishment, exercise, or defense of legal claims.</p>
+	<p>When personal data is no longer required for a lawful or legitimate purpose, it will be securely deleted, destroyed, or otherwise disposed of in accordance with MBSI’s retention and disposal procedures.</p>
+	<p>MBSI implements reasonable and appropriate organizational, physical, and technical safeguards to protect personal data against unauthorized access, disclosure, alteration, loss, misuse, or unlawful processing.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-1694dca0 privacy-native-section-title elementor-widget elementor-widget-heading" data-id="1694dca0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">MBSI's Role in Providing Client Services</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-c2f0cbcd privacy-native-text elementor-widget elementor-widget-text-editor" data-id="c2f0cbcd" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>This Notice applies primarily to personal data collected through the MBSI website.</p>
+	<p>In providing outsourced business and professional support services, MBSI may process personal data on behalf of its clients. Depending on the processing activity, MBSI may act as a Personal Information Controller or as a Personal Information Processor acting under a client’s instructions.</p>
+	<p>Such processing is governed by applicable laws, client agreements, data-processing arrangements, and MBSI’s internal privacy and information-security policies.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-65116305 privacy-native-section-title elementor-widget elementor-widget-heading" data-id="65116305" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Privacy Contact</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1094de88 privacy-native-text elementor-widget elementor-widget-text-editor" data-id="1094de88" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>For questions about this Notice, concerns regarding the processing of your personal data, or requests to exercise your privacy rights, please contact:</p>
+	<div class="privacy-contact-details">
+		<p><strong>Millennium Business Services, Inc.</strong></p>
+		<p>22/F 139 Corporate Center</p>
+		<p>139 Valero Street, Salcedo Village</p>
+		<p>Makati City 1227, Philippines</p>
+		<p>Email: dpo@mbsi.com.ph</p>
+		<p>Telephone: +63 2 8818 9492</p>
+	</div>								</div>
+				</div>
+				<div class="elementor-element elementor-element-fa4317ec privacy-native-section-title elementor-widget elementor-widget-heading" data-id="fa4317ec" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Changes to This Notice</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-317028b4 privacy-native-text elementor-widget elementor-widget-text-editor" data-id="317028b4" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>MBSI may update this Website Privacy Notice to reflect changes in its website, business operations, processing activities, or legal requirements. The current version will be published on this page.</p>								</div>
+				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+		</section>
+	</div>
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;overflow:hidden"><defs><filter id="mbsi-dark-logo-contrast" color-interpolation-filters="sRGB"><fecolormatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  -1 0 1 0 0" result="blue-mask"></fecolormatrix><fecomponenttransfer in="blue-mask" result="highlight"><fefunca type="linear" slope="4" intercept="-0.15"></fefunca></fecomponenttransfer><fecomposite in="highlight" in2="SourceGraphic" operator="in" result="white-lettering"></fecomposite><fecomposite in="white-lettering" in2="SourceGraphic" operator="over"></fecomposite></filter></defs></svg>
+<button type="button" class="mbsi-theme-floating" data-mbsi-theme-toggle aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode"><span data-mbsi-theme-icon aria-hidden="true"></span></button>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/mbsi/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Find all external links opening in a new tab
+        const externalLinks = document.querySelectorAll('a[target="_blank"]');
+        
+        externalLinks.forEach(link => {
+            let relAttr = link.getAttribute('rel') || '';
+            let relValues = relAttr.split(/\s+/).filter(Boolean);
+            
+            // Ensure 'noopener' is present
+            if (!relValues.includes('noopener')) {
+                relValues.push('noopener');
+            }
+            // Best practice: also include 'noreferrer' for security
+            if (!relValues.includes('noreferrer')) {
+                relValues.push('noreferrer');
+            }
+            
+            link.setAttribute('rel', relValues.join(' '));
+        });
+    });
+    </script>
+    <link rel="stylesheet" id="widget-image-css" href="/MBSI-Website/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=4.3.4" media="all">
+<script id="mbsi-theme-js" src="/MBSI-Website/wp-content/themes/mbsi/assets/js/theme.js?ver=1793342021"></script>
+<script id="mbsi-homepage-meeting-revisions-js" src="/MBSI-Website/wp-content/themes/mbsi/assets/js/homepage-meeting-revisions.js?ver=1.1.303"></script>
+<script id="mbsi-form-validation-js" src="/MBSI-Website/wp-content/themes/mbsi/assets/js/form-validation.js?ver=1.1.303"></script>
+<script id="mbsi-form-confirm-js" src="/MBSI-Website/wp-content/themes/mbsi/assets/js/form-confirm.js?ver=1791523030"></script>
+<script id="elementor-webpack-runtime-js" src="/MBSI-Website/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.3.4"></script>
+<script id="elementor-frontend-modules-js" src="/MBSI-Website/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.3.4"></script>
+<script id="jquery-ui-core-js-before">
+jQuery.uiBackCompat = true;
+//# sourceURL=jquery-ui-core-js-before
+</script>
+<script id="jquery-ui-core-js" src="/MBSI-Website/wp-includes/js/jquery/ui/core.min.js?ver=1.14.2"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnX":"Share on X","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.3.4","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"theme_builder_v2":true,"nested-elements":true,"import-export-customization":true},"urls":{"assets":"\/MBSI-Website\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"\/MBSI-Website\/wp-admin\/admin-ajax.php","uploadUrl":"\/MBSI-Website\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"e2ab6cfdb6","atomicFormsSendForm":"6946637079"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":855,"title":"Tax%20Compliance%20%E2%80%93%20Millennium%20Business%20Services%2C%20Inc.","excerpt":"","featuredImage":false}};
+//# sourceURL=elementor-frontend-js-before
+</script>
+<script id="elementor-frontend-js" src="/MBSI-Website/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.3.4"></script>
+<script id="mbsi-navigation-refinements-js" src="/MBSI-Website/wp-content/mu-plugins/mbsi-navigation.js?ver=1792029148"></script>
+<script id="mbsi-wide-screen-js" src="/MBSI-Website/wp-content/mu-plugins/mbsi-wide-screen.js?ver=1791523065"></script>
+<script id="mbsi-page-loading-js" src="/MBSI-Website/wp-content/mu-plugins/mbsi-page-loading.js?ver=1792117948"></script>
+<script id="mbsi-mobile-drawer-js" src="/MBSI-Website/wp-content/mu-plugins/mbsi-mobile-drawer.js?ver=1792128673"></script>
+<script id="mbsi-mobile-bottom-nav-js" src="/MBSI-Website/wp-content/mu-plugins/mbsi-mobile-bottom-nav.js?ver=1792046142"></script>
+<script id="mbsi-dark-mode-js" src="/MBSI-Website/wp-content/mu-plugins/mbsi-dark-mode.js?ver=1793322755"></script>
+<script id="elementor-pro-webpack-runtime-js" src="/MBSI-Website/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.27.6"></script>
+<script id="wp-hooks-js" src="/MBSI-Website/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255"></script>
+<script id="wp-i18n-js" src="/MBSI-Website/wp-includes/js/dist/i18n.min.js?ver=1dfe7db3940c23ea9216"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"\/MBSI-Website\/wp-admin\/admin-ajax.php","nonce":"b68e985828","urls":{"assets":"\/MBSI-Website\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"\/MBSI-Website\/wp-json\/"},"settings":{"lazy_load_background_images":false},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"\/MBSI-Website\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+//# sourceURL=elementor-pro-frontend-js-before
+</script>
+<script id="elementor-pro-frontend-js" src="/MBSI-Website/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.27.6"></script>
+<script id="pro-elements-handlers-js" src="/MBSI-Website/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.27.6"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/MBSI-Website/wp-includes/js/wp-emoji-release.min.js?ver=7.1.4"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=/MBSI-Website/wp-includes/js/wp-emoji-loader.min.js
+</script>
+</body>
+</html>

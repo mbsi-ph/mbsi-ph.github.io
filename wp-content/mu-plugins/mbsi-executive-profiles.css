@@ -1,0 +1,147 @@
+/* MBSI mbsi-executive-profiles; shared asset registry: mbsi-asset-styles.php. */
+body #primary.mbsi-team-profile .executive-editorial {
+  width: min(1160px,calc(100% - 48px));
+  max-width: 1160px;
+  margin: 48px auto 64px;
+  padding: 0;
+}
+
+body #primary .executive-profile-header {
+  display: grid;
+  grid-template-columns: minmax(0,.85fr) minmax(0,1.15fr);
+  gap: 56px;
+  align-items: start;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #dbe3ed;
+}
+
+body #primary .executive-portrait.mbsi-profile-intro {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #edf2f6;
+}
+
+body #primary.mbsi-team-profile .wp-content .executive-portrait.mbsi-profile-intro img {
+  display: block;
+  width: 100%!important;
+  height: 560px!important;
+  max-width: none!important;
+  object-fit: cover!important;
+  object-position: center bottom!important;
+  margin: 0!important;
+}
+
+body #primary .executive-eyebrow {
+  font: 700 12px/1.5 Arial,sans-serif!important;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #596b82;
+  margin: 0 0 16px!important;
+}
+
+body #primary .executive-profile-summary h1 {
+  font: 700 clamp(32px,3.5vw,46px)/1.12 Georgia,serif!important;
+  color: #003c8f;
+  margin: 0 0 14px!important;
+}
+
+body #primary .executive-role {
+  font: 600 18px/1.5 Arial,sans-serif!important;
+  color: #293b53;
+  margin: 0 0 10px!important;
+}
+
+body #primary .executive-profile-summary .profile-direct-email {
+  display: inline-block;
+  font: 15px/1.6 Arial,sans-serif;
+  color: #003c8f;
+  overflow-wrap: anywhere;
+}
+
+body #primary .executive-highlights {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 3px solid #d29a2e;
+}
+
+body #primary .executive-editorial h2 {
+  font: 700 26px/1.25 Georgia,serif!important;
+  color: #003c8f;
+  margin: 0 0 20px!important;
+}
+
+body #primary .executive-highlights ul {
+  display: grid;
+  gap: 14px;
+  list-style: disc;
+  padding: 0 0 0 20px;
+  margin: 0;
+  font: 15px/1.65 Arial,sans-serif;
+  color: #34445a;
+}
+
+body #primary .executive-highlights li {
+  margin: 0;
+  padding-left: 4px;
+}
+
+body #primary .executive-highlights li::marker {
+  color: #b78223;
+}
+
+body #primary .executive-biography {
+  padding: 40px 0 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+body #primary .executive-biography-copy p {
+  font: 17px/1.85 Arial,sans-serif!important;
+  color: #34445a;
+  margin: 0 0 22px!important;
+  text-align: left;
+}
+
+body #primary .executive-profile-footer {
+  padding-top: 24px;
+  border-top: 1px solid #dbe3ed;
+}
+
+@media(max-width:767px) {
+  body #primary.mbsi-team-profile .executive-editorial {
+    width: calc(100% - 32px);
+    margin: 28px auto 40px;
+  }
+
+  body #primary .executive-profile-header {
+    grid-template-columns: minmax(0,1fr);
+    gap: 28px;
+    padding-bottom: 28px;
+  }
+
+  body #primary.mbsi-team-profile .wp-content .executive-portrait.mbsi-profile-intro img {
+    height: 440px!important;
+  }
+
+  body #primary .executive-biography {
+    padding-top: 28px;
+  }
+}
+
+body #primary:is(#mbsi-profile-priority,*) .executive-portrait.mbsi-profile-intro {
+  padding: 0!important;
+  margin: 0!important;
+  gap: 0!important;
+  border: 0!important;
+}
+
+body #primary:is(#mbsi-profile-priority,*) .executive-portrait.mbsi-profile-intro img {
+  padding: 0!important;
+  margin: 0!important;
+  border: 0!important;
+  object-fit: cover!important;
+  object-position: center 20%!important;
+}

@@ -1,0 +1,21 @@
+# Private WordPress data must never be published
+wp-content/uploads/mbsi-private/
+wp-config.php
+.env
+.env.*
+*.sql
+*.sql.*
+*.key
+*.pem
+*.log
+
+# Local backups and test content
+*.zip
+*.wpress
+*.bak
+*.backup
+test/
+test-for-payroll-guide/
+author/
+Thumbs.db
+.DS_Store

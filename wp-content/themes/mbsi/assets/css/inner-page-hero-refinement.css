@@ -1,0 +1,512 @@
+/* MBSI inner-page-hero-refinement; shared asset registry: mbsi-asset-styles.php. */
+:is(
+  .page-hero,
+  .contact-hero > div:first-child,
+  .about-hero > div,
+  .career-hero,
+  .mbsi-resource-hero,
+  .resource-post-hero
+) {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: var(--inner-hero-min-height);
+  color: #fff;
+  background: radial-gradient(circle at 86% 50%,
+      rgba(255, 255, 255, 0.08) 0 52px,
+      rgba(255, 255, 255, 0.32) 53px 55px,
+      transparent 56px 94px,
+      rgba(210, 154, 46, 0.66) 95px 98px,
+      transparent 99px 137px,
+      rgba(255, 255, 255, 0.22) 138px 141px,
+      transparent 142px 180px,
+      rgba(255, 255, 255, 0.13) 181px 184px,
+      transparent 185px),
+    linear-gradient(118deg, #002b68 0%, var(--royal-blue, #003c8f) 58%, #155fa8 100%) !important;
+  box-shadow: none;
+}
+
+:is(
+  .page-hero,
+  .contact-hero > div:first-child,
+  .about-hero > div,
+  .career-hero,
+  .mbsi-resource-hero,
+  .resource-post-hero
+)::before {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(0, 25, 67, 0.28), transparent 62%),
+    linear-gradient(135deg, transparent 0 64%, rgba(255, 255, 255, 0.055) 64% 65%, transparent 65%);
+  background-size: auto, 58px 58px;
+  content: "";
+}
+
+:is(
+  .page-hero,
+  .contact-hero > div:first-child,
+  .about-hero > div,
+  .career-hero,
+  .mbsi-resource-hero,
+  .resource-post-hero
+)::after {
+  position: absolute !important;
+  top: 50% !important;
+  right: calc(14% - 41px) !important;
+  bottom: auto !important;
+  left: auto !important;
+  z-index: 1 !important;
+  display: grid !important;
+  width: 82px !important;
+  height: 82px !important;
+  place-items: center;
+  transform: translateY(-50%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.52);
+  border-radius: 22px;
+  background: rgba(0, 36, 88, 0.72) !important;
+  box-shadow: 0 16px 38px rgba(0, 24, 62, 0.24);
+  color: #fff;
+  content: var(--mbsi-banner-icon, "\f314") !important;
+  font-family: dashicons;
+  font-size: 3.125rem;
+  font-weight: 700;
+  line-height: 1;
+  opacity: 1 !important;
+  pointer-events: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.mbsi-banner-about-us {
+  --mbsi-banner-icon: "\f512";
+}
+
+body.mbsi-banner-our-history {
+  --mbsi-banner-icon: "\f469";
+}
+
+body.mbsi-banner-our-approach {
+  --mbsi-banner-icon: "\f463";
+}
+
+body.mbsi-banner-honors-awards {
+  --mbsi-banner-icon: "\f313";
+}
+
+body:is(.mbsi-banner-faq, .mbsi-banner-faqs, .mbsi-banner-not-found) {
+  --mbsi-banner-icon: "\f223";
+}
+
+body.mbsi-banner-our-services {
+  --mbsi-banner-icon: "\f509";
+}
+
+body.mbsi-banner-accounting-services {
+  --mbsi-banner-icon: "\f16e";
+}
+
+body.mbsi-banner-payroll-processing {
+  --mbsi-banner-icon: "\f18e";
+}
+
+body.mbsi-banner-financial-services {
+  --mbsi-banner-icon: "\f238";
+}
+
+body.mbsi-banner-tax-compliance {
+  --mbsi-banner-icon: "\f497";
+}
+
+body.mbsi-banner-cfo-services {
+  --mbsi-banner-icon: "\f12e";
+}
+
+body.mbsi-banner-treasury-services {
+  --mbsi-banner-icon: "\f16a";
+}
+
+body.mbsi-banner-xero-services {
+  --mbsi-banner-icon: "\f176";
+}
+
+body:is(.mbsi-banner-hris, .mbsi-banner-hris-services) {
+  --mbsi-banner-icon: "\f110";
+}
+
+body.mbsi-banner-resources {
+  --mbsi-banner-icon: "\f331";
+}
+
+body.mbsi-banner-payroll-guides {
+  --mbsi-banner-icon: "\f314";
+}
+
+body.mbsi-banner-accounting-compliance-updates {
+  --mbsi-banner-icon: "\f495";
+}
+
+body.mbsi-banner-government-deadlines {
+  --mbsi-banner-icon: "\f508";
+}
+
+body.mbsi-banner-news {
+  --mbsi-banner-icon: "\f497";
+}
+
+body.mbsi-banner-content-post {
+  --mbsi-banner-icon: "\f330";
+}
+
+body.mbsi-banner-our-team {
+  --mbsi-banner-icon: "\f307";
+}
+
+body.mbsi-banner-executive-team {
+  --mbsi-banner-icon: "\f12e";
+}
+
+body.mbsi-banner-bpo-heads {
+  --mbsi-banner-icon: "\f325";
+}
+
+body.mbsi-banner-team-member {
+  --mbsi-banner-icon: "\f338";
+}
+
+body.mbsi-banner-careers {
+  --mbsi-banner-icon: "\f322";
+}
+
+body.mbsi-banner-job {
+  --mbsi-banner-icon: "\f336";
+}
+
+body.mbsi-banner-contact-us {
+  --mbsi-banner-icon: "\f466";
+}
+
+body:is(.mbsi-banner-privacy-policy, .mbsi-banner-applicant-privacy-notice) {
+  --mbsi-banner-icon: "\f332";
+}
+
+body:is(.mbsi-banner-cookie-policy, .mbsi-banner-my-account) {
+  --mbsi-banner-icon: "\f160";
+}
+
+body.mbsi-banner-sitemap {
+  --mbsi-banner-icon: "\f325";
+}
+
+:is(
+  .page-hero,
+  .contact-hero > div:first-child,
+  .about-hero > div,
+  .career-hero,
+  .mbsi-resource-hero,
+  .resource-post-hero
+) > * {
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 761px) {
+  :is(
+    .page-hero,
+    .contact-hero > div:first-child,
+    .about-hero > div,
+    .career-hero,
+    .mbsi-resource-hero,
+    .resource-post-hero
+  ) {
+    padding-right: max(190px, var(--inner-hero-padding)) !important;
+  }
+}
+
+body.mbsi-banner-financial-services .page-hero {
+  background: linear-gradient(118deg, #002b68 0%, var(--royal-blue, #003c8f) 58%, #155fa8 100%) !important;
+}
+
+body.mbsi-banner-financial-services .page-hero::before {
+  z-index: 1;
+  background: linear-gradient(90deg,
+      rgba(0, 43, 104, 0.99) 0%,
+      rgba(0, 60, 143, 0.93) 38%,
+      rgba(0, 43, 104, 0.64) 57%,
+      rgba(0, 43, 104, 0.12) 76%,
+      transparent 100%) !important;
+  background-size: auto !important;
+}
+
+body.mbsi-banner-financial-services .page-hero::after {
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: auto !important;
+  z-index: 0 !important;
+  display: block !important;
+  width: 58% !important;
+  height: 100% !important;
+  transform: none !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: var(--mbsi-elementor-banner-photo, url("/MBSI-Website/wp-content/themes/mbsi/assets/img/financial-reporting-banner-clean.optimized.webp")) 79% 52% / cover no-repeat !important;
+  box-shadow: none !important;
+  content: "" !important;
+  opacity: 1 !important;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.42) 17%, #000 45%);
+  mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.42) 17%, #000 45%);
+}
+
+body.mbsi-banner-accounting-services {
+  --mbsi-inner-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-accounting.webp");
+}
+
+body.mbsi-banner-payroll-processing {
+  --mbsi-inner-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-payroll.webp");
+}
+
+body.mbsi-banner-xero-services {
+  --mbsi-inner-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-xero.webp");
+}
+
+body.mbsi-banner-about-us {
+  --mbsi-inner-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-about.webp");
+}
+
+body.mbsi-banner-our-team {
+  --mbsi-inner-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-team.webp");
+}
+
+body.mbsi-banner-careers {
+  --mbsi-inner-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-careers.webp");
+}
+
+body.mbsi-banner-contact-us {
+  --mbsi-inner-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-contact.webp");
+}
+
+body.mbsi-banner-resources {
+  --mbsi-inner-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-resources.webp");
+}
+
+body.mbsi-banner-payroll-guides {
+  --mbsi-inner-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-resource-payroll.webp");
+}
+
+body.mbsi-banner-accounting-compliance-updates {
+  --mbsi-inner-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-resource-compliance.webp");
+}
+
+body.mbsi-banner-government-deadlines {
+  --mbsi-inner-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-resource-deadlines.webp");
+}
+
+body.mbsi-banner-faqs {
+  --mbsi-inner-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-resource-faqs.webp");
+}
+
+body.mbsi-banner-news {
+  --mbsi-inner-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-resource-news.webp");
+}
+
+body:is(
+  .mbsi-banner-accounting-services,
+  .mbsi-banner-payroll-processing,
+  .mbsi-banner-xero-services,
+  .mbsi-banner-about-us,
+  .mbsi-banner-our-team,
+  .mbsi-banner-careers,
+  .mbsi-banner-contact-us,
+  .mbsi-banner-resources,
+  .mbsi-banner-payroll-guides,
+  .mbsi-banner-accounting-compliance-updates,
+  .mbsi-banner-government-deadlines,
+  .mbsi-banner-faqs,
+  .mbsi-banner-news
+) :is(
+  .page-hero,
+  .contact-hero > div:first-child,
+  .about-hero > div,
+  .career-hero,
+  .mbsi-resource-hero
+) {
+  background: linear-gradient(118deg, #002b68 0%, var(--royal-blue, #003c8f) 58%, #155fa8 100%) !important;
+}
+
+body:is(
+  .mbsi-banner-accounting-services,
+  .mbsi-banner-payroll-processing,
+  .mbsi-banner-xero-services,
+  .mbsi-banner-about-us,
+  .mbsi-banner-our-team,
+  .mbsi-banner-careers,
+  .mbsi-banner-contact-us,
+  .mbsi-banner-resources,
+  .mbsi-banner-payroll-guides,
+  .mbsi-banner-accounting-compliance-updates,
+  .mbsi-banner-government-deadlines,
+  .mbsi-banner-faqs,
+  .mbsi-banner-news
+) :is(
+  .page-hero,
+  .contact-hero > div:first-child,
+  .about-hero > div,
+  .career-hero,
+  .mbsi-resource-hero
+)::before {
+  z-index: 1;
+  background: linear-gradient(90deg,
+      rgba(0, 43, 104, 0.99) 0%,
+      rgba(0, 60, 143, 0.93) 38%,
+      rgba(0, 43, 104, 0.64) 57%,
+      rgba(0, 43, 104, 0.12) 76%,
+      transparent 100%) !important;
+  background-size: auto !important;
+}
+
+body:is(
+  .mbsi-banner-accounting-services,
+  .mbsi-banner-payroll-processing,
+  .mbsi-banner-xero-services,
+  .mbsi-banner-about-us,
+  .mbsi-banner-our-team,
+  .mbsi-banner-careers,
+  .mbsi-banner-contact-us,
+  .mbsi-banner-resources,
+  .mbsi-banner-payroll-guides,
+  .mbsi-banner-accounting-compliance-updates,
+  .mbsi-banner-government-deadlines,
+  .mbsi-banner-faqs,
+  .mbsi-banner-news
+) :is(
+  .page-hero,
+  .contact-hero > div:first-child,
+  .about-hero > div,
+  .career-hero,
+  .mbsi-resource-hero
+)::after {
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: auto !important;
+  z-index: 0 !important;
+  display: block !important;
+  width: 58% !important;
+  height: 100% !important;
+  transform: none !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: var(--mbsi-elementor-banner-photo, var(--mbsi-inner-banner-photo)) 79% 52% / cover no-repeat !important;
+  box-shadow: none !important;
+  content: "" !important;
+  opacity: 1 !important;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.42) 17%, #000 45%);
+  mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.42) 17%, #000 45%);
+}
+
+.about-modern .mission-panel,
+.about-modern .about-cta,
+.about-modern .cta-section.about-cta {
+  background: radial-gradient(circle at 86% 22%, rgba(255, 255, 255, 0.11), transparent 25%),
+    linear-gradient(135deg, #002b68, var(--royal-blue, #003c8f) 66%, #155fa8) !important;
+}
+
+@media (max-width: 760px) {
+  :is(
+    .page-hero,
+    .contact-hero > div:first-child,
+    .about-hero > div,
+    .career-hero,
+    .mbsi-resource-hero,
+    .resource-post-hero
+  ) {
+    min-height: 0;
+    background: radial-gradient(circle at 108% 50%,
+        rgba(255, 255, 255, 0.07) 0 38px,
+        rgba(210, 154, 46, 0.42) 39px 41px,
+        transparent 42px 76px,
+        rgba(255, 255, 255, 0.15) 77px 79px,
+        transparent 80px),
+      linear-gradient(118deg, #002b68 0%, var(--royal-blue, #003c8f) 68%, #155fa8 100%) !important;
+  }
+
+  :is(
+    .page-hero,
+    .contact-hero > div:first-child,
+    .about-hero > div,
+    .career-hero,
+    .mbsi-resource-hero,
+    .resource-post-hero
+  )::after {
+    display: none !important;
+  }
+
+  body.mbsi-banner-financial-services .page-hero::before {
+    background: linear-gradient(90deg,
+        rgba(0, 43, 104, 0.99) 0%,
+        rgba(0, 60, 143, 0.94) 55%,
+        rgba(0, 43, 104, 0.54) 78%,
+        rgba(0, 43, 104, 0.16) 100%) !important;
+  }
+
+  body.mbsi-banner-financial-services .page-hero::after {
+    display: block !important;
+    width: 74% !important;
+    opacity: 0.38 !important;
+  }
+
+  body:is(
+    .mbsi-banner-accounting-services,
+    .mbsi-banner-payroll-processing,
+    .mbsi-banner-xero-services,
+    .mbsi-banner-about-us,
+    .mbsi-banner-our-team,
+    .mbsi-banner-careers,
+    .mbsi-banner-contact-us,
+    .mbsi-banner-resources,
+    .mbsi-banner-payroll-guides,
+    .mbsi-banner-accounting-compliance-updates,
+    .mbsi-banner-government-deadlines,
+    .mbsi-banner-faqs,
+    .mbsi-banner-news
+  ) :is(
+    .page-hero,
+    .contact-hero > div:first-child,
+    .about-hero > div,
+    .career-hero,
+    .mbsi-resource-hero
+  )::before {
+    background: linear-gradient(90deg,
+        rgba(0, 43, 104, 0.99) 0%,
+        rgba(0, 60, 143, 0.94) 55%,
+        rgba(0, 43, 104, 0.54) 78%,
+        rgba(0, 43, 104, 0.16) 100%) !important;
+  }
+
+  body:is(
+    .mbsi-banner-accounting-services,
+    .mbsi-banner-payroll-processing,
+    .mbsi-banner-xero-services,
+    .mbsi-banner-about-us,
+    .mbsi-banner-our-team,
+    .mbsi-banner-careers,
+    .mbsi-banner-contact-us,
+    .mbsi-banner-resources,
+    .mbsi-banner-payroll-guides,
+    .mbsi-banner-accounting-compliance-updates,
+    .mbsi-banner-government-deadlines,
+    .mbsi-banner-faqs,
+    .mbsi-banner-news
+  ) :is(
+    .page-hero,
+    .contact-hero > div:first-child,
+    .about-hero > div,
+    .career-hero,
+    .mbsi-resource-hero
+  )::after {
+    display: block !important;
+    width: 74% !important;
+    opacity: 0.38 !important;
+  }
+}

@@ -1,0 +1,588 @@
+/* MBSI mbsi-service-design; shared asset registry: mbsi-asset-styles.php. */
+body.mbsi-service-page {
+  --service-blue: #003c8f;
+  --service-ink: #162940;
+  --service-muted: #526078;
+  --service-line: #dce5ef;
+}
+
+body.mbsi-service-page #primary .service-detail {
+  padding-top: 48px!important;
+  padding-bottom: 64px!important;
+}
+
+body.mbsi-service-page #primary .service-detail h2 {
+  color: var(--service-blue);
+  font-family: Arial,sans-serif!important;
+  font-size: clamp(25px,2.6vw,34px)!important;
+  font-weight: 700!important;
+  line-height: 1.25!important;
+  letter-spacing: -.025em;
+}
+
+body.mbsi-service-page #primary .detail-intro {
+  display: grid!important;
+  grid-template-columns: minmax(0,1.6fr) minmax(260px,1fr)!important;
+  gap: 36px!important;
+  align-items: start!important;
+  margin: 0 0 44px!important;
+}
+
+body.mbsi-service-page #primary .detail-side-card {
+  padding: 26px!important;
+  border: 1px solid var(--service-line)!important;
+  border-top: 3px solid #b68b3c!important;
+  border-radius: 16px!important;
+  background: #f1f6fc!important;
+  box-shadow: none!important;
+}
+
+body.mbsi-service-page #primary .detail-card-grid {
+  display: grid!important;
+  grid-template-columns: repeat(3,minmax(0,1fr))!important;
+  gap: 22px!important;
+  margin-top: 26px!important;
+  align-items: stretch!important;
+}
+
+body.mbsi-service-page #primary .detail-card-grid .detail-card {
+  position: relative!important;
+  display: flex!important;
+  flex-direction: column!important;
+  align-items: flex-start!important;
+  gap: 0!important;
+  min-width: 0!important;
+  height: auto!important;
+  padding: 26px!important;
+  border: 1px solid var(--service-line)!important;
+  border-top: 3px solid #b68b3c!important;
+  border-radius: 16px!important;
+  background: linear-gradient(160deg,#f0f6fd 0%,#fff 45%)!important;
+  box-shadow: 0 8px 24px rgba(0,43,104,.045)!important;
+  overflow: hidden!important;
+  transform: none!important;
+}
+
+body.mbsi-service-page #primary .detail-card::before,body.mbsi-service-page #primary .detail-card::after {
+  display: none!important;
+  content: none!important;
+}
+
+body.mbsi-service-page #primary .detail-card > .elementor-widget,
+body.mbsi-service-page #primary .detail-card > .elementor-widget > .elementor-widget-container {
+  display: contents!important;
+}
+
+body.mbsi-service-page #primary .detail-card > .elementor-widget.detail-icon::before {
+  display: none!important;
+  content: none!important;
+}
+
+body.mbsi-service-page #primary .detail-card span.detail-icon {
+  position: static!important;
+  display: grid!important;
+  place-items: center!important;
+  flex: none!important;
+  width: 44px!important;
+  height: 44px!important;
+  min-width: 44px!important;
+  margin: 0 0 18px!important;
+  padding: 0!important;
+  border: 0!important;
+  border-radius: 11px!important;
+  background: #07468e!important;
+  color: #fff!important;
+  font-family: dashicons!important;
+  font-size: 23px!important;
+  line-height: 1!important;
+  box-shadow: none!important;
+}
+
+body.mbsi-service-page #primary .detail-card span.detail-icon::before {
+  position: static!important;
+  width: auto!important;
+  height: auto!important;
+  font-family: dashicons!important;
+  font-size: 23px!important;
+  line-height: 1!important;
+  color: #fff!important;
+}
+
+body.mbsi-service-page #primary .detail-card h3 {
+  position: static!important;
+  display: block!important;
+  min-height: 0!important;
+  margin: 0 0 13px!important;
+  padding: 0!important;
+  border: 0!important;
+  background: none!important;
+  color: var(--service-blue)!important;
+  font-family: Arial,sans-serif!important;
+  font-size: 21px!important;
+  font-weight: 700!important;
+  line-height: 1.3!important;
+  letter-spacing: -.02em!important;
+}
+
+body.mbsi-service-page #primary .detail-card p {
+  min-height: 0!important;
+  margin: 0 0 18px!important;
+  padding: 0!important;
+  background: none!important;
+  color: var(--service-muted)!important;
+  font-size: 15px!important;
+  line-height: 1.7!important;
+}
+
+body.mbsi-service-page #primary .detail-card .elementor-icon-list-items {
+  display: flex!important;
+  flex-direction: column!important;
+  gap: 12px!important;
+  width: 100%!important;
+  margin: 0!important;
+  padding: 18px 0 0!important;
+  border-top: 1px solid #e3eaf2!important;
+  list-style: none!important;
+}
+
+body.mbsi-service-page #primary .detail-card li {
+  position: static!important;
+  display: flex!important;
+  align-items: flex-start!important;
+  gap: 10px!important;
+  margin: 0!important;
+  padding: 0!important;
+  min-height: 0!important;
+  color: var(--service-ink)!important;
+  font-size: 14px!important;
+  line-height: 1.5!important;
+}
+
+body.mbsi-service-page #primary .detail-card li::before {
+  display: none!important;
+  content: none!important;
+}
+
+body.mbsi-service-page #primary .detail-card .elementor-icon-list-icon {
+  display: flex!important;
+  flex: none!important;
+  padding: 3px 0 0!important;
+}
+
+body.mbsi-service-page #primary .detail-card .elementor-icon-list-icon svg {
+  width: 15px!important;
+  height: 15px!important;
+  fill: #0d579b!important;
+}
+
+body.mbsi-service-page #primary .detail-card .elementor-icon-list-text {
+  padding: 0!important;
+  color: var(--service-ink)!important;
+  font-size: 14px!important;
+  line-height: 1.5!important;
+}
+
+body.mbsi-service-page #primary .detail-card-grid-compact .detail-card {
+  padding: 22px!important;
+}
+
+body.mbsi-service-page #primary .detail-card-grid-compact .detail-card p:last-child {
+  margin-bottom: 0!important;
+}
+
+body.mbsi-service-page #primary .mbsi-related-services {
+  display: block;
+  margin: 56px 0 0;
+}
+
+body.mbsi-service-page #primary .mbsi-related-services h2 {
+  margin: 0 0 24px!important;
+}
+
+body.mbsi-service-page #primary .mbsi-related-grid {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 18px;
+}
+
+body.mbsi-service-page #primary .mbsi-related-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 24px;
+  border: 1px solid var(--service-line);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(0,43,104,.035);
+}
+
+body.mbsi-service-page #primary .mbsi-related-icon {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  background: #edf4fc;
+  color: #07468e;
+  font-size: 21px;
+}
+
+body.mbsi-service-page #primary .mbsi-related-card h3 {
+  margin: 0 0 12px!important;
+  color: var(--service-blue)!important;
+  font: 700 19px/1.3 Arial,sans-serif!important;
+}
+
+body.mbsi-service-page #primary .mbsi-related-card p {
+  margin: 0 0 22px!important;
+  color: var(--service-muted)!important;
+  font-size: 14px!important;
+  line-height: 1.65!important;
+}
+
+body.mbsi-service-page #primary .mbsi-related-card a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid #e4ebf3;
+  color: #07468e;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+body.mbsi-service-page #primary .mbsi-related-card a:hover {
+  color: #002b68;
+  text-decoration: underline;
+}
+
+body.mbsi-service-page #primary .mbsi-service-contact {
+  display: flex!important;
+  align-items: center!important;
+  justify-content: space-between!important;
+  gap: 32px!important;
+  margin: 48px 0 0!important;
+  padding: 32px!important;
+  border: 0!important;
+  border-radius: 16px!important;
+  background: linear-gradient(110deg,#002b68,#155fa8)!important;
+  box-shadow: none!important;
+}
+
+body.mbsi-service-page #primary .mbsi-service-contact-copy {
+  flex: 1;
+  min-width: 0;
+}
+
+body.mbsi-service-page #primary .mbsi-service-contact h2 {
+  margin: 0 0 12px!important;
+  padding: 0!important;
+  color: #fff!important;
+  font-family: var(--mbsi-brand-font,Arial,sans-serif)!important;
+  font-size: clamp(24px,2.3vw,29px)!important;
+  font-weight: 700!important;
+  line-height: 1.25!important;
+  letter-spacing: -.02em!important;
+}
+
+body.mbsi-service-page #primary .mbsi-service-contact p {
+  margin: 0!important;
+  color: #fff!important;
+  font-size: 16px!important;
+  line-height: 1.65!important;
+}
+
+body.mbsi-service-page #primary .mbsi-service-contact a {
+  display: inline-flex!important;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 24px;
+  border: 1px solid #fff;
+  border-radius: 999px;
+  background: #fff;
+  color: #003c8f!important;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+body.mbsi-service-page #primary .mbsi-service-contact a:hover {
+  background: #edf4fc;
+}
+
+body.mbsi-service-page #primary :is(.mbsi-related-card a,.mbsi-service-contact a):focus-visible {
+  outline: 3px solid #b68b3c;
+  outline-offset: 5px;
+}
+
+@media(max-width:1050px) {
+  body.mbsi-service-page #primary .detail-card-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr))!important;
+  }
+
+  body.mbsi-service-page #primary .mbsi-related-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:760px) {
+  body.mbsi-service-page #primary .detail-intro {
+    grid-template-columns: minmax(0,1fr)!important;
+    gap: 24px!important;
+  }
+
+  body.mbsi-service-page #primary .mbsi-service-contact {
+    flex-direction: column!important;
+    align-items: flex-start!important;
+    padding: 26px!important;
+    gap: 24px!important;
+  }
+
+  body.mbsi-service-page #primary .service-detail {
+    padding-top: 32px!important;
+    padding-bottom: 40px!important;
+  }
+}
+
+@media(max-width:560px) {
+  body.mbsi-service-page #primary .detail-card-grid,body.mbsi-service-page #primary .mbsi-related-grid {
+    grid-template-columns: minmax(0,1fr)!important;
+  }
+
+  body.mbsi-service-page #primary .detail-card-grid .detail-card {
+    padding: 22px!important;
+  }
+
+  body.mbsi-service-page #primary .mbsi-related-services {
+    margin-top: 36px;
+  }
+}
+
+body.mbsi-service-page #primary .detail-card-grid-compact .detail-card h3 {
+  font-size: 21px!important;
+}
+
+body.mbsi-service-page #primary .detail-card-grid-compact .detail-card::before {
+  content: '\2713'!important;
+  position: static!important;
+  display: grid!important;
+  place-items: center;
+  flex: none;
+  width: 44px;
+  height: 44px;
+  margin: 0 0 18px;
+  border-radius: 11px;
+  background: #07468e;
+  color: #fff;
+  font: 700 23px/1 Arial,sans-serif;
+}
+
+body.mbsi-service-page #primary .mbsi-service-shared-blocks {
+  width: 100%!important;
+}
+
+html body.mbsi-service-page #primary :is(.detail-card,.mbsi-related-card) {
+  text-align: left!important;
+}
+
+html body.mbsi-service-page #primary :is(.detail-card,.mbsi-related-card) :is(h3,p,li) {
+  text-align: left!important;
+  text-justify: none!important;
+  word-spacing: normal!important;
+  letter-spacing: normal!important;
+}
+
+html body.mbsi-service-page #primary .detail-card-grid .detail-card h3 {
+  font-size: 21px!important;
+  font-weight: 700!important;
+}
+
+html body.mbsi-service-page #primary .mbsi-related-card a {
+  display: flex!important;
+  justify-content: flex-start!important;
+  align-items: center!important;
+  gap: 8px!important;
+  word-spacing: normal!important;
+  letter-spacing: normal!important;
+  text-align: left!important;
+}
+
+html body.mbsi-service-page #primary .mbsi-related-card a > span[aria-hidden] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 16px;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  font: 400 17px/1 Arial,sans-serif;
+}
+
+html body.mbsi-service-page.page-id-855 #primary .detail-card-grid {
+  grid-template-columns: repeat(2,minmax(0,1fr))!important;
+  align-items: stretch!important;
+}
+
+html body.mbsi-service-page #primary .detail-card-grid .detail-card {
+  align-items: flex-start!important;
+  text-align: left!important;
+}
+
+html body.mbsi-service-page #primary .detail-card-grid .detail-card h3 {
+  width: 100%!important;
+  align-self: flex-start!important;
+  text-align: left!important;
+}
+
+html body.mbsi-service-page #primary .detail-card span.detail-icon {
+  align-self: flex-start!important;
+  margin-left: 0!important;
+  margin-right: 0!important;
+}
+
+@media(max-width:600px) {
+  html body.mbsi-service-page.page-id-855 #primary .detail-card-grid {
+    grid-template-columns: minmax(0,1fr)!important;
+  }
+}
+
+html body.mbsi-service-page #primary .detail-card .mbsi-tax-scope {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin: 0;
+  padding: 18px 0 0;
+  border-top: 1px solid #e3eaf2;
+  list-style: none;
+}
+
+html body.mbsi-service-page #primary .detail-card .mbsi-tax-scope li {
+  position: relative!important;
+  padding-left: 25px!important;
+}
+
+html body.mbsi-service-page #primary .detail-card .mbsi-tax-scope li::before {
+  content: '\2713'!important;
+  position: absolute!important;
+  left: 0;
+  top: 4px;
+  display: grid!important;
+  place-items: center;
+  width: 15px;
+  height: 15px;
+  border: 0;
+  border-radius: 50%;
+  background: #0d579b;
+  color: #fff;
+  font: 700 10px/1 Arial,sans-serif;
+}
+
+html body.mbsi-service-page #primary .service-detail .detail-card-grid .detail-card span.detail-icon {
+  align-self: flex-start!important;
+  justify-self: start!important;
+  margin: 0 0 18px!important;
+}
+
+body.mbsi-service-page #primary .mbsi-service-shared-blocks {
+  display: flex!important;
+  flex-direction: column!important;
+  gap: 0!important;
+  padding: 0!important;
+}
+
+body.mbsi-service-page #primary .mbsi-related-link {
+  display: block!important;
+  width: 100%!important;
+  margin-top: auto!important;
+}
+
+body.mbsi-service-page #primary .mbsi-related-link .elementor-button {
+  width: 100%!important;
+  padding: 16px 0 0!important;
+  border-width: 1px 0 0!important;
+  border-radius: 0!important;
+  background: transparent!important;
+  box-shadow: none!important;
+  color: #07468e;
+}
+
+body.mbsi-service-page #primary .mbsi-related-link .elementor-button-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+body.mbsi-service-page #primary .mbsi-related-link .elementor-button-icon {
+  display: inline-flex;
+  margin: 0!important;
+}
+
+body.mbsi-service-page #primary .mbsi-related-link .elementor-button-icon svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+body.mbsi-service-page #primary .mbsi-related-icon.elementor-widget-icon {
+  width: 38px!important;
+  flex: 0 0 38px!important;
+}
+
+body.mbsi-service-page #primary .mbsi-related-icon .elementor-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  color: inherit;
+}
+
+body.mbsi-service-page #primary .mbsi-related-icon .elementor-icon svg {
+  width: 21px;
+  height: 21px;
+  fill: currentColor;
+}
+
+body.mbsi-service-page #primary .mbsi-service-contact-action {
+  width: auto!important;
+  flex: 0 0 auto!important;
+  align-self: center!important;
+}
+
+@media(max-width:760px) {
+  body.mbsi-service-page #primary .mbsi-service-contact-action {
+    align-self: flex-start!important;
+  }
+}
+
+body.mbsi-service-page #primary .mbsi-related-icon > .elementor-widget-container {
+  display: grid!important;
+  place-items: center!important;
+  width: 38px!important;
+  height: 38px!important;
+}
+
+@media(min-width:761px) {
+  body.mbsi-service-page #primary .mbsi-service-contact {
+    flex-direction: row!important;
+  }
+
+  body.mbsi-service-page #primary .mbsi-service-contact-copy {
+    width: auto!important;
+    flex: 1 1 0!important;
+  }
+}
+/* Avoid inherited section padding creating a large gap before capabilities. */
+body.page-id-49 #primary .detail-intro{padding-top:0!important;padding-bottom:0!important;margin-bottom:40px!important;height:auto!important;min-height:0!important}
+body.page-id-49 #primary .elementor-element-14eedfca{padding-top:0!important;margin-top:0!important}

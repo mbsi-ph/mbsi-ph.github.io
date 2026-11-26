@@ -1,0 +1,65 @@
+/* MBSI mbsi-navigation; shared asset registry: mbsi-asset-styles.php. */
+@media(min-width:1281px) {
+  html body .site-header .site-nav .dropdown-panel a[data-desc] {
+    display: grid!important;
+    grid-template-columns: 30px minmax(0,1fr)!important;
+    column-gap: 12px!important;
+    align-items: start!important;
+    text-align: left!important;
+    white-space: normal!important;
+  }
+
+  html body .site-header .site-nav .dropdown-panel a[data-desc]::after {
+    content: attr(data-desc)!important;
+    display: block!important;
+    position: static!important;
+    width: auto!important;
+    height: auto!important;
+    margin: 5px 0 0!important;
+    padding: 0!important;
+    background: none!important;
+    border: 0!important;
+    transform: none!important;
+    font: 400 12px/1.5 Arial,Helvetica,sans-serif!important;
+    letter-spacing: normal!important;
+    text-transform: none!important;
+    color: #586a80!important;
+  }
+
+  html body .site-header .site-nav .mbsi-resources-nav .dropdown-panel {
+    left: auto!important;
+    right: 20px!important;
+    transform: translateY(10px)!important;
+    width: min(420px,calc(100vw - 48px))!important;
+  }
+
+  html body .site-header .site-nav .mbsi-resources-nav:is(.is-active,:focus-within) .dropdown-panel {
+    transform: translateY(0)!important;
+  }
+}
+
+@media(max-width:1280px) {
+  html body .site-header .site-nav .dropdown-panel a[data-desc]::after {
+    content: none!important;
+    display: none!important;
+  }
+}
+
+@media(min-width:1281px) {
+  html body .site-header .site-nav .dropdown-panel a[data-desc]::before {
+    display: block!important;
+    grid-column: 1!important;
+    grid-row: 1 / span 2!important;
+    width: 30px!important;
+    height: 30px!important;
+  }
+
+  html body .site-header .site-nav .dropdown-panel a[data-desc]::after {
+    grid-column: 2!important;
+    grid-row: 2!important;
+  }
+}
+
+html body .site-header .site-nav .dropdown-panel a[href$="/our-services/tax-compliance/"] {
+  --menu-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.3' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='5' y='3' width='14' height='18' rx='2'/%3E%3Cpath d='M9 7h6M9 17l6-6'/%3E%3Ccircle cx='9' cy='11' r='1'/%3E%3Ccircle cx='15' cy='17' r='1'/%3E%3C/svg%3E");
+}

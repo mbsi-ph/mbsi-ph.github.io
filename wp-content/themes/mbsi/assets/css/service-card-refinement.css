@@ -1,0 +1,168 @@
+/* MBSI service-card-refinement; shared asset registry: mbsi-asset-styles.php. */
+body:has(.service-detail) .detail-card-grid:has(> .detail-card > .detail-icon) {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 28px;
+}
+
+body:has(.service-detail) .detail-card-grid .detail-card:has(> .detail-icon) {
+  position: relative;
+  display: grid;
+  grid-template-columns: 66px minmax(0, 1fr);
+  grid-template-rows: 94px auto 1fr;
+  column-gap: 14px;
+  align-items: center;
+  min-width: 0;
+  padding: 0 !important;
+  overflow: hidden;
+  border: 1px solid #d7e0ea;
+  border-radius: 12px;
+  background: #ffffff !important;
+  box-shadow: 0 16px 38px rgba(0, 60, 143, 0.08);
+}
+
+body:has(.service-detail) .detail-card-grid .detail-card:has(> .detail-icon)::before {
+  position: absolute;
+  z-index: 0;
+  inset: 0 0 auto;
+  height: 94px;
+  box-sizing: border-box;
+  border-top: 4px solid #cf8f1e;
+  border-bottom: 1px solid #d7e0ea;
+  background: linear-gradient(135deg, #e8f2ff, #f3f7fc);
+  content: "";
+}
+
+body:has(.service-detail) .detail-card:has(> .detail-icon) .detail-icon {
+  z-index: 1;
+  display: inline-grid !important;
+  grid-column: 1;
+  grid-row: 1;
+  width: 46px !important;
+  height: 46px !important;
+  min-width: 46px !important;
+  margin-left: 20px;
+  padding: 0 !important;
+  place-items: center !important;
+  border-radius: 10px !important;
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #003c8f, #155fa8) !important;
+  box-shadow: 0 10px 22px rgba(0, 60, 143, 0.2) !important;
+  font-family: dashicons !important;
+  font-size: 22px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 46px !important;
+}
+
+body:has(.service-detail) .detail-card:has(> .detail-icon) .detail-icon::before {
+  width: 22px;
+  height: 22px;
+  color: #ffffff;
+  font-family: dashicons !important;
+  font-size: 22px;
+  line-height: 1;
+}
+
+body:has(.service-detail) .detail-card:has(> .detail-icon) h3 {
+  position: relative;
+  z-index: 1;
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+  min-width: 0;
+  margin: 0 20px 0 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  color: #003c8f !important;
+  font-family: var(--font-sans) !important;
+  font-size: clamp(1.08rem, 1.35vw, 1.28rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.25 !important;
+}
+
+body:has(.service-detail) .detail-card:has(> .detail-icon) > p {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  min-height: 5.5em;
+  margin: 0 !important;
+  padding: 22px 24px 0;
+  background: #ffffff !important;
+  color: #172033 !important;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+body:has(.service-detail) .detail-card:has(> .detail-icon) > p::after,
+body:has(.service-detail) .detail-card:has(> .detail-icon) > h3::after {
+  display: none !important;
+  content: none !important;
+}
+
+body:has(.service-detail) .detail-card:has(> .detail-icon) > .mbsi-check-list {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  align-self: start;
+  display: grid;
+  gap: 12px;
+  margin: 0 !important;
+  padding: 20px 24px 26px !important;
+  background: #ffffff !important;
+  list-style: none;
+}
+
+body:has(.service-detail) .detail-card:has(> .detail-icon) .mbsi-check-list li,
+body:has(.service-detail) .detail-side-card .mbsi-check-list li {
+  position: relative;
+  min-height: 22px;
+  margin: 0;
+  padding-left: 30px;
+  color: #172033 !important;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+body:has(.service-detail) .detail-card:has(> .detail-icon) .mbsi-check-list li::before,
+body:has(.service-detail) .detail-side-card .mbsi-check-list li::before {
+  position: absolute;
+  top: 0.08em;
+  left: 0;
+  display: grid;
+  width: 20px;
+  height: 20px;
+  place-items: center;
+  border: 0 !important;
+  border-radius: 999px;
+  color: #ffffff !important;
+  background: #003c8f !important;
+  content: "\2713";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 900;
+  line-height: 1;
+  transform: none;
+}
+
+body:has(.service-detail) .detail-card:has(> .detail-icon):focus-within {
+  border-color: #d7e0ea;
+  box-shadow: 0 16px 38px rgba(0, 60, 143, 0.08);
+  transform: none;
+}
+
+@media (max-width: 1180px) {
+  body:has(.service-detail) .detail-card-grid:has(> .detail-card > .detail-icon) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  body:has(.service-detail) .detail-card-grid:has(> .detail-card > .detail-icon) {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  body:has(.service-detail) .detail-card:has(> .detail-icon) > p {
+    min-height: 0;
+  }
+}

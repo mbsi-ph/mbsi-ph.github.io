@@ -1,0 +1,722 @@
+/* MBSI mbsi-dark-mode; shared asset registry: mbsi-asset-styles.php. */
+.mbsi-theme-floating {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  border: 1px solid #d7e2ef;
+  border-radius: 50%;
+  background: #fff;
+  color: #07468e;
+  box-shadow: 0 8px 28px rgba(0,27,65,.2);
+  cursor: pointer;
+}
+
+[data-mbsi-theme-icon] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+
+[data-mbsi-theme-icon] svg {
+  display: block;
+  width: 23px;
+  height: 23px;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.mbsi-theme-menu {
+  display: none;
+}
+
+.mbsi-theme-menu-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 1px solid #cbd9eb;
+  border-radius: 10px;
+  background: #f2f6fc;
+  color: #003c8f;
+  font: 700 14px/1.4 Arial,sans-serif;
+  cursor: pointer;
+}
+
+:is(.mbsi-theme-floating,.mbsi-theme-menu-toggle):focus-visible {
+  outline: 3px solid #b68b3c;
+  outline-offset: 4px;
+}
+
+@media(max-width:1160px) {
+  .mbsi-theme-floating {
+    display: none!important;
+  }
+
+  .mbsi-theme-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin: 4px 18px 24px;
+    padding: 20px 0 0;
+    border-top: 1px solid #e0e7f0;
+    color: #526078;
+    font: 600 14px/1.4 Arial,sans-serif;
+  }
+}
+
+html[data-mbsi-theme=dark] {
+  color-scheme: dark;
+  --ink: #e6edf3;
+  --muted: #a1aab4;
+  --line: #30363d;
+  --surface: #161b22;
+  --soft: #21262d;
+  --mbsi-brand-ink: #e6edf3;
+  --mbsi-brand-muted: #a1aab4;
+  --mbsi-brand-line: #30363d;
+  --mbsi-brand-blue: #79c0ff;
+  --service-ink: #e6edf3;
+  --service-muted: #a1aab4;
+  --service-line: #30363d;
+  --service-blue: #79c0ff;
+}
+
+html[data-mbsi-theme=dark] body {
+  background: #0d1117!important;
+  color: #e6edf3!important;
+}
+
+html[data-mbsi-theme=dark] body :is(#primary,#top) {
+  color: #e6edf3;
+}
+
+html[data-mbsi-theme=dark] body .elementor {
+  --e-global-color-primary: #79c0ff;
+  --e-global-color-secondary: #a1aab4;
+  --e-global-color-text: #e6edf3;
+  --e-global-color-accent: #79c0ff;
+}
+
+html[data-mbsi-theme=dark] body :is(#primary,#top) :is(h2,h3,h4,h5,h6) {
+  color: #f0f6fc!important;
+}
+
+html[data-mbsi-theme=dark] body :is(#primary,#top) :is(p,li,dt,dd,label,strong,blockquote) {
+  color: #c9d1d9!important;
+}
+
+html[data-mbsi-theme=dark] body :is(#primary,#top) :is(.section-kicker,.eyebrow,.mbsi-kicker) {
+  color: #a1aab4!important;
+}
+
+html[data-mbsi-theme=dark] body :is(#primary,#top) a:not(:is(.elementor-button,.btn,.mbsi-gold-btn)) {
+  color: #79c0ff;
+}
+
+html[data-mbsi-theme=dark] body :is(#primary,#top) :is(.service-section,.home-service-story,.service-detail,.our-services-content,.resource-page-content,.career-section,.section-light,.stats-story,.about-cta,.mbsi-about-story,.industries-section,.proof-section,.team-section,.mbsi-resources-layout,.mbsi-modern-page,.wp-content) {
+  background-color: #0d1117!important;
+  color: #e6edf3!important;
+}
+
+html[data-mbsi-theme=dark] body :is(#primary,#top) :is(.service-feature,.service-card,.detail-card,.detail-side-card,.mbsi-related-card,.resource-card,.mbsi-resource-post-card,.mbsi-resource-card-body,.mbsi-card,.job-card,.career-filters,.career-empty,.mbsi-job-copy,.mbsi-job-sidebar,.affiliate-card,.consultation-card,.mbsi-newsletter,.mbsi-resource-empty,.faq-item,.mbsi-faq-item,.industry-tab-panel,.proof-card) {
+  background: #161b22!important;
+  border-color: #30363d!important;
+  box-shadow: 0 8px 28px rgba(0,0,0,.12)!important;
+}
+
+html[data-mbsi-theme=dark] body.mbsi-service-page #primary :is(.detail-card-grid .detail-card,.detail-side-card,.mbsi-related-card) {
+  background: #161b22!important;
+  border-color: #30363d!important;
+  border-top-color: #b68b3c!important;
+}
+
+html[data-mbsi-theme=dark] body.mbsi-service-page #primary .detail-card-grid .detail-card :is(h3,p,li,.elementor-icon-list-text) {
+  color: #c9d1d9!important;
+}
+
+html[data-mbsi-theme=dark] body.mbsi-service-page #primary .detail-card-grid .detail-card h3 {
+  color: #f0f6fc!important;
+}
+
+html[data-mbsi-theme=dark] body.mbsi-service-page #primary :is(.mbsi-related-card h3,.mbsi-related-card a) {
+  color: #f0f6fc!important;
+}
+
+html[data-mbsi-theme=dark] body.home-page #top #services .service-feature {
+  background: #161b22!important;
+  border-color: #30363d!important;
+}
+
+html[data-mbsi-theme=dark] body.home-page #top #services .service-feature :is(h3,p,.elementor-icon-list-text) {
+  color: #c9d1d9!important;
+}
+
+html[data-mbsi-theme=dark] body.home-page #top #services .service-feature h3 {
+  color: #f0f6fc!important;
+}
+
+html[data-mbsi-theme=dark] body.home-page #top #services .service-checklist li {
+  background: #21262d!important;
+  border-color: #30363d!important;
+}
+
+html[data-mbsi-theme=dark] body :is(#primary,#top) :is(.detail-card .elementor-icon-list-items,.mbsi-tax-scope,.mbsi-related-card a) {
+  border-color: #30363d!important;
+}
+
+html[data-mbsi-theme=dark] body #primary .mbsi-resource-empty :is(h2,.section-kicker,.mbsi-resource-empty__description) {
+  color: #c9d1d9!important;
+}
+
+html[data-mbsi-theme=dark] body #primary .mbsi-resource-empty h2 {
+  color: #f0f6fc!important;
+}
+
+html[data-mbsi-theme=dark] body :is(.mbsi-resource-empty__icon,.mbsi-related-icon) {
+  background: #21262d!important;
+  border-color: #30363d!important;
+  color: #a7cdff!important;
+}
+
+html[data-mbsi-theme=dark] body :is(.site-header,.mbsi-elementor-site-header,.dropdown-panel,.mbsi-mobile-drawer,.mbsi-privacy-modal__dialog,.mbsi-privacy-modal__header,.career-application-dialog,.career-dialog-body) {
+  background: #010409!important;
+  border-color: #30363d!important;
+  color: #e6edf3!important;
+}
+
+html[data-mbsi-theme=dark] body .site-header :is(.brand-name,.brand-name strong,.brand strong,.site-nav a,.site-nav button) {
+  color: #e6edf3!important;
+}
+
+html[data-mbsi-theme=dark] body .dropdown-panel :is(a,strong,h3,p,span) {
+  color: #e6edf3!important;
+}
+
+html[data-mbsi-theme=dark] body :is(.brand-logo-widget img,.mbsi-drawer-logo) {
+  background: #f8fafc;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+html[data-mbsi-theme=dark] body .mbsi-mobile-drawer :is(.site-nav,.dropdown-panel) {
+  background: #010409!important;
+}
+
+html[data-mbsi-theme=dark] body .mbsi-mobile-drawer :is([data-dropdown-trigger],.site-nav>a:not(.nav-cta),.dropdown-panel a) {
+  background: #21262d!important;
+  color: #e6edf3!important;
+}
+
+html[data-mbsi-theme=dark] body :is(.mbsi-drawer-heading,.mbsi-theme-menu,.mbsi-privacy-modal__header) {
+  border-color: #30363d!important;
+  color: #a1aab4!important;
+}
+
+html[data-mbsi-theme=dark] body :is(.mbsi-drawer-company,.mbsi-privacy-modal__content,.mbsi-privacy-modal__content h2,.mbsi-privacy-modal__content p) {
+  color: #c9d1d9!important;
+}
+
+html[data-mbsi-theme=dark] body :is(.mbsi-theme-floating,.mbsi-theme-menu-toggle,.mbsi-drawer-close,.mbsi-privacy-modal__close,.career-dialog-close) {
+  background: #21262d!important;
+  border-color: #484f58!important;
+  color: #e6edf3!important;
+}
+
+html[data-mbsi-theme=dark] body .mbsi-mobile-bottom-nav {
+  background: #161b22!important;
+  border-color: #30363d!important;
+  color: #a1aab4!important;
+}
+
+html[data-mbsi-theme=dark] body .mbsi-mobile-bottom-nav :is(a,button) {
+  color: #a1aab4!important;
+}
+
+html[data-mbsi-theme=dark] body .mbsi-mobile-bottom-nav .is-current {
+  background: #21262d!important;
+  color: #e6edf3!important;
+}
+
+html[data-mbsi-theme=dark] body :is(#primary,#top,.mbsi-privacy-modal__dialog,.career-application-dialog) :is(input:not([type=checkbox]):not([type=radio]),select,textarea) {
+  background: #0d1117!important;
+  border-color: #484f58!important;
+  color: #e6edf3!important;
+}
+
+html[data-mbsi-theme=dark] body :is(input,textarea)::placeholder {
+  color: #95a9c3!important;
+}
+
+html[data-mbsi-theme=dark] body :is(#primary,#top) :is(th,td) {
+  background: #161b22!important;
+  border-color: #30363d!important;
+  color: #c9d1d9!important;
+}
+
+html[data-mbsi-theme=dark] body :is(.mbsi-resource-tabs a,.career-job-badges span,.mbsi-outline-btn,.industry-tabs button,.mbsi-faq-topic-nav button) {
+  background: #21262d!important;
+  border-color: #484f58!important;
+  color: #e6edf3!important;
+}
+
+html[data-mbsi-theme=dark] body #primary :is(.mbsi-resource-empty__secondary,.mbsi-resource-empty__primary) {
+  border-color: #487ab5!important;
+}
+
+html[data-mbsi-theme=dark] body #primary .mbsi-resource-empty__secondary {
+  background: #21262d!important;
+  color: #e6edf3!important;
+}
+
+html[data-mbsi-theme=dark] body :is(#primary,#top) :is(.page-hero,.hero,.contact-hero,.career-hero,.cta-section,.mbsi-service-contact) :is(h1,h2,h3,p,strong,.eyebrow,.section-kicker) {
+  color: #fff!important;
+}
+
+html[data-mbsi-theme=dark] body #primary .mbsi-service-contact {
+  background: linear-gradient(110deg,#052952,#124775)!important;
+}
+
+html[data-mbsi-theme=dark] body #primary :is(.mbsi-service-contact,.cta-section) a {
+  background: #f0f6ff!important;
+  color: #003c8f!important;
+}
+
+html[data-mbsi-theme=dark] body.error404 #primary .mbsi-not-found__message :is(h1,p) {
+  color: #c9d1d9!important;
+}
+
+html[data-mbsi-theme=dark] body .site-header.mbsi-elementor-site-header,
+html[data-mbsi-theme=dark] body .site-header.mbsi-elementor-site-header.is-scrolled,
+html[data-mbsi-theme=dark] body.home-page .site-header.mbsi-elementor-site-header {
+  background: #010409!important;
+  border-color: #30363d!important;
+  box-shadow: 0 8px 28px rgba(0,0,0,.22)!important;
+}
+
+html[data-mbsi-theme=dark] body.page-id-28 #primary .stats-story > .elementor-widget-heading h2,
+html[data-mbsi-theme=dark] body.page-id-28 #primary .mbsi-about-story-copy h2 {
+  color: #f0f6fc!important;
+}
+
+html[data-mbsi-theme=dark] body.mbsi-service-page #primary .detail-card-grid .detail-card .elementor-icon-list-icon svg,
+html[data-mbsi-theme=dark] body.home-page #top #services .service-checklist svg {
+  fill: #79c0ff!important;
+}
+
+html[data-mbsi-theme=dark] body .site-header.mbsi-elementor-site-header [data-nav-toggle] {
+  border-color: #484f58!important;
+  background: #21262d!important;
+}
+
+html[data-mbsi-theme=dark] body .site-header.mbsi-elementor-site-header [data-nav-toggle] span {
+  background: #e6edf3!important;
+}
+
+html[data-mbsi-theme=dark] body .site-header .site-nav .dropdown-panel a[data-desc]::after {
+  color: #a1aab4!important;
+}
+
+html[data-mbsi-theme=dark] body #primary :is(.contact-info-panel,.contact-form-panel,.affiliate-section--partners,.team-showcase-card,.leadership-card,.mbsi-faq-topic-nav,.mbsi-faq-panel,.faq-topic-panel),
+html[data-mbsi-theme=dark] body.page-id-32 #primary .our-services-content .proof-grid > .mbsi-native-container {
+  background: #161b22!important;
+  border-color: #30363d!important;
+  color: #c9d1d9!important;
+}
+
+html[data-mbsi-theme=dark] body.page-id-33 #primary :is(.team-group-heading,.team-section-heading) :is(h2,h3),
+html[data-mbsi-theme=dark] body.page-id-33 #primary .team-showcase-card :is(h2,h3,p,a),
+html[data-mbsi-theme=dark] body.page-id-29 #primary .contact-info-panel :is(h2,h3,p,a,dt,dd,strong) {
+  color: #e6edf3!important;
+}
+
+html[data-mbsi-theme=dark] body.page-id-33 #primary h2 {
+  color: #f0f6fc!important;
+}
+
+html[data-mbsi-theme=dark] body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card,
+html[data-mbsi-theme=dark] body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card .leadership-copy {
+  background: #161b22!important;
+  border-color: #30363d!important;
+}
+
+html[data-mbsi-theme=dark] body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card h3,
+html[data-mbsi-theme=dark] body.page-id-33 #primary:is(#mbsi-team-card-priority,*) h2 {
+  color: #f0f6fc!important;
+}
+
+html[data-mbsi-theme=dark] body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card .role {
+  color: #a1aab4!important;
+}
+
+html[data-mbsi-theme=dark] body.page-id-56 #primary :is(.mbsi-faq-directory,.mbsi-faq-answers,.mbsi-faq-topic-panel) {
+  background: #161b22!important;
+  border-color: #30363d!important;
+}
+
+html[data-mbsi-theme=dark] body.page-id-56 #primary .mbsi-faq-topic-nav button {
+  background: #21262d!important;
+  color: #e6edf3!important;
+}
+
+html[data-mbsi-theme=dark] body.page-id-56 #primary .mbsi-faq-topic-nav button[aria-selected=true] {
+  background: #24578d!important;
+  color: #fff!important;
+}
+
+html[data-mbsi-theme=dark] body.page-id-56 #primary .elementor-accordion :is(.elementor-tab-title,.elementor-tab-content,.elementor-accordion-item) {
+  background: #161b22!important;
+  border-color: #30363d!important;
+  color: #c9d1d9!important;
+}
+
+html[data-mbsi-theme=dark] body.page-id-56 #primary .elementor-accordion .elementor-accordion-title {
+  color: #e6edf3!important;
+}
+
+html[data-mbsi-theme=dark],
+html[data-mbsi-theme=dark] body,
+html[data-mbsi-theme=dark] body :is(main#primary,main#top),
+html[data-mbsi-theme=dark] body :is(main#primary,main#top) > .elementor,
+html[data-mbsi-theme=dark] body :is(main#primary,main#top) .mbsi-native-elementor-root {
+  background: #0d1117!important;
+  color: #c9d1d9!important;
+}
+
+html[data-mbsi-theme=dark] body :is(#primary,#top):is(#mbsi-theme-text-priority,*) :is(h1,h2,h3,h4,h5,h6) {
+  color: #f0f6fc!important;
+}
+
+html[data-mbsi-theme=dark] body :is(#primary,#top):is(#mbsi-theme-text-priority,*) :is(p,li,dt,dd,label,strong,.elementor-icon-list-text) {
+  color: #c9d1d9!important;
+}
+
+html[data-mbsi-theme=dark] body :is(#primary,#top):is(#mbsi-theme-text-priority,*) :is(.section-kicker,.eyebrow,.mbsi-kicker),
+html[data-mbsi-theme=dark] body :is(#primary,#top):is(#mbsi-theme-text-priority,*) .detail-intro > .mbsi-native-container:first-child > .elementor-widget:first-child p,
+html[data-mbsi-theme=dark] body.home-page #top #services .service-feature-copy::before {
+  color: #a1aab4!important;
+}
+
+html[data-mbsi-theme=dark] body :is(#primary,#top):is(#mbsi-theme-text-priority,*) :is(.detail-side-card,.service-feature,.detail-card) :is(h2,h3) {
+  color: #f0f6fc!important;
+}
+
+html[data-mbsi-theme=dark] body .site-footer,
+html[data-mbsi-theme=dark] body .site-footer.mbsi-elementor-site-footer,
+html[data-mbsi-theme=dark] body .mbsi-elementor-site-part--footer {
+  background: #010409!important;
+  border-color: #30363d!important;
+  color: #c9d1d9!important;
+}
+
+html[data-mbsi-theme=dark] body .site-footer :is(p,span,li,a,dt,dd,.footer-copy,.footer-bottom) {
+  color: #a1aab4!important;
+}
+
+html[data-mbsi-theme=dark] body .site-footer :is(h2,h3,h4,strong,.footer-title) {
+  color: #f0f6fc!important;
+}
+
+html[data-mbsi-theme=dark] body .site-footer :is(.footer-bottom,.footer-grid,.footer-contact) {
+  border-color: #30363d!important;
+}
+
+html[data-mbsi-theme=dark] body .site-footer a:hover {
+  color: #79c0ff!important;
+}
+
+html[data-mbsi-theme=dark] body .site-footer .social-links a {
+  background: #21262d!important;
+  border-color: #30363d!important;
+}
+
+html[data-mbsi-theme=dark] body .site-header :is(.brand-logo-widget img,.brand img),
+html[data-mbsi-theme=dark] body .mbsi-mobile-drawer .mbsi-drawer-logo {
+  background: transparent!important;
+  border: 0!important;
+  border-radius: 0!important;
+  padding: 0!important;
+}
+
+html[data-mbsi-theme=dark] body .site-header :is(.brand-name,.brand-name strong,.brand strong),
+html[data-mbsi-theme=dark] body .mbsi-drawer-company {
+  color: #f0f6fc!important;
+}
+
+html[data-mbsi-theme=dark] body :is(#primary,#top):is(#mbsi-theme-text-priority,*) :is(.cta-section,.mbsi-service-contact) {
+  background: #161b22!important;
+  border: 1px solid #30363d!important;
+}
+
+html[data-mbsi-theme=dark] body :is(#primary,#top):is(#mbsi-theme-text-priority,*) :is(.cta-section,.mbsi-service-contact) a {
+  background: #f0f6fc!important;
+  color: #161b22!important;
+}
+
+html[data-mbsi-theme=dark] body .mbsi-theme-floating {
+  background: #21262d!important;
+  border-color: #484f58!important;
+  color: #e6edf3!important;
+}
+
+html[data-mbsi-theme=dark] body :is(#primary,#top) :is(.reveal,.service-cinema-copy) {
+  opacity: 1!important;
+  filter: none!important;
+  animation: none!important;
+  translate: none!important;
+}
+
+html[data-mbsi-theme=dark] body .site-header :is(.brand-logo-widget img,.brand img),
+html[data-mbsi-theme=dark] body .mbsi-mobile-drawer .mbsi-drawer-logo {
+  filter: url(#mbsi-dark-logo-contrast)!important;
+}
+
+html[data-mbsi-theme=dark] body.mbsi-service-page #primary .detail-side-card .elementor-icon-list-icon svg {
+  fill: #79c0ff!important;
+}
+
+html[data-mbsi-theme=dark] body.home-page #top .proof-section .proof-panel,
+html[data-mbsi-theme=dark] body.home-page #top .proof-section {
+  background: #0d1117!important;
+}
+
+html[data-mbsi-theme=dark] body.home-page #top .proof-section .proof-grid > div {
+  background: #161b22!important;
+  border-color: #30363d!important;
+  border-top-color: #484f58!important;
+  opacity: 1!important;
+  translate: none!important;
+}
+
+html[data-mbsi-theme=dark] body.home-page #top .proof-section .proof-grid :is(strong,p) {
+  color: #c9d1d9!important;
+}
+
+html[data-mbsi-theme=dark] body.post-type-archive-mbsi_job #primary .job-card h3 a {
+  color: #f0f6fc!important;
+}
+
+html[data-mbsi-theme=dark] body.post-type-archive-mbsi_job #primary .job-card h3 a:hover {
+  color: #79c0ff!important;
+}
+
+html[data-mbsi-theme=dark] body.post-type-archive-mbsi_job #primary .job-card :is(.job-meta,.career-job-badges span) {
+  background: #21262d!important;
+  border-color: #30363d!important;
+  color: #c9d1d9!important;
+}
+
+html[data-mbsi-theme=dark] body.home-page #top .workflow-comparison,
+html[data-mbsi-theme=dark] body.home-page #top .service-feature-media:not(.elementor-widget),
+html[data-mbsi-theme=dark] body #primary.mbsi-job-detail .mbsi-job-layout {
+  background: #0d1117!important;
+  border-color: #30363d!important;
+}
+
+html[data-mbsi-theme=dark] body.page-id-29 #primary :is(.contact-layout,.contact-message-card,.mbsi-contact-icon-box,.mbsi-form-shell),
+html[data-mbsi-theme=dark] body.page-id-29 #primary .contact-layout > .elementor-widget-shortcode,
+html[data-mbsi-theme=dark] body.page-id-29 #primary .mbsi-contact-dialog .mbsi-form-shell,
+html[data-mbsi-theme=dark] body #primary .mbsi-resources-layout > aside,
+html[data-mbsi-theme=dark] body #primary.mbsi-team-profile .executive-portrait.mbsi-profile-intro {
+  background: #161b22!important;
+  border-color: #30363d!important;
+}
+
+html[data-mbsi-theme=dark] body #primary:is(#mbsi-team-card-priority,*) .team-showcase-card.leadership-card .leadership-photo {
+  background: #161b22!important;
+}
+
+html[data-mbsi-theme=dark] body #primary .mbsi-resource-read-more {
+  background: #1f6feb!important;
+  border-color: #1f6feb!important;
+  color: #fff!important;
+}
+
+html[data-mbsi-theme=dark] body.page-id-32 #primary .service-card .elementor-button {
+  background: #1f6feb!important;
+  border-color: #1f6feb!important;
+  color: #fff!important;
+}
+
+html[data-mbsi-theme=dark] body.home-page #top .workflow-comparison .workflow-semicircle-step strong {
+  background: none!important;
+  color: #e6edf3!important;
+  -webkit-text-fill-color: #e6edf3!important;
+}
+
+html[data-mbsi-theme=dark] body.home-page #top section.workflow-comparison .workflow-semicircle[data-layout=semicircle] {
+  mix-blend-mode: normal!important;
+}
+
+@media(min-width:901px) {
+  html[data-mbsi-theme=dark] body.home-page #top section.workflow-comparison .workflow-semicircle[data-layout=semicircle]::before {
+    filter: invert(1) hue-rotate(180deg);
+    mix-blend-mode: screen!important;
+    opacity: 1!important;
+  }
+}
+
+@media(max-width:900px) {
+  html[data-mbsi-theme=dark] body.home-page #top .workflow-semicircle-step strong {
+    color: #e6edf3!important;
+  }
+
+  html[data-mbsi-theme=dark] body.home-page #top .workflow-semicircle-number {
+    background: #d29922!important;
+    color: #0d1117!important;
+  }
+
+  html[data-mbsi-theme=dark] body.home-page #top .workflow-semicircle-icon {
+    background: #21262d!important;
+    border-color: #484f58!important;
+    color: #79c0ff!important;
+  }
+}
+
+html[data-mbsi-theme=dark] body.home-page #top:is(#mbsi-theme-text-priority,*) .service-feature-media {
+  background: #161b22!important;
+}
+
+::view-transition-old(root),::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-new(root) {
+  z-index: 1;
+}
+
+::view-transition-old(root) {
+  z-index: 0;
+}
+
+.mbsi-theme-ripple {
+  position: fixed;
+  left: var(--ripple-x);
+  top: var(--ripple-y);
+  z-index: 2147483647;
+  width: 12px;
+  height: 12px;
+  margin: -6px 0 0 -6px;
+  border: 1px solid rgba(121,192,255,.45);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: mbsi-theme-water-ring 700ms cubic-bezier(.16,.7,.25,1) forwards;
+}
+
+@keyframes mbsi-theme-water-ring{0%{transform:scale(1);opacity:.6;box-shadow:0 0 0 3px rgba(121,192,255,.1);}100%{transform:scale(36);opacity:0;box-shadow:0 0 0 18px rgba(121,192,255,0);}}
+
+@media(prefers-reduced-motion:reduce) {
+  .mbsi-theme-ripple {
+    display: none;
+  }
+
+  ::view-transition-group(root) {
+    animation: none!important;
+  }
+}
+
+html[data-mbsi-theme=dark] body.home-page #top .hero {
+  /* Keep the photo in layer three so shared cover sizing and mobile positioning apply. */
+  background-image: linear-gradient(transparent,transparent),linear-gradient(90deg,rgba(1,4,9,.97) 0%,rgba(1,4,9,.92) 46%,rgba(1,4,9,.84) 76%,rgba(1,4,9,.78) 100%),url('/MBSI-Website/wp-content/uploads/2026/MBSI_Building/MBSI_Building_Fit.optimized.webp')!important;
+}
+
+html[data-mbsi-theme=dark] body #primary:is(#mbsi-theme-text-priority,*) :is(.consultation-card,.cta-section,.mbsi-service-contact) :is(a.elementor-button,a.btn) {
+  background: #f0f6fc!important;
+  border-color: #f0f6fc!important;
+  color: #161b22!important;
+}
+
+html[data-mbsi-theme=dark] body #primary:is(#mbsi-theme-text-priority,*) :is(.consultation-card,.cta-section,.mbsi-service-contact) :is(a.elementor-button,a.btn) :is(span,svg) {
+  color: #161b22!important;
+  -webkit-text-fill-color: #161b22!important;
+}
+
+html[data-mbsi-theme=dark] body .mbsi-mobile-bottom-nav :is([aria-current=page],.is-current-section) {
+  background: #30363d!important;
+  color: #f0f6fc!important;
+  box-shadow: inset 0 0 0 1px #484f58;
+}
+
+html[data-mbsi-theme=dark] body .mbsi-mobile-bottom-nav :is([aria-current=page],.is-current-section) :is(span,svg) {
+  color: #f0f6fc!important;
+}
+
+html[data-mbsi-theme=dark] body .mbsi-mobile-bottom-nav .mbsi-bottom-menu-icon {
+  border-color: #30363d!important;
+}
+
+html[data-mbsi-theme=dark] body .mbsi-mobile-drawer .site-nav .dropdown-panel {
+  background: #161b22!important;
+  border-radius: 10px!important;
+}
+
+html[data-mbsi-theme=dark] body .mbsi-mobile-drawer .site-nav .dropdown-panel a {
+  background: transparent!important;
+  border: 0!important;
+  box-shadow: none!important;
+  border-radius: 6px!important;
+  color: #c9d1d9!important;
+}
+
+html[data-mbsi-theme=dark] body .mbsi-mobile-drawer .site-nav .dropdown-panel a:is(:hover,:focus-visible) {
+  background: #21262d!important;
+  color: #f0f6fc!important;
+}
+
+@media(max-width:1160px) {
+  .mbsi-mobile-drawer .mbsi-theme-menu {
+    margin: 0 18px;
+    padding: 16px 0;
+    border-top: 0;
+    border-bottom: 1px solid #e0e7f0;
+  }
+}
+
+html[data-mbsi-theme=dark] body .site-header .site-nav .dropdown-panel a:is(:hover,:focus-visible,:focus) {
+  background: #21262d!important;
+  color: #f0f6fc!important;
+  border-color: #484f58!important;
+}
+
+html[data-mbsi-theme=dark] body .site-header .site-nav .dropdown-panel a:is(:hover,:focus-visible,:focus) :is(strong,span,h3) {
+  color: #f0f6fc!important;
+}
+
+html[data-mbsi-theme=dark] body .site-header .site-nav .dropdown-panel a[data-desc]:is(:hover,:focus-visible,:focus)::after {
+  color: #b1bac4!important;
+  background: transparent!important;
+}
+
+html[data-mbsi-theme=dark] body .site-header .site-nav .dropdown-panel a:focus-visible {
+  outline: 2px solid #79c0ff!important;
+  outline-offset: -2px;
+}
+
+/* Top-level navigation states use dark surfaces, including open dropdowns. */
+html[data-mbsi-theme=dark] body .site-header .site-nav:is(#mbsi-nav-state-priority, *) .nav-item:is(:hover, :focus-within, .is-active) > button,
+html[data-mbsi-theme=dark] body .site-header .site-nav:is(#mbsi-nav-state-priority, *) > a:not(.btn):is(:hover, :focus-visible) {
+  background: #21262d !important;
+  color: #f0f6fc !important;
+  border-color: #484f58 !important;
+}
+
+html[data-mbsi-theme=dark] body .site-header .site-nav:is(#mbsi-nav-state-priority, *) .nav-item:is(:hover, :focus-within, .is-active) > button :is(span, svg) {
+  color: #f0f6fc !important;
+}
+
+html[data-mbsi-theme=dark] body .site-header .site-nav:is(#mbsi-nav-state-priority, *) :is(button, a):focus-visible {
+  outline: 2px solid #79c0ff !important;
+  outline-offset: 2px;
+}

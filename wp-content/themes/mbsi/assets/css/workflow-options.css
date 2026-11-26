@@ -1,0 +1,198 @@
+/* MBSI workflow-options; shared asset registry: mbsi-asset-styles.php. */
+.home-page main .workflow-updown-route {
+  display: none;
+}
+
+.home-page main .workflow-semicircle[data-layout="up-down"]::before,
+.home-page main .workflow-semicircle[data-layout="up-down"]::after {
+  display: none;
+  content: none;
+}
+
+@media (min-width: 901px) {
+  .home-page main .workflow-semicircle[data-layout="up-down"] {
+    box-sizing: border-box;
+    width: min(100%, 900px);
+    height: 335px;
+    margin-top: clamp(26px, 3vw, 38px);
+    border: 1px solid rgba(14, 90, 167, 0.14);
+    border-radius: 24px;
+    background: radial-gradient(circle at 12% 82%, rgba(216, 154, 29, 0.12), transparent 24%),
+      radial-gradient(circle at 88% 15%, rgba(14, 90, 167, 0.12), transparent 27%),
+      linear-gradient(145deg, #ffffff 0%, #f4f9fe 52%, #edf6ff 100%);
+    box-shadow: 0 22px 48px rgba(6, 47, 105, 0.09);
+  }
+
+  .home-page main .workflow-semicircle[data-layout="up-down"] .workflow-updown-route {
+    position: absolute;
+    z-index: 0;
+    display: block;
+    width: 18.3%;
+    height: 4px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #d89a1d 0%, #0e5aa7 100%);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9), 0 3px 8px rgba(6, 47, 105, 0.14);
+    pointer-events: none;
+    transform: rotate(-21.7deg);
+    transform-origin: left center;
+  }
+
+  .home-page main .workflow-semicircle[data-layout="up-down"] .workflow-updown-route-1 {
+    top: 283px;
+    left: 8%;
+  }
+
+  .home-page main .workflow-semicircle[data-layout="up-down"] .workflow-updown-route-2 {
+    top: 225px;
+    left: 25%;
+  }
+
+  .home-page main .workflow-semicircle[data-layout="up-down"] .workflow-updown-route-3 {
+    top: 167px;
+    left: 42%;
+  }
+
+  .home-page main .workflow-semicircle[data-layout="up-down"] .workflow-updown-route-4 {
+    top: 109px;
+    left: 59%;
+  }
+
+  .home-page main .workflow-semicircle[data-layout="up-down"] .workflow-semicircle-step:nth-child(n) {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 220px;
+    height: 46px;
+    min-width: 0;
+    align-items: initial;
+    margin: 0;
+    text-align: left;
+    transform: none;
+  }
+
+  .home-page main .workflow-semicircle[data-layout="up-down"] .workflow-semicircle-step:nth-child(1) {
+    top: 260px;
+    right: auto;
+    bottom: auto;
+    left: 8%;
+  }
+
+  .home-page main .workflow-semicircle[data-layout="up-down"] .workflow-semicircle-step:nth-child(2) {
+    top: 202px;
+    right: auto;
+    bottom: auto;
+    left: 25%;
+  }
+
+  .home-page main .workflow-semicircle[data-layout="up-down"] .workflow-semicircle-step:nth-child(3) {
+    top: 144px;
+    right: auto;
+    bottom: auto;
+    left: 42%;
+  }
+
+  .home-page main .workflow-semicircle[data-layout="up-down"] .workflow-semicircle-step:nth-child(4) {
+    top: 86px;
+    right: auto;
+    bottom: auto;
+    left: 59%;
+  }
+
+  .home-page main .workflow-semicircle[data-layout="up-down"] .workflow-semicircle-step:nth-child(5) {
+    top: 28px;
+    right: auto;
+    bottom: auto;
+    left: 76%;
+  }
+
+  .home-page main .workflow-semicircle[data-layout="up-down"] .workflow-semicircle-node {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  .home-page main .workflow-semicircle[data-layout="up-down"] .workflow-semicircle-icon {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #f4c65a;
+    color: #fff;
+    background: linear-gradient(145deg, #1670c2, #074584);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.82), 0 10px 22px rgba(6, 47, 105, 0.22);
+  }
+
+  .home-page main .workflow-semicircle[data-layout="up-down"] .workflow-semicircle-number {
+    top: -7px;
+    right: -17px;
+    border-color: #fff;
+    color: #062f69;
+    background: #e4ad32;
+  }
+
+  .home-page main .workflow-semicircle[data-layout="up-down"] .workflow-semicircle-step strong {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    box-sizing: border-box;
+    width: 220px;
+    min-height: 46px;
+    align-items: center;
+    margin: 0;
+    padding: 7px 8px 7px 38px;
+    border: 0;
+    border-radius: 0;
+    color: #111827;
+    background: transparent;
+    box-shadow: none;
+    filter: none;
+    font-size: clamp(0.86rem, 0.9vw, 0.94rem);
+    line-height: 1.2;
+    text-align: left;
+    clip-path: none;
+  }
+
+  .home-page main .workflow-semicircle[data-layout="up-down"] .workflow-semicircle-step strong::before {
+    display: none;
+    content: none;
+  }
+
+  .home-page main .workflow-semicircle[data-layout="up-down"] .workflow-semicircle-step:nth-child(2) strong {
+    color: #111827;
+    background: transparent;
+  }
+
+  .home-page main .workflow-semicircle[data-layout="up-down"] .workflow-semicircle-step:nth-child(3) strong {
+    border-color: transparent;
+    color: #111827;
+    background: transparent;
+  }
+
+  .home-page main .workflow-semicircle[data-layout="up-down"] .workflow-semicircle-step:nth-child(4) strong {
+    border-color: transparent;
+    color: #111827;
+    background: transparent;
+  }
+
+  .home-page main .workflow-semicircle[data-layout="up-down"] .workflow-semicircle-step:nth-child(5) strong {
+    border-color: transparent;
+    color: #111827;
+    background: transparent;
+  }
+}
+
+@media (max-width: 900px) {
+  .home-page main .workflow-semicircle[data-layout="up-down"] {
+    height: auto;
+  }
+
+  .home-page main .workflow-semicircle[data-layout="up-down"] .workflow-updown-route {
+    display: none;
+  }
+
+  .home-page main .workflow-semicircle[data-layout="up-down"] .workflow-semicircle-step:nth-child(n) {
+    position: static;
+    width: auto;
+    transform: none;
+  }
+}

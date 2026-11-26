@@ -1,0 +1,14 @@
+/* MBSI mbsi-tax-ui; shared asset registry: mbsi-asset-styles.php. */
+body.page-id-855 #primary .page-hero {
+  background: linear-gradient(90deg,#002b68 0%,rgba(0,43,104,.94) 47%,rgba(0,43,104,.25) 100%),url('/MBSI-Website/wp-content/uploads/2026/Banners/MBSI_Tax_Banner.optimized.webp') right center/cover no-repeat!important;
+}
+
+body.page-id-855 #primary .page-hero::before,body.page-id-855 #primary .page-hero::after {
+  display: none!important;
+}
+
+body.page-id-855 #primary .page-hero :is(h1,p) {
+  position: relative;
+  z-index: 2;
+  max-width: 720px;
+}

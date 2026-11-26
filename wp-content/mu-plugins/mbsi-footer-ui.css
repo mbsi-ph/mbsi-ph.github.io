@@ -1,0 +1,47 @@
+/* MBSI mbsi-footer-ui; shared asset registry: mbsi-asset-styles.php. */
+html body .site-footer .footer-contact .footer-office-hours {
+  display: grid!important;
+  grid-template-columns: 88px minmax(0,1fr)!important;
+  gap: 10px!important;
+  align-items: start!important;
+}
+
+html body .site-footer .footer-contact .footer-office-hours strong {
+  display: block!important;
+  width: auto!important;
+  margin: 0!important;
+  line-height: 1.5!important;
+}
+
+html body .site-footer .footer-contact .footer-office-hours-lines {
+  display: block!important;
+  line-height: 1.7!important;
+}
+
+.affiliate-section--partners .affiliate-logo--ksearch {
+  position: relative;
+  top: -20px;
+}
+
+.affiliate-section--partners .affiliate-card {
+  transition: transform 220ms ease,box-shadow 220ms ease,border-color 220ms ease;
+}
+
+@media(hover:hover) and (prefers-reduced-motion:no-preference) {
+  .affiliate-section--partners .affiliate-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 32px rgba(0,35,85,.12);
+    border-color: #9bb5d6;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .affiliate-section--partners .affiliate-card {
+    transition: none;
+  }
+}
+
+html body .site-footer .footer-contact p,html body .site-footer .footer-contact .footer-office-hours {
+  grid-template-columns: 100px minmax(0,1fr)!important;
+  column-gap: 14px!important;
+}

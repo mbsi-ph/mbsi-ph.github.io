@@ -1,0 +1,1625 @@
+/* Scale the complete laptop banner composition together on larger screens. */
+@media (min-width: 1351px) {
+  body.home-page { --mbsi-laptop-unit: calc(100vw / 1351); }
+  body.home-page:not(.elementor-editor-active) .mbsi-elementor-site-header.site-header {
+    padding: calc(16 * var(--mbsi-laptop-unit)) calc(75.5 * var(--mbsi-laptop-unit)) !important;
+    min-height: calc(104.6 * var(--mbsi-laptop-unit)) !important;
+    gap: calc(13.51 * var(--mbsi-laptop-unit)) !important;
+  }
+  body.home-page:not(.elementor-editor-active) .mbsi-elementor-site-header .brand {
+    max-width: calc(594.44 * var(--mbsi-laptop-unit)) !important;
+    gap: calc(13.51 * var(--mbsi-laptop-unit)) !important;
+  }
+  body.home-page .site-header .brand strong { font-size: calc(19.1842 * var(--mbsi-laptop-unit)) !important; }
+  body.home-page .site-header .brand-logo-widget img {
+    width: calc(71.6 * var(--mbsi-laptop-unit)) !important;
+    height: calc(71.6 * var(--mbsi-laptop-unit)) !important;
+  }
+  body.home-page .site-header .site-nav { gap: calc(4.7285 * var(--mbsi-laptop-unit)) !important; }
+  body.home-page .site-header :is(.site-nav > a, .nav-item > button) {
+    font-size: calc(13.8665 * var(--mbsi-laptop-unit)) !important;
+    min-height: calc(43.91 * var(--mbsi-laptop-unit)) !important;
+    padding-inline: calc(6.0795 * var(--mbsi-laptop-unit)) !important;
+  }
+  body.home-page .site-header .site-nav > a.nav-cta {
+    min-height: calc(46 * var(--mbsi-laptop-unit)) !important;
+    padding-inline: calc(20 * var(--mbsi-laptop-unit)) !important;
+  }
+  body.home-page main#top .hero.mbsi-native-container {
+    padding-inline: calc(75.5 * var(--mbsi-laptop-unit)) !important;
+    padding-top: calc(121.41 * var(--mbsi-laptop-unit)) !important;
+    padding-bottom: calc(30 * var(--mbsi-laptop-unit)) !important;
+    margin-top: calc(-114 * var(--mbsi-laptop-unit)) !important;
+    align-items: start !important;
+  }
+  body.home-page main#top .hero-copy {
+    width: calc(980 * var(--mbsi-laptop-unit)) !important;
+    max-width: 100% !important;
+    top: calc(36 * var(--mbsi-laptop-unit)) !important;
+    font-size: calc(17.7775 * var(--mbsi-laptop-unit));
+  }
+  body.home-page main#top .hero h1 {
+    max-width: calc(900 * var(--mbsi-laptop-unit)) !important;
+    font-size: calc(46.6095 * var(--mbsi-laptop-unit)) !important;
+    line-height: 1.04 !important;
+    margin-bottom: calc(20 * var(--mbsi-laptop-unit)) !important;
+  }
+  body.home-page main#top .hero .hero-text {
+    max-width: calc(720 * var(--mbsi-laptop-unit)) !important;
+    font-size: calc(16.64 * var(--mbsi-laptop-unit)) !important;
+    line-height: 1.54 !important;
+  }
+  body.home-page main#top .hero .hero-service-pill {
+    font-size: calc(12 * var(--mbsi-laptop-unit)) !important;
+    margin-bottom: calc(20 * var(--mbsi-laptop-unit)) !important;
+    padding: calc(7 * var(--mbsi-laptop-unit)) calc(15 * var(--mbsi-laptop-unit)) !important;
+    transform: translateY(calc(-10 * var(--mbsi-laptop-unit))) !important;
+  }
+  body.home-page main#top .hero .hero-actions { margin-top: calc(32 * var(--mbsi-laptop-unit)) !important; }
+  body.home-page main#top .hero .btn {
+    font-size: calc(17.7775 * var(--mbsi-laptop-unit)) !important;
+    padding: calc(12 * var(--mbsi-laptop-unit)) calc(24 * var(--mbsi-laptop-unit)) !important;
+  }
+}
+
+/* Preserve the approved MBSI document structure around Elementor widgets. */
+body:not(.elementor-editor-active) .mbsi-elementor-root,
+body:not(.elementor-editor-active) .mbsi-elementor-root > .e-con-inner,
+body:not(.elementor-editor-active) #primary > .elementor > .e-con:first-child,
+body:not(.elementor-editor-active) #primary > .elementor > .e-con:first-child > .e-con-inner,
+body:not(.elementor-editor-active) #top > .elementor > .e-con:first-child,
+body:not(.elementor-editor-active) #top > .elementor > .e-con:first-child > .e-con-inner,
+body:not(.elementor-editor-active) .elementor-widget-mbsi-editable-section,
+body:not(.elementor-editor-active) .elementor-widget-mbsi-editable-section > .elementor-widget-container {
+	display: contents;
+}
+
+/* Native Elementor conversion: Elementor containers now carry the original
+ * semantic tags/classes, while the small HTML widgets only hold editable copy.
+ * Remove Elementor's default box model so the approved theme remains in full
+ * control of spacing, grids, typography and animation. */
+body:not(.elementor-editor-active) .mbsi-native-elementor-root,
+body:not(.elementor-editor-active) .mbsi-native-container,
+body:not(.elementor-editor-active) .mbsi-native-text-node {
+	--padding-top: 0;
+	--padding-right: 0;
+	--padding-bottom: 0;
+	--padding-left: 0;
+	--margin-top: 0;
+	--margin-right: 0;
+	--margin-bottom: 0;
+	--margin-left: 0;
+	--gap: 0;
+	--row-gap: 0;
+	--column-gap: 0;
+	min-height: 0;
+}
+
+body:not(.elementor-editor-active) .mbsi-native-inline-content,
+body:not(.elementor-editor-active) .mbsi-native-text,
+body:not(.elementor-editor-active) .mbsi-native-text > .elementor-widget-container,
+body:not(.elementor-editor-active) .mbsi-native-section,
+body:not(.elementor-editor-active) .mbsi-native-section > .elementor-widget-container,
+body:not(.elementor-editor-active) .mbsi-native-inline-content > .elementor-widget-container,
+body:not(.elementor-editor-active) .mbsi-native-protected,
+body:not(.elementor-editor-active) .mbsi-native-protected > .elementor-widget-container,
+body:not(.elementor-editor-active) .mbsi-native-markup,
+body:not(.elementor-editor-active) .mbsi-native-markup > .elementor-widget-container,
+body:not(.elementor-editor-active) .mbsi-native-list,
+body:not(.elementor-editor-active) .mbsi-native-list > .elementor-widget-container,
+body:not(.elementor-editor-active) .mbsi-native-shortcode,
+body:not(.elementor-editor-active) .mbsi-native-shortcode > .elementor-widget-container {
+	display: contents;
+}
+
+/* Native Elementor Icon Lists replace protected unordered-list HTML. Keep
+ * their generated list as the layout item and let the existing MBSI section
+ * classes continue to control typography and spacing. */
+body:not(.elementor-editor-active) .mbsi-native-list .elementor-icon-list-items {
+	display: grid;
+	gap: 10px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body:not(.elementor-editor-active) .mbsi-native-list .elementor-icon-list-item {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+body:not(.elementor-editor-active) .mbsi-native-list .elementor-icon-list-icon {
+	flex: 0 0 auto;
+	margin-top: 0.14em;
+	color: var(--royal-blue, #003c8f);
+}
+
+body:not(.elementor-editor-active) .mbsi-native-list .elementor-icon-list-icon svg {
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+body:not(.elementor-editor-active) .mbsi-native-list :is(.elementor-icon-list-item, .elementor-icon-list-text)::before {
+	display: none !important;
+	content: none !important;
+}
+
+/* Homepage layout fidelity. Elementor makes every converted container a flex
+ * column; the approved homepage uses an ordinary block flow for sections and
+ * a grid for the hero. Restore those original layout roles without changing
+ * the individual editable widgets. */
+body.home-page:not(.elementor-editor-active) .hero.mbsi-native-container {
+	display: grid !important;
+}
+
+body.home-page:not(.elementor-editor-active) .hero-copy.mbsi-native-container,
+body.home-page:not(.elementor-editor-active) .section.mbsi-native-container,
+body.home-page:not(.elementor-editor-active) .service-feature-copy.mbsi-native-container {
+	display: block !important;
+}
+
+body.home-page:not(.elementor-editor-active) .section.mbsi-native-container {
+	width: min(var(--max, 1200px), calc(100% - (var(--gutter, 24px) * 2))) !important;
+	max-width: var(--max, 1200px) !important;
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
+
+/* Proof in Numbers is the intentional full-bleed homepage band. Keep its
+ * background edge-to-edge while retaining the normal centered content gutter. */
+body.home-page:not(.elementor-editor-active) .stats-story.mbsi-native-container {
+	width: 100vw !important;
+	max-width: none !important;
+	margin-right: calc(50% - 50vw) !important;
+	margin-left: calc(50% - 50vw) !important;
+	padding-right: max(var(--gutter, 24px), calc((100vw - var(--max, 1200px)) / 2)) !important;
+	padding-left: max(var(--gutter, 24px), calc((100vw - var(--max, 1200px)) / 2)) !important;
+}
+
+@media (min-width: 761px) {
+	body.home-page:not(.elementor-editor-active) .stats-story.mbsi-native-container {
+		padding-top: 32px !important;
+		padding-bottom: 32px !important;
+	}
+
+	body.home-page:not(.elementor-editor-active) .proof-section {
+		padding-bottom: 28px !important;
+	}
+
+	body.home-page:not(.elementor-editor-active) .process-section {
+		padding-top: 44px !important;
+		padding-bottom: 40px !important;
+	}
+
+	body.home-page:not(.elementor-editor-active) .industries-section {
+		padding-top: 40px !important;
+	}
+}
+
+@media (min-width: 761px) {
+	body.home-page:not(.elementor-editor-active) .hero-copy.mbsi-native-container {
+		top: 36px !important;
+	}
+}
+
+body.home-page:not(.elementor-editor-active) .service-checklist.mbsi-native-list .elementor-icon-list-items {
+	grid-template-columns: repeat(2, minmax(220px, 1fr));
+	gap: 16px 42px;
+	width: 100%;
+	max-width: 620px;
+	margin: 28px 0 30px;
+}
+
+/* Elementor icon-list widgets otherwise reapply the kit's generic text
+ * token to the inner span. Keep homepage service previews consistent with
+ * the approved list typography controlled by the semantic list item. */
+body.home-page:not(.elementor-editor-active) .service-checklist.mbsi-native-list .elementor-icon-list-text {
+	color: inherit !important;
+	font-family: inherit !important;
+	font-size: inherit !important;
+	font-weight: inherit !important;
+	line-height: inherit !important;
+}
+
+@media (max-width: 760px) {
+	body.home-page:not(.elementor-editor-active) .service-checklist.mbsi-native-list .elementor-icon-list-items {
+		grid-template-columns: 1fr;
+		row-gap: 12px;
+	}
+}
+
+/* The semantic media class exists on both the Elementor widget wrapper and
+ * its editable inner element. Only the inner element should paint the photo
+ * overlay; otherwise the wrapper's generated overlay covers the whole row. */
+body.home-page:not(.elementor-editor-active) .service-feature > .elementor-widget.service-feature-media::after {
+	content: none !important;
+}
+
+body:not(.elementor-editor-active) .mbsi-native-text-node > .elementor-element,
+body:not(.elementor-editor-active) .mbsi-native-text-node > .elementor-element > .elementor-widget-container {
+	display: contents;
+}
+
+body:not(.elementor-editor-active) .mbsi-native-image {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+body:not(.elementor-editor-active) .mbsi-native-image > .elementor-widget-container,
+body:not(.elementor-editor-active) .mbsi-native-image img {
+	width: 100%;
+	height: 100%;
+}
+
+body:not(.elementor-editor-active) .mbsi-native-image img {
+	display: block;
+	object-fit: inherit;
+}
+
+/* Elementor's Button widget ships with a green global background and its own
+ * padding. Migrated links must instead inherit the exact class/context styles
+ * from the original design (text links stay text links; CTA classes stay
+ * buttons) while remaining individually editable Button widgets. */
+body:not(.elementor-editor-active) .mbsi-native-tag-a .elementor-button {
+	width: fit-content;
+	min-height: inherit;
+	margin: inherit;
+	padding: inherit;
+	border-radius: inherit;
+	background: inherit !important;
+	box-shadow: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	letter-spacing: inherit;
+	text-transform: inherit;
+}
+
+body:not(.elementor-editor-active) .mbsi-native-tag-a.text-link .elementor-button {
+	display: inline-flex;
+	align-items: center;
+	align-self: flex-start;
+	padding-bottom: 8px;
+	border-bottom: 1px solid rgba(0, 60, 143, 0.28);
+	color: var(--royal-blue, #003c8f) !important;
+	font-weight: 800;
+}
+
+body:not(.elementor-editor-active) .service-card .mbsi-native-tag-a.text-link .elementor-button {
+	margin-top: auto;
+}
+
+body:not(.elementor-editor-active) .mbsi-native-tag-a.text-link::after {
+	display: none !important;
+	content: none !important;
+}
+
+body:not(.elementor-editor-active) .mbsi-native-tag-a.text-link .elementor-button::after {
+	display: inline-block;
+	margin-left: 6px;
+	content: ">";
+}
+
+body:not(.elementor-editor-active) .mbsi-native-tag-a:is(.btn, .mbsi-gold-btn, .mbsi-outline-btn, .bpo-profile-primary) .elementor-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 44px;
+	padding: 0 18px;
+	border: 1px solid transparent;
+	border-radius: 8px;
+	font-weight: 750;
+	white-space: nowrap;
+}
+
+body:not(.elementor-editor-active) .mbsi-native-tag-a:is(.btn-primary, .mbsi-gold-btn, .bpo-profile-primary) .elementor-button {
+	border-color: rgba(0, 60, 143, 0.24);
+	color: #fff !important;
+	background: linear-gradient(135deg, var(--royal-blue, #003c8f), var(--royal-blue-2, #155fa8)) !important;
+	box-shadow: 0 16px 34px rgba(0, 60, 143, 0.2);
+}
+
+body:not(.elementor-editor-active) .mbsi-native-tag-a:is(.btn-primary, .mbsi-gold-btn, .bpo-profile-primary) .elementor-button * {
+	color: #fff !important;
+}
+
+body:not(.elementor-editor-active) .mbsi-native-tag-a.btn-secondary .elementor-button,
+body:not(.elementor-editor-active) .mbsi-native-tag-a.mbsi-outline-btn .elementor-button {
+	border-color: var(--line);
+	color: var(--royal-blue, #003c8f) !important;
+	background: #fff !important;
+	box-shadow: none;
+}
+
+/* Clean native Our Services page. Image widgets need the same fixed media
+ * frame as the original service-card image, rather than the general 100%
+ * image height used by split-layout photos. */
+body:not(.elementor-editor-active) .our-services-content .service-card > .mbsi-native-image {
+	flex: 0 0 168px;
+	width: calc(100% + 48px);
+	height: 168px;
+	margin: 0 -24px 22px;
+}
+
+body:not(.elementor-editor-active) .our-services-content .service-card > .mbsi-native-image :is(.elementor-widget-container, img) {
+	width: 100%;
+	height: 168px;
+}
+
+body:not(.elementor-editor-active) .our-services-content .service-card > .mbsi-native-image img {
+	object-fit: cover;
+}
+
+body:not(.elementor-editor-active) .our-services-content :is(h2, .service-card h3) {
+	color: var(--royal-blue, #003c8f) !important;
+}
+
+body:not(.elementor-editor-active) .our-services-content .cta-section :is(h2, p) {
+	color: #fff !important;
+}
+
+body:not(.elementor-editor-active) .our-services-content .cta-section p {
+	opacity: 0.86;
+}
+
+/* The generated Elementor root replaces the old direct page children. */
+body:not(.elementor-editor-active) #primary > .elementor > .mbsi-native-elementor-root,
+body:not(.elementor-editor-active) #top > .elementor > .mbsi-native-elementor-root {
+	display: contents;
+}
+
+/* Global Elementor site parts deliberately retain the theme's established
+ * header/footer layout classes. Remove only Elementor's transparent document
+ * and widget wrappers so the saved templates render like their PHP fallbacks. */
+body:not(.elementor-editor-active) .mbsi-elementor-site-part,
+body:not(.elementor-editor-active) .mbsi-elementor-site-part > .elementor,
+body:not(.elementor-editor-active) .mbsi-elementor-site-part .mbsi-site-part-root,
+body:not(.elementor-editor-active) .mbsi-header-toggle-widget,
+body:not(.elementor-editor-active) .mbsi-header-toggle-widget > .elementor-widget-container,
+body:not(.elementor-editor-active) .mbsi-header-nav-widget,
+body:not(.elementor-editor-active) .mbsi-header-nav-widget > .elementor-widget-container,
+body:not(.elementor-editor-active) .mbsi-footer-menu-widget,
+body:not(.elementor-editor-active) .mbsi-footer-menu-widget > .elementor-widget-container,
+body:not(.elementor-editor-active) .mbsi-elementor-site-header .elementor-widget-text-editor,
+body:not(.elementor-editor-active) .mbsi-elementor-site-header .elementor-widget-text-editor > .elementor-widget-container,
+body:not(.elementor-editor-active) .mbsi-elementor-site-footer .elementor-widget,
+body:not(.elementor-editor-active) .mbsi-elementor-site-footer .elementor-widget > .elementor-widget-container {
+	display: contents;
+}
+
+body:not(.elementor-editor-active) .mbsi-elementor-site-header,
+body:not(.elementor-editor-active) .mbsi-elementor-site-footer,
+body:not(.elementor-editor-active) .mbsi-elementor-site-header .e-con,
+body:not(.elementor-editor-active) .mbsi-elementor-site-footer .e-con {
+	--padding-top: 0;
+	--padding-right: 0;
+	--padding-bottom: 0;
+	--padding-left: 0;
+	--margin-top: 0;
+	--margin-right: 0;
+	--margin-bottom: 0;
+	--margin-left: 0;
+	--gap: 0;
+	min-height: 0;
+}
+
+body:not(.elementor-editor-active) .brand-logo-widget,
+body:not(.elementor-editor-active) .brand-logo-widget > .elementor-widget-container {
+	display: contents;
+}
+
+body:not(.elementor-editor-active) .brand-logo-widget img {
+	flex: 0 0 auto;
+	width: clamp(66px, 5.1vw, 96px);
+	height: clamp(66px, 5.1vw, 96px);
+	object-fit: contain;
+}
+
+body:not(.elementor-editor-active) .mbsi-elementor-site-header .brand-copy {
+	display: block !important;
+	width: auto !important;
+	min-width: 0 !important;
+}
+
+body:not(.elementor-editor-active) .mbsi-elementor-site-header.site-header {
+	display: grid !important;
+	position: sticky !important;
+	top: 0 !important;
+	z-index: 1000 !important;
+	grid-template-columns: minmax(0, max-content) minmax(0, 1fr) !important;
+	gap: clamp(10px, 1.5vw, 28px) !important;
+	min-height: clamp(78px, 6.2vw, 104px) !important;
+	padding: 16px max(var(--fluid-chrome-gutter), calc((100% - var(--fluid-page-max)) / 2)) !important;
+}
+
+body:not(.elementor-editor-active) .mbsi-elementor-site-header.site-header:is(.is-scrolled, :focus-within),
+body.home-page:not(.elementor-editor-active) .mbsi-elementor-site-header.site-header:is(.is-scrolled, :focus-within) {
+	min-height: clamp(72px, 5.2vw, 88px) !important;
+}
+
+body.home-page:not(.elementor-editor-active) .mbsi-elementor-site-header.site-header:not(.is-scrolled):not(:focus-within) {
+	border-color: transparent !important;
+	background: transparent !important;
+	box-shadow: none !important;
+}
+
+body:not(.elementor-editor-active) .mbsi-elementor-site-header.site-header:is(.is-scrolled, :focus-within) {
+	border-color: rgba(219, 227, 237, 0.9) !important;
+	background: rgba(251, 250, 247, 0.97) !important;
+	box-shadow: 0 12px 34px rgba(0, 31, 85, 0.12) !important;
+}
+
+body:not(.elementor-editor-active) .mbsi-elementor-site-header .brand {
+	display: flex !important;
+	flex-direction: row !important;
+	align-items: center !important;
+	width: auto !important;
+	max-width: min(52vw, 760px) !important;
+	gap: clamp(10px, 1vw, 18px) !important;
+}
+
+/* Elementor containers default to flex. The approved footer is a four-column
+ * CSS grid with ordinary block-flow columns, so restate those layout roles on
+ * the editable template wrappers. Content and links remain separate widgets. */
+body:not(.elementor-editor-active) .mbsi-elementor-site-footer.site-footer {
+	display: block !important;
+	width: 100% !important;
+	margin: 34px 0 0 !important;
+	padding: 0 !important;
+	gap: 0 !important;
+}
+
+body:not(.elementor-editor-active) .mbsi-elementor-site-footer .footer-contact p:has(> strong:first-child) {
+	font-size: 0.88rem;
+	white-space: nowrap;
+}
+
+body:not(.elementor-editor-active) .mbsi-elementor-site-footer .footer-contact .footer-office-hours {
+	grid-template-columns: 88px minmax(0, 1fr);
+	column-gap: 10px;
+	font-size: 0.82rem;
+	white-space: normal;
+}
+
+body:not(.elementor-editor-active) .mbsi-elementor-site-footer .footer-office-hours-lines {
+	display: block;
+	min-width: 0;
+	white-space: nowrap;
+}
+
+body:not(.elementor-editor-active) .mbsi-elementor-site-footer .mbsi-footer-brand-name strong,
+body:not(.elementor-editor-active) .mbsi-elementor-site-footer .footer-column > .elementor-widget-heading h3 {
+	margin: 0 0 16px !important;
+}
+
+body:not(.elementor-editor-active) .mbsi-elementor-site-footer .footer-grid {
+	display: grid !important;
+	grid-template-columns: minmax(300px, 1.15fr) clamp(14px, 1.5vw, 22px) minmax(170px, 0.66fr) minmax(190px, 0.74fr) minmax(360px, 1.25fr) !important;
+	align-items: start !important;
+	column-gap: 14px !important;
+	row-gap: 24px !important;
+	width: min(var(--fluid-page-max), calc(100% - (var(--fluid-chrome-gutter) * 2))) !important;
+	margin: 0 auto !important;
+	padding: 42px 0 34px !important;
+}
+
+body:not(.elementor-editor-active) .mbsi-elementor-site-footer :is(.footer-brand, .footer-column) {
+	display: block !important;
+	min-width: 0 !important;
+	padding: 0 !important;
+	gap: 0 !important;
+}
+
+body:not(.elementor-editor-active) .mbsi-elementor-site-footer .mbsi-footer-menu-widget li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body:not(.elementor-editor-active) .mbsi-elementor-site-footer .footer-brand {
+	grid-column: 1 !important;
+}
+
+body:not(.elementor-editor-active) .mbsi-elementor-site-footer .footer-services {
+	grid-column: 3 !important;
+}
+
+body:not(.elementor-editor-active) .mbsi-elementor-site-footer .footer-resources {
+	grid-column: 4 !important;
+}
+
+body:not(.elementor-editor-active) .mbsi-elementor-site-footer .footer-contact {
+	grid-column: 5 !important;
+}
+
+body:not(.elementor-editor-active) .mbsi-elementor-site-footer .footer-bottom {
+	display: flex !important;
+	flex-direction: row !important;
+	align-items: center !important;
+	justify-content: space-between !important;
+	gap: 18px !important;
+	width: min(var(--fluid-page-max), calc(100% - (var(--fluid-chrome-gutter) * 2))) !important;
+	margin: 0 auto !important;
+	padding: 15px 0 !important;
+}
+
+@media (max-width: 1180px) {
+	body:not(.elementor-editor-active) .mbsi-elementor-site-footer .footer-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+	}
+
+	body:not(.elementor-editor-active) .mbsi-elementor-site-footer :is(.footer-brand, .footer-services, .footer-resources, .footer-contact) {
+		grid-column: auto !important;
+	}
+}
+
+@media (max-width: 760px) {
+	body:not(.elementor-editor-active) .mbsi-elementor-site-footer .footer-grid {
+		grid-template-columns: 1fr !important;
+	}
+
+	body:not(.elementor-editor-active) .mbsi-elementor-site-footer .footer-bottom {
+		flex-direction: column !important;
+		align-items: flex-start !important;
+	}
+}
+
+@media (max-width: 520px) {
+	body:not(.elementor-editor-active) .mbsi-elementor-site-footer .footer-contact .footer-office-hours {
+		grid-template-columns: 1fr;
+		row-gap: 4px;
+	}
+}
+
+@media (min-width: 1181px) and (max-width: 1439px) {
+	body:not(.elementor-editor-active) .mbsi-elementor-site-header.site-header {
+		grid-template-columns: minmax(0, 44vw) minmax(0, 1fr) !important;
+		gap: clamp(8px, 1vw, 16px) !important;
+	}
+
+	body:not(.elementor-editor-active) .mbsi-elementor-site-header .brand {
+		max-width: 44vw !important;
+	}
+
+	body:not(.elementor-editor-active) .brand-logo-widget img {
+		width: clamp(64px, 5.3vw, 76px);
+		height: clamp(64px, 5.3vw, 76px);
+	}
+}
+
+/* Elementor's container variables can replace the theme's auto side margins
+ * with zero during native conversion. Keep migrated page-content sections
+ * centered inside the approved content width, matching the pre-conversion
+ * layout and producing equal whitespace on both sides. */
+body:not(.elementor-editor-active) .wp-content.mbsi-native-container {
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+/* Service section headings follow an eyebrow/kicker. The legacy .wp-content
+ * heading rule adds a 38px top margin, which combines with the kicker margin
+ * and creates an oversized gap after Elementor conversion. */
+.service-detail .mbsi-native-tag-h2 > .elementor-widget-container > h2 {
+	margin-top: 0 !important;
+	color: var(--royal-blue, #003c8f) !important;
+}
+
+/* About Us sections originally inherit the theme's responsive section rhythm.
+ * Elementor's zero-padding reset removes it from converted containers, making
+ * Our Story touch the banner and Our Purpose touch its divider. */
+.about-modern .section.mbsi-native-container {
+	padding-top: var(--section-y) !important;
+	padding-bottom: var(--section-y) !important;
+}
+
+/* The Team showcase already owns its responsive top and bottom padding. The
+ * converted outer .section and the legacy .team-layout margin duplicate that
+ * spacing and push the Leadership eyebrow too far below the banner. */
+body:not(.home-page):has(.team-layout--showcase) .team-section.mbsi-native-container {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+body:not(.home-page):has(.team-layout--showcase) .team-layout--showcase {
+	margin-top: 0 !important;
+}
+
+/* Keep the divider between the two leadership groups, but avoid stacking the
+ * original large group margin and padding with the showcase grid gap. */
+body:not(.home-page):has(.team-layout--showcase) .team-showcase-group + .team-showcase-group {
+	margin-top: clamp(24px, 2.5vw, 32px) !important;
+	padding-top: clamp(24px, 2.5vw, 32px) !important;
+}
+
+/* Individual leadership profiles: keep the portrait and primary details
+ * comfortably within a laptop viewport without changing the mobile stack or
+ * the approved full-size presentation on large desktop displays. */
+@media (min-width: 901px) and (max-width: 1600px) {
+	body.single-mbsi_team .mbsi-profile-intro:not(.bpo-profile-hero) {
+		grid-template-columns: minmax(360px, 0.82fr) minmax(340px, 1fr) !important;
+	}
+
+	body.single-mbsi_team .wp-content .mbsi-profile-intro:not(.bpo-profile-hero) img {
+		height: clamp(400px, calc(100vh - 280px), 460px) !important;
+	}
+
+	body.single-mbsi_team .mbsi-profile-intro.bpo-profile-hero {
+		grid-template-columns: minmax(320px, 420px) minmax(360px, 1fr) !important;
+		gap: clamp(36px, 4vw, 56px) !important;
+	}
+
+	body.single-mbsi_team .mbsi-profile-intro.bpo-profile-hero .bpo-profile-photo-wrap img {
+		display: block !important;
+		width: 100% !important;
+		height: clamp(420px, calc(100vh - 260px), 480px) !important;
+		object-fit: cover !important;
+	}
+}
+
+/* The approved hero overlay sits above ordinary content. Before migration the
+ * hero's headings were direct children and received the theme's z-index rule.
+ * Elementor introduces transparent widget wrappers, so promote the actual
+ * editable nodes to the same paint layer. */
+body:not(.elementor-editor-active) .page-hero > .mbsi-native-text > .elementor-widget-container > *,
+body:not(.elementor-editor-active) .contact-hero > .mbsi-native-container > .mbsi-native-text > .elementor-widget-container > * {
+	position: relative;
+	z-index: 2;
+}
+
+/*
+ * Elementor containers default to flex-column. Restore the approved layout
+ * modes carried by the original MBSI section classes. Individual text widgets
+ * use display:contents above, so their actual heading/paragraph/link remains a
+ * grid or flex item instead of acquiring an extra visual box.
+ */
+body:not(.elementor-editor-active):has(.service-detail) .service-detail.mbsi-native-container,
+body:not(.elementor-editor-active):has(.service-detail) .detail-intro.mbsi-native-container,
+body:not(.elementor-editor-active):has(.service-detail) .detail-card-grid.mbsi-native-container,
+body:not(.elementor-editor-active):has(.service-detail) .detail-side-card.mbsi-native-container,
+body:not(.elementor-editor-active):has(.service-detail) .detail-card.mbsi-native-container,
+body:not(.elementor-editor-active):has(.service-detail) .service-other-grid.mbsi-native-container,
+body:not(.elementor-editor-active):has(.service-detail) .service-other-card.mbsi-native-container {
+	display: grid !important;
+}
+
+body:not(.elementor-editor-active):has(.service-detail) .detail-cta.mbsi-native-container {
+	display: flex !important;
+	flex-direction: row !important;
+}
+
+/* Restore the established non-service page grids after Elementor changes the
+ * underlying containers to flex-column.  These are layout adapters only; the
+ * original theme continues to own all sizing, colors and typography. */
+body:not(.elementor-editor-active) .split.mbsi-native-container,
+body:not(.elementor-editor-active) .section-heading.mbsi-native-container,
+body:not(.elementor-editor-active) .cta-section.mbsi-native-container,
+body:not(.elementor-editor-active) .service-story-list.mbsi-native-container,
+body:not(.elementor-editor-active) .service-feature.mbsi-native-container,
+body:not(.elementor-editor-active) .stats-story-grid.mbsi-native-container,
+body:not(.elementor-editor-active) .about-purpose-stack.mbsi-native-container,
+body:not(.elementor-editor-active) .contact-layout.mbsi-native-container,
+body:not(.elementor-editor-active) .contact-info-list.mbsi-native-container,
+body:not(.elementor-editor-active) .affiliate-grid.mbsi-native-container,
+body:not(.elementor-editor-active) .service-grid.mbsi-native-container,
+body:not(.elementor-editor-active) .service-other-grid.mbsi-native-container,
+body:not(.elementor-editor-active) .team-grid.mbsi-native-container,
+body:not(.elementor-editor-active) .career-grid.mbsi-native-container,
+body:not(.elementor-editor-active) .value-grid.mbsi-native-container,
+body:not(.elementor-editor-active) .industry-list.mbsi-native-container,
+body:not(.elementor-editor-active) .benefit-list.mbsi-native-container,
+body:not(.elementor-editor-active) .proof-panel.mbsi-native-container,
+body:not(.elementor-editor-active) .proof-grid.mbsi-native-container,
+body:not(.elementor-editor-active) .job-card.mbsi-native-container {
+	display: grid !important;
+}
+
+/* FAQ navigation and directory are deliberately horizontal/block layouts in
+ * the approved design. Elementor containers otherwise make both behave like
+ * generic conversion grids. */
+body:not(.elementor-editor-active) .mbsi-faq-topic-nav.mbsi-native-container {
+	display: flex !important;
+	flex-flow: row nowrap !important;
+	gap: 4px !important;
+	overflow-x: auto;
+	margin-bottom: clamp(24px, 3vw, 36px) !important;
+	border-bottom: 1px solid #ccd9e8;
+}
+
+body:not(.elementor-editor-active) .mbsi-faq-question-index.mbsi-native-container {
+	display: block !important;
+	margin-bottom: clamp(30px, 4vw, 48px) !important;
+	padding: clamp(24px, 3.5vw, 38px) !important;
+}
+
+/* Native Elementor FAQ accordions retain the approved numbered-directory
+ * appearance while exposing each question and answer through Elementor's
+ * standard Accordion repeater controls. */
+body:not(.elementor-editor-active) .mbsi-faq-answers--native.mbsi-native-container {
+	display: block !important;
+}
+
+body:not(.elementor-editor-active) .mbsi-native-faq-accordion .elementor-accordion {
+	counter-reset: mbsi-faq-item;
+}
+
+body:not(.elementor-editor-active) .mbsi-native-faq-accordion .elementor-accordion-item {
+	border: 0;
+	border-bottom: 1px solid #dce5ef;
+}
+
+body:not(.elementor-editor-active) .mbsi-native-faq-accordion .elementor-accordion-item:last-child {
+	border-bottom: 0;
+}
+
+body:not(.elementor-editor-active) .mbsi-native-faq-accordion .elementor-tab-title {
+	counter-increment: mbsi-faq-item;
+	display: grid !important;
+	grid-template-columns: 44px minmax(0, 1fr) 34px;
+	gap: 16px;
+	align-items: center;
+	min-height: 78px;
+	padding: 16px clamp(18px, 2.5vw, 28px) !important;
+	border: 0;
+	color: #0b2f5b !important;
+	scroll-margin-top: clamp(88px, 9vw, 118px);
+}
+
+body:not(.elementor-editor-active) .mbsi-native-faq-accordion .elementor-tab-title::before {
+	display: grid;
+	grid-column: 1;
+	grid-row: 1;
+	width: 42px;
+	height: 42px;
+	place-items: center;
+	border-radius: 50%;
+	color: #fff;
+	background: #0753a6;
+	font-size: 0.82rem;
+	font-weight: 800;
+	content: counter(mbsi-faq-item, decimal-leading-zero);
+}
+
+body:not(.elementor-editor-active) .mbsi-native-faq-accordion .elementor-accordion-title {
+	grid-column: 2;
+	grid-row: 1;
+	color: #0b2f5b !important;
+	font-size: clamp(1.05rem, 1.35vw, 1.28rem);
+	font-weight: 700;
+	line-height: 1.35;
+}
+
+body:not(.elementor-editor-active) .mbsi-native-faq-accordion .elementor-accordion-icon {
+	grid-column: 3;
+	grid-row: 1;
+	width: 32px;
+	height: 32px;
+	margin: 0 !important;
+	border: 1px solid #a9c6e5;
+	border-radius: 50%;
+	color: #0753a6 !important;
+	background: #eef5fc;
+	line-height: 30px;
+	text-align: center;
+}
+
+body:not(.elementor-editor-active) .mbsi-native-faq-accordion .elementor-tab-content {
+	padding: 0 clamp(18px, 2.5vw, 28px) 24px calc(clamp(18px, 2.5vw, 28px) + 60px) !important;
+	border: 0;
+	color: #253247;
+	font-size: 1rem;
+	line-height: 1.7;
+}
+
+body:not(.elementor-editor-active) .mbsi-native-faq-accordion .elementor-tab-content p {
+	max-width: 820px;
+	margin: 0;
+}
+
+body:not(.elementor-editor-active) .mbsi-native-faq-accordion .elementor-tab-content p + p {
+	margin-top: 14px;
+}
+
+@media (max-width: 640px) {
+	body:not(.elementor-editor-active) .mbsi-native-faq-accordion .elementor-tab-title {
+		grid-template-columns: 36px minmax(0, 1fr) 30px;
+		gap: 11px;
+		padding-inline: 14px !important;
+	}
+
+	body:not(.elementor-editor-active) .mbsi-native-faq-accordion .elementor-tab-title::before {
+		width: 36px;
+		height: 36px;
+	}
+
+	body:not(.elementor-editor-active) .mbsi-native-faq-accordion .elementor-accordion-icon {
+		width: 28px;
+		height: 28px;
+		line-height: 26px;
+	}
+
+	body:not(.elementor-editor-active) .mbsi-native-faq-accordion .elementor-tab-content {
+		padding: 0 16px 22px 61px !important;
+	}
+}
+
+body:not(.elementor-editor-active) .service-card.mbsi-native-container,
+body:not(.elementor-editor-active) .team-grid article.mbsi-native-container {
+	display: flex !important;
+	flex-direction: column !important;
+}
+
+/* Reapply card grid placement to the semantic nodes inside Elementor widgets. */
+body:not(.elementor-editor-active):has(.service-detail) .detail-card:has(.detail-icon) .mbsi-native-tag-span.detail-icon > .elementor-widget-container > .detail-icon {
+	position: relative;
+	z-index: 1;
+	display: inline-grid !important;
+	grid-column: 1;
+	grid-row: 1;
+}
+
+body:not(.elementor-editor-active):has(.service-detail) .detail-card:has(.detail-icon) .mbsi-native-tag-h3 > .elementor-widget-container > h3 {
+	position: relative;
+	z-index: 1;
+	grid-column: 2;
+	grid-row: 1;
+}
+
+body:not(.elementor-editor-active):has(.service-detail) .detail-card:has(.detail-icon) .mbsi-native-tag-p > .elementor-widget-container > p {
+	grid-column: 1 / -1;
+	grid-row: 2;
+}
+
+body:not(.elementor-editor-active):has(.service-detail) .detail-card:has(.detail-icon) > .mbsi-native-protected.mbsi-check-list > .elementor-widget-container > .mbsi-check-list {
+	grid-column: 1 / -1;
+	grid-row: 3;
+}
+
+/*
+ * Service cards are composed of granular Elementor widgets. Restore the exact
+ * card box model that existed before conversion and keep only the inner span
+ * as the visible icon. Without these rules Elementor's zero-padding variables
+ * collapse the card while the icon class on its widget wrapper paints a second
+ * icon behind the real one.
+ */
+body:not(.elementor-editor-active):has(.service-detail) .detail-card.mbsi-native-container {
+	grid-template-columns: 66px minmax(0, 1fr) !important;
+	grid-template-rows: 94px auto 1fr !important;
+	column-gap: 14px !important;
+	row-gap: 0 !important;
+	align-items: center;
+	align-content: stretch;
+	padding: 0 !important;
+}
+
+body:not(.elementor-editor-active):has(.service-detail) .detail-card.mbsi-native-container:has(.detail-icon) {
+	--type-card-title: 20px;
+}
+
+body:not(.elementor-editor-active):has(.service-detail) .detail-card > .mbsi-native-tag-span.detail-icon {
+	display: contents !important;
+	width: auto !important;
+	height: auto !important;
+	min-width: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	color: inherit !important;
+	background: none !important;
+	box-shadow: none !important;
+}
+
+body:not(.elementor-editor-active):has(.service-detail) .detail-card > .mbsi-native-tag-span.detail-icon::before {
+	display: none !important;
+	content: none !important;
+}
+
+body:not(.elementor-editor-active):has(.service-detail) .detail-card:has(.detail-icon) .mbsi-native-tag-span.detail-icon > .elementor-widget-container > .detail-icon {
+	align-self: start;
+	margin: 24px 0 0 20px !important;
+}
+
+body:not(.elementor-editor-active):has(.service-detail) .detail-card:has(.detail-icon) .mbsi-native-tag-h3 > .elementor-widget-container > h3 {
+	align-self: center;
+	margin: 0 20px 0 0 !important;
+	padding: 0 !important;
+	font-size: 20px !important;
+	line-height: 1.25 !important;
+}
+
+body:not(.elementor-editor-active):has(.service-detail) .detail-card:has(.detail-icon) .mbsi-native-tag-p > .elementor-widget-container > p {
+	box-sizing: border-box;
+	min-height: 9em;
+	margin: 0 !important;
+	padding: 22px 24px 0 !important;
+}
+
+body:not(.elementor-editor-active):has(.service-detail) .detail-card:has(.detail-icon) > .mbsi-native-protected.mbsi-check-list > .elementor-widget-container > .mbsi-check-list {
+	align-self: start;
+	display: grid !important;
+	gap: 12px !important;
+	margin: 0 !important;
+	padding: 20px 24px 26px !important;
+}
+
+@media (max-width: 720px) {
+	body:not(.elementor-editor-active):has(.service-detail) .detail-card:has(.detail-icon) .mbsi-native-tag-p > .elementor-widget-container > p {
+		min-height: 0;
+	}
+}
+
+body:not(.elementor-editor-active):has(.service-detail) .detail-cta.mbsi-native-container {
+	align-items: center !important;
+	justify-content: space-between !important;
+	gap: 18px !important;
+	padding: 24px !important;
+}
+
+/*
+ * Text-only capability cards (notably the six "Why Xero?" cards) do not use
+ * the icon/header grid employed by the service-offering cards.  Elementor's
+ * converted containers were inheriting that 46px icon column, which squeezed
+ * each heading into a narrow strip and placed the paragraph beside it. Keep
+ * every heading and paragraph independently editable, but restore the
+ * approved stacked card composition on the public page.
+ */
+body:not(.elementor-editor-active):has(.service-detail) .detail-card.mbsi-native-container:not(:has(.detail-icon)) {
+	display: flex !important;
+	min-width: 0 !important;
+	padding: 0 !important;
+	flex-direction: column !important;
+	gap: 0 !important;
+}
+
+body:not(.elementor-editor-active):has(.service-detail) .detail-card.mbsi-native-container:not(:has(.detail-icon)) > .mbsi-native-tag-h3,
+body:not(.elementor-editor-active):has(.service-detail) .detail-card.mbsi-native-container:not(:has(.detail-icon)) > .mbsi-native-tag-p {
+	display: contents !important;
+}
+
+body:not(.elementor-editor-active):has(.service-detail) .detail-card.mbsi-native-container:not(:has(.detail-icon)) .mbsi-native-tag-h3 > .elementor-widget-container > h3 {
+	box-sizing: border-box !important;
+	width: 100% !important;
+	margin: 0 !important;
+	padding: 25px 28px 9px !important;
+	border-top: 4px solid #0e5aa7 !important;
+	background: linear-gradient(135deg, #eef5fc 0%, #e5eff9 100%) !important;
+}
+
+body:not(.elementor-editor-active):has(.service-detail) .detail-card.mbsi-native-container:not(:has(.detail-icon)) .mbsi-native-tag-p > .elementor-widget-container > p {
+	box-sizing: border-box !important;
+	width: 100% !important;
+	margin: 0 !important;
+	padding: 0 28px 22px !important;
+	flex: 1 1 auto;
+	background: linear-gradient(135deg, #eef5fc 0%, #e5eff9 100%) !important;
+}
+
+/*
+ * Elementor's document and widget wrappers must not turn approved full-width
+ * page banners into boxed sections. These declarations mirror the theme's
+ * original direct-child rules for pages migrated through the bridge.
+ */
+body:not(.elementor-editor-active) .content-page > .elementor .page-hero {
+	width: 100vw !important;
+	margin-right: calc(50% - 50vw) !important;
+	margin-left: calc(50% - 50vw) !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	padding-right: max(var(--gutter, 24px), calc((100vw - var(--max)) / 2)) !important;
+	padding-left: max(var(--gutter, 24px), calc((100vw - var(--max)) / 2)) !important;
+}
+
+body:not(.elementor-editor-active) .content-page > .elementor .elementor-widget-mbsi-editable-section:first-child .page-hero:first-child {
+	margin-top: 0 !important;
+}
+
+/* Restore the approved edge-to-edge Contact Us banner through Elementor. */
+body:not(.elementor-editor-active) #primary.contact-modern > .elementor .contact-hero {
+	display: block;
+	width: 100vw;
+	margin-top: 0;
+	margin-right: calc(50% - 50vw);
+	margin-left: calc(50% - 50vw);
+}
+
+body:not(.elementor-editor-active) #primary.contact-modern > .elementor .contact-hero > div:first-child {
+	width: 100%;
+	min-height: 280px;
+	box-sizing: border-box;
+	max-width: none;
+	margin-top: 0;
+	padding-right: max(var(--gutter, 24px), calc((100vw - var(--max)) / 2));
+	padding-left: max(var(--gutter, 24px), calc((100vw - var(--max)) / 2));
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+/* Native Elementor wrappers must not inherit the white hero-eyebrow color
+ * when the About Us story eyebrow sits on the light page background. */
+body:not(.elementor-editor-active) #primary .stats-story .section-kicker,
+body:not(.elementor-editor-active) #primary .stats-story .section-kicker * {
+	color: #111827 !important;
+}
+
+/* Give editors a clear, usable boundary without affecting the public design. */
+.elementor-editor-active .elementor-widget-mbsi-editable-section {
+	min-height: 48px;
+}
+
+/* Keep every approved section visible and selectable inside Elementor. */
+.elementor-editor-active .elementor-widget-mbsi-editable-section .reveal,
+.elementor-editor-active .elementor-widget-mbsi-editable-section .motion-tilt.reveal,
+.elementor-editor-preview .elementor-widget-mbsi-editable-section .reveal,
+.elementor-editor-preview .elementor-widget-mbsi-editable-section .motion-tilt.reveal {
+	opacity: 1 !important;
+	visibility: visible !important;
+	transform: none !important;
+}
+
+/* Defensive fallback if an editor iframe was opened before the PHP check. */
+.elementor-editor-active .mbsi-brand-splash,
+.elementor-editor-preview .mbsi-brand-splash {
+	display: none !important;
+	pointer-events: none !important;
+}
+
+/*
+ * Inner-page banner system.
+ *
+ * Some converted pages still inherited the old 1120px content constraint,
+ * while others lost their vertical padding through Elementor's container
+ * reset. Keep the homepage hero independent, but give every inner page a
+ * consistent edge-to-edge banner, header-aligned content and enough height for
+ * the longest approved laptop heading (Careers).
+ */
+body:not(.home) .page-hero {
+	display: flex !important;
+	width: 100vw !important;
+	min-height: 280px !important;
+	box-sizing: border-box !important;
+	margin-right: calc(50% - 50vw) !important;
+	margin-left: calc(50% - 50vw) !important;
+	padding-top: 24px !important;
+	padding-right: max(var(--gutter, 24px), calc((100vw - var(--max)) / 2)) !important;
+	padding-bottom: 24px !important;
+	padding-left: max(var(--gutter, 24px), calc((100vw - var(--max)) / 2)) !important;
+	flex-direction: column !important;
+	justify-content: center !important;
+	align-items: stretch !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+}
+
+/* Resource banners begin directly below the site header. The legacy banner
+ * rule adds a 26px top margin, which appears as an unintended white strip
+ * after these pages are converted to native Elementor containers. */
+body:not(.elementor-editor-active) .page-hero.resource-page-hero {
+	margin-top: 0 !important;
+}
+
+/* Keep the full banner anchored to the header during initial page load. Only
+ * its internal content may animate; translating the banner itself exposes the
+ * white page background above it for the duration of the reveal transition. */
+body:not(.elementor-editor-active) .page-hero.resource-page-hero.reveal {
+	opacity: 1 !important;
+	transform: none !important;
+}
+
+body:not(.home) .contact-hero {
+	min-height: 280px !important;
+	box-sizing: border-box !important;
+}
+
+/* The editor canvas uses its own viewport; mirror the banner height there
+ * without applying the public negative-margin full-bleed technique. */
+.elementor-editor-active .page-hero,
+.elementor-editor-preview .page-hero {
+	width: 100% !important;
+	min-height: 280px !important;
+	box-sizing: border-box !important;
+}
+
+/*
+ * Contact Us conversion repair.
+ *
+ * Elementor writes zero container gaps/padding after the native conversion.
+ * Restore the approved card rhythm from the working version while leaving all
+ * text, fields and map content as independent editable elements.
+ */
+body:not(.elementor-editor-active) .contact-layout.mbsi-native-container {
+	grid-template-columns: minmax(0, 0.88fr) minmax(420px, 1.12fr) !important;
+	gap: 18px !important;
+	margin: 34px 0 !important;
+}
+
+body:not(.elementor-editor-active) .contact-info-panel.mbsi-native-container {
+	padding: clamp(22px, 2.2vw, 30px) !important;
+}
+
+.mbsi-contact-pilot .contact-layout .mbsi-form-shell {
+	padding-top: clamp(22px, 2.2vw, 30px) !important;
+}
+
+@media (max-width: 520px) {
+	.mbsi-contact-pilot .contact-layout .mbsi-form-shell {
+		padding-top: 20px !important;
+	}
+}
+
+body:not(.elementor-editor-active) .contact-info-list.mbsi-native-container {
+	gap: 8px !important;
+	margin: 18px 0 14px !important;
+}
+
+body:not(.elementor-editor-active) .contact-info-list.mbsi-native-container > article {
+	padding: 13px 16px !important;
+}
+
+body:not(.elementor-editor-active) .contact-map.mbsi-native-container {
+	gap: 0 !important;
+	margin-top: 12px !important;
+}
+
+/* Contact Us native-Elementor pilot. Each information card is a real Icon Box
+ * widget, while its empty optional icon preserves the approved text-only card
+ * design until an editor chooses to add an icon. */
+.mbsi-contact-pilot .contact-info-list > .mbsi-contact-icon-box {
+	padding: 13px 16px !important;
+	border-radius: 8px;
+	background: var(--soft);
+}
+
+.mbsi-contact-pilot .mbsi-contact-icon-box .elementor-icon-box-wrapper {
+	display: block;
+	text-align: left;
+}
+
+.mbsi-contact-pilot .mbsi-contact-icon-box .elementor-icon-box-title {
+	margin: 0 !important;
+	color: var(--gold);
+	font-family: var(--font-sans);
+	font-size: 0.86rem !important;
+	font-weight: 900;
+	line-height: 1.35;
+	text-transform: uppercase;
+}
+
+.mbsi-contact-pilot .mbsi-contact-icon-box .elementor-icon-box-description {
+	margin: 8px 0 0;
+	color: #111827;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.55;
+}
+
+.mbsi-contact-pilot .mbsi-contact-icon-box a {
+	color: #111827;
+	font-weight: 400;
+}
+
+.mbsi-contact-pilot .contact-info-panel h2,
+.mbsi-contact-pilot .affiliate-section__intro h2 {
+	color: var(--royal-blue, #003c8f) !important;
+}
+
+.mbsi-contact-pilot .section-kicker,
+.mbsi-contact-pilot .section-kicker .elementor-heading-title {
+	color: #111827 !important;
+}
+
+.mbsi-contact-pilot .contact-map .elementor-widget-google_maps,
+.mbsi-contact-pilot .contact-map .elementor-widget-container,
+.mbsi-contact-pilot .contact-map .elementor-custom-embed,
+.mbsi-contact-pilot .contact-map iframe {
+	width: 100%;
+}
+
+.mbsi-contact-pilot .mbsi-affiliate-logo {
+	display: block;
+	width: min(100%, 220px);
+	height: auto;
+	margin: 0 auto;
+}
+
+.mbsi-contact-pilot .mbsi-affiliate-logo > .elementor-widget-container {
+	display: block;
+}
+
+.mbsi-contact-pilot .mbsi-affiliate-logo img {
+	display: block;
+	width: 100%;
+	height: 48px;
+	object-fit: contain;
+}
+
+.mbsi-contact-pilot .mbsi-affiliate-logo--leading img {
+	height: 44px;
+	filter: brightness(0) saturate(100%) invert(9%) sepia(42%) saturate(2380%) hue-rotate(263deg) brightness(72%) contrast(112%);
+}
+
+.mbsi-contact-pilot .mbsi-affiliate-contact-list,
+.mbsi-contact-pilot .mbsi-affiliate-contact-list > .elementor-widget-container,
+.mbsi-contact-pilot .mbsi-affiliate-contact-list .elementor-icon-list-items {
+	width: 100%;
+}
+
+.mbsi-contact-pilot .mbsi-affiliate-contact-list,
+.mbsi-contact-pilot .mbsi-affiliate-contact-list > .elementor-widget-container {
+	display: block !important;
+}
+
+.mbsi-contact-pilot .mbsi-affiliate-contact-list .elementor-icon-list-items {
+	display: grid;
+	gap: 8px;
+	margin: 0;
+	padding: 0;
+}
+
+.mbsi-contact-pilot .mbsi-affiliate-contact-list .elementor-icon-list-item,
+.mbsi-contact-pilot .mbsi-affiliate-contact-list .elementor-icon-list-item > a {
+	display: block;
+	width: 100%;
+	color: var(--royal-blue, #003c8f);
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 1.4;
+	text-decoration: none;
+}
+
+.mbsi-contact-pilot .mbsi-affiliate-contact-list strong {
+	display: inline-block;
+	min-width: 72px;
+	color: #111827;
+	font-weight: 700;
+}
+
+/* Mirror the approved Contact layout in the Elementor canvas. */
+.elementor-editor-active .mbsi-contact-pilot .contact-layout,
+.elementor-editor-preview .mbsi-contact-pilot .contact-layout {
+	display: grid !important;
+	grid-template-columns: minmax(0, 0.88fr) minmax(420px, 1.12fr) !important;
+	gap: 18px !important;
+	margin: 34px 0 !important;
+}
+
+.elementor-editor-active .mbsi-contact-pilot .contact-info-panel,
+.elementor-editor-preview .mbsi-contact-pilot .contact-info-panel {
+	padding: clamp(22px, 2.2vw, 30px) !important;
+}
+
+.elementor-editor-active .mbsi-contact-pilot .contact-info-list,
+.elementor-editor-preview .mbsi-contact-pilot .contact-info-list {
+	display: grid !important;
+	gap: 8px !important;
+	margin: 18px 0 14px !important;
+}
+
+@media (max-width: 880px) {
+	.elementor-editor-active .mbsi-contact-pilot .contact-layout,
+	.elementor-editor-preview .mbsi-contact-pilot .contact-layout {
+		grid-template-columns: 1fr !important;
+	}
+}
+
+/* About Us closing panel: preserve the original two-column composition and
+ * card padding that Elementor's generated container variables reset. */
+body:not(.elementor-editor-active) .about-cta.mbsi-native-container {
+	grid-template-columns: minmax(0, 0.95fr) minmax(340px, 0.55fr) !important;
+	align-items: stretch !important;
+	gap: 34px !important;
+	padding: clamp(30px, 4.5vw, 54px) !important;
+	overflow: hidden !important;
+}
+
+body:not(.elementor-editor-active) .about-cta .cta-copy.mbsi-native-container {
+	gap: 0 !important;
+}
+
+body:not(.elementor-editor-active) .about-cta .consultation-card.mbsi-native-container {
+	justify-content: center !important;
+	gap: 18px !important;
+	padding: 28px !important;
+}
+
+@media (max-width: 880px) {
+	body:not(.elementor-editor-active) .contact-layout.mbsi-native-container,
+	body:not(.elementor-editor-active) .about-cta.mbsi-native-container {
+		grid-template-columns: 1fr !important;
+	}
+}
+
+/*
+ * Elementor visual-editing parity for converted service pages.
+ *
+ * The public layout deliberately flattens Elementor's wrapper elements with
+ * display: contents. Doing that in the editor would make widgets difficult to
+ * select, so the editor keeps every widget box and places those boxes in the
+ * same grid positions as their public semantic elements.
+ */
+:is(.elementor-editor-active, .elementor-editor-preview) :is(.mbsi-native-elementor-root, .elementor-element-4911fbb6),
+:is(.elementor-editor-active, .elementor-editor-preview) .mbsi-native-container,
+:is(.elementor-editor-active, .elementor-editor-preview) .mbsi-native-text {
+	--padding-top: 0;
+	--padding-right: 0;
+	--padding-bottom: 0;
+	--padding-left: 0;
+	--margin-top: 0;
+	--margin-right: 0;
+	--margin-bottom: 0;
+	--margin-left: 0;
+	--gap: 0;
+	--row-gap: 0;
+	--column-gap: 0;
+	min-height: 0;
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview) :is(.mbsi-native-elementor-root, .elementor-element-4911fbb6) {
+	width: 100% !important;
+	max-width: none !important;
+	gap: 0 !important;
+}
+
+/* Keep the approved photo banner visible in the editor iframe. */
+:is(.elementor-editor-active, .elementor-editor-preview).elementor-page-49 {
+	--mbsi-elementor-editor-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-accounting.webp");
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview).elementor-page-50 {
+	--mbsi-elementor-editor-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/financial-reporting-banner-clean.optimized.webp");
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview).elementor-page-51 {
+	--mbsi-elementor-editor-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-payroll.webp");
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview).elementor-page-52 {
+	--mbsi-elementor-editor-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-xero.webp");
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview, body.elementor-page-49) :is(.page-hero, .elementor-element-36a34572) {
+	--mbsi-elementor-editor-banner-photo: url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-accounting.webp");
+	position: relative !important;
+	isolation: isolate;
+	display: flex !important;
+	width: 100% !important;
+	min-height: 280px !important;
+	margin: 0 !important;
+	padding: 24px clamp(34px, 6vw, 86px) !important;
+	overflow: hidden !important;
+	flex-direction: column !important;
+	align-items: stretch !important;
+	justify-content: center !important;
+	border-radius: 0 !important;
+	color: #fff !important;
+	background: linear-gradient(118deg, #002b68 0%, #003c8f 58%, #155fa8 100%) !important;
+	background-image:
+		linear-gradient(90deg, rgba(0, 43, 104, 0.99) 0%, rgba(0, 60, 143, 0.94) 42%, rgba(0, 43, 104, 0.62) 67%, rgba(0, 43, 104, 0.28) 100%),
+		url("/MBSI-Website/wp-content/themes/mbsi/assets/img/inner-banner-accounting.webp") !important;
+	background-position: center, right center !important;
+	background-repeat: no-repeat !important;
+	background-size: 100% 100%, 58% 100% !important;
+	box-shadow: none !important;
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview, body.elementor-page-49) :is(.page-hero, .elementor-element-36a34572)::before {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	background: linear-gradient(90deg, rgba(0, 43, 104, 0.99) 0%, rgba(0, 60, 143, 0.93) 38%, rgba(0, 43, 104, 0.64) 57%, rgba(0, 43, 104, 0.12) 76%, transparent 100%);
+	content: "";
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview, body.elementor-page-49) :is(.page-hero, .elementor-element-36a34572)::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	width: 58%;
+	background: var(--mbsi-elementor-editor-banner-photo) 79% 52% / cover no-repeat;
+	content: "";
+	-webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.42) 17%, #000 45%);
+	mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.42) 17%, #000 45%);
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview, body.elementor-page-49) :is(.page-hero, .elementor-element-36a34572) > .elementor-element {
+	position: relative;
+	z-index: 2;
+	width: min(760px, 72%) !important;
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview, body.elementor-page-49) :is(.page-hero, .elementor-element-36a34572) :is(h1, p) {
+	color: #fff !important;
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview, body.elementor-page-49) :is(.service-detail, .elementor-element-a12cd004) {
+	display: grid !important;
+	width: min(100%, var(--max, 1200px)) !important;
+	margin-right: auto !important;
+	margin-left: auto !important;
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+	gap: clamp(56px, 4vw, 64px) !important;
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview, body.elementor-page-49) :is(.detail-intro, .elementor-element-927d60f7) {
+	display: grid !important;
+	grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr) !important;
+	gap: clamp(36px, 5vw, 72px) !important;
+	align-items: center !important;
+	padding-block: clamp(42px, 5vw, 72px) !important;
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview, body.elementor-page-49) :is(.detail-side-card, .elementor-element-c4d2632b) {
+	display: grid !important;
+	gap: 14px !important;
+	padding: clamp(26px, 3vw, 34px) !important;
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview, body.elementor-page-49) :is(.detail-card-grid, .elementor-element-dcf071ba) {
+	display: grid !important;
+	grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+	gap: 22px !important;
+	margin-top: 28px !important;
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview, body.elementor-page-49) :is(.detail-card, .elementor-element-77d393cf, .elementor-element-312cf1f2, .elementor-element-0963f7be, .elementor-element-d8f04b01, .elementor-element-98a88cb0) {
+	position: relative;
+	display: grid !important;
+	grid-template-columns: 66px minmax(0, 1fr) !important;
+	grid-template-rows: 94px auto 1fr !important;
+	column-gap: 14px !important;
+	align-items: center !important;
+	min-width: 0 !important;
+	padding: 0 !important;
+	overflow: hidden !important;
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview, body.elementor-page-49) :is(.detail-card, .elementor-element-77d393cf, .elementor-element-312cf1f2, .elementor-element-0963f7be, .elementor-element-d8f04b01, .elementor-element-98a88cb0)::before {
+	position: absolute;
+	inset: 0 0 auto;
+	z-index: 0;
+	height: 94px;
+	box-sizing: border-box;
+	border-top: 4px solid #cf8f1e;
+	border-bottom: 1px solid #d7e0ea;
+	background: linear-gradient(135deg, #e8f2ff, #f3f7fc);
+	content: "";
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview, body.elementor-page-49) :is(.detail-card, .elementor-element-77d393cf, .elementor-element-312cf1f2, .elementor-element-0963f7be, .elementor-element-d8f04b01, .elementor-element-98a88cb0) > .mbsi-native-tag-span.detail-icon {
+	z-index: 1;
+	grid-column: 1;
+	grid-row: 1;
+	width: auto !important;
+	height: auto !important;
+	min-width: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	color: inherit !important;
+	background: none !important;
+	box-shadow: none !important;
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview, body.elementor-page-49) :is(.detail-card, .elementor-element-77d393cf, .elementor-element-312cf1f2, .elementor-element-0963f7be, .elementor-element-d8f04b01, .elementor-element-98a88cb0) > .mbsi-native-tag-span.detail-icon::before {
+	display: none !important;
+	content: none !important;
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview, body.elementor-page-49) :is(.detail-card, .elementor-element-77d393cf, .elementor-element-312cf1f2, .elementor-element-0963f7be, .elementor-element-d8f04b01, .elementor-element-98a88cb0) > .mbsi-native-tag-span.detail-icon .detail-icon {
+	display: inline-grid !important;
+	width: 46px !important;
+	height: 46px !important;
+	margin: 24px 0 0 20px !important;
+	place-items: center !important;
+	border-radius: 10px !important;
+	color: #fff !important;
+	background: linear-gradient(135deg, #003c8f, #155fa8) !important;
+	font-family: dashicons !important;
+	font-size: 22px !important;
+	line-height: 46px !important;
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview, body.elementor-page-49) :is(.detail-card, .elementor-element-77d393cf, .elementor-element-312cf1f2, .elementor-element-0963f7be, .elementor-element-d8f04b01, .elementor-element-98a88cb0) > .mbsi-native-tag-h3 {
+	z-index: 1;
+	grid-column: 2;
+	grid-row: 1;
+	align-self: center;
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview, body.elementor-page-49) :is(.detail-card, .elementor-element-77d393cf, .elementor-element-312cf1f2, .elementor-element-0963f7be, .elementor-element-d8f04b01, .elementor-element-98a88cb0) > .mbsi-native-tag-h3 h3 {
+	margin: 0 20px 0 0 !important;
+	padding: 0 !important;
+	color: #003c8f !important;
+	font-family: var(--font-sans) !important;
+	font-size: 20px !important;
+	font-weight: 800 !important;
+	line-height: 1.25 !important;
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview, body.elementor-page-49) :is(.detail-card, .elementor-element-77d393cf, .elementor-element-312cf1f2, .elementor-element-0963f7be, .elementor-element-d8f04b01, .elementor-element-98a88cb0) > .mbsi-native-tag-p {
+	grid-column: 1 / -1;
+	grid-row: 2;
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview, body.elementor-page-49) :is(.detail-card, .elementor-element-77d393cf, .elementor-element-312cf1f2, .elementor-element-0963f7be, .elementor-element-d8f04b01, .elementor-element-98a88cb0) > .mbsi-native-tag-p p {
+	min-height: 9em;
+	margin: 0 !important;
+	padding: 22px 24px 0 !important;
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview, body.elementor-page-49) :is(.detail-card, .elementor-element-77d393cf, .elementor-element-312cf1f2, .elementor-element-0963f7be, .elementor-element-d8f04b01, .elementor-element-98a88cb0) > .mbsi-native-protected.mbsi-check-list {
+	grid-column: 1 / -1;
+	grid-row: 3;
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview, body.elementor-page-49) :is(.detail-card, .elementor-element-77d393cf, .elementor-element-312cf1f2, .elementor-element-0963f7be, .elementor-element-d8f04b01, .elementor-element-98a88cb0) > .mbsi-native-protected.mbsi-check-list .mbsi-check-list {
+	display: grid !important;
+	gap: 12px !important;
+	margin: 0 !important;
+	padding: 20px 24px 26px !important;
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview, body.elementor-page-49) :is(.service-other-grid, .elementor-element-be4d0568) {
+	display: grid !important;
+	grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+	gap: clamp(18px, 2.4vw, 28px) !important;
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview, body.elementor-page-49) :is(.service-other-card, .elementor-element-3b449a2e, .elementor-element-90bc52c9, .elementor-element-2f6035a6) {
+	display: grid !important;
+	grid-template-rows: auto auto 1fr auto !important;
+	align-content: start !important;
+	min-height: 166px !important;
+	padding: 26px !important;
+}
+
+:is(.elementor-editor-active, .elementor-editor-preview, body.elementor-page-49) :is(.detail-cta, .elementor-element-b80e90eb) {
+	display: flex !important;
+	padding: 24px !important;
+	flex-direction: row !important;
+	align-items: center !important;
+	justify-content: space-between !important;
+	gap: 18px !important;
+}
+
+@media (max-width: 800px) {
+	:is(.elementor-editor-active, .elementor-editor-preview, body.elementor-page-49) :is(:is(.detail-intro, .elementor-element-927d60f7), :is(.detail-card-grid, .elementor-element-dcf071ba), :is(.service-other-grid, .elementor-element-be4d0568)) {
+		grid-template-columns: 1fr !important;
+	}
+
+	:is(.elementor-editor-active, .elementor-editor-preview, body.elementor-page-49) :is(.detail-cta, .elementor-element-b80e90eb) {
+		flex-direction: column !important;
+		align-items: flex-start !important;
+	}
+}
+
+/* Keep every service page on the same generous desktop content measure.
+ * The Elementor migration previously added a second layer of horizontal
+ * padding to Accounting, while the other service pages followed the theme
+ * container. One shared outer measure removes that mismatch and restores the
+ * approved laptop-width margins without changing the internal card layouts. */
+@media (min-width: 801px) {
+	body:has(.service-detail) #primary.content-page {
+		width: min(1200px, calc(100% - 64px)) !important;
+		max-width: 1200px !important;
+		margin-right: auto !important;
+		margin-left: auto !important;
+	}
+
+	body:has(.service-detail) #primary.content-page .service-detail,
+	body.elementor-page-49 :is(.service-detail, .elementor-element-a12cd004) {
+		box-sizing: border-box !important;
+		width: 100% !important;
+		max-width: 1200px !important;
+		margin-right: auto !important;
+		margin-left: auto !important;
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
+}

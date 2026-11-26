@@ -1,0 +1,161 @@
+/* MBSI mbsi-home-proof; shared asset registry: mbsi-asset-styles.php. */
+body.home-page #top .proof-section .proof-panel {
+  width: 100%!important;
+  max-width: none!important;
+  margin-inline: auto!important;
+}
+
+body.home-page #top .proof-section .proof-panel > div:first-child {
+  width: 100%!important;
+  max-width: 820px!important;
+  margin-inline: auto!important;
+  text-align: center!important;
+}
+
+body.home-page #top .proof-section .proof-panel > div:first-child h2 {
+  margin-inline: auto!important;
+  text-align: center!important;
+}
+
+body.home-page #top .proof-section .proof-grid > div {
+  text-align: center!important;
+  transition: transform 240ms ease,box-shadow 240ms ease,border-color 240ms ease!important;
+}
+
+body.home-page #top .proof-section .proof-grid .proof-icon {
+  margin-inline: auto!important;
+}
+
+body.home-page #top .proof-section .proof-grid strong {
+  min-height: 2.6em!important;
+  display: flex!important;
+  align-items: center!important;
+  justify-content: center!important;
+  text-align: center!important;
+}
+
+body.home-page #top .proof-section .proof-grid p {
+  text-align: center!important;
+}
+
+@media(hover:hover) and (prefers-reduced-motion:no-preference) {
+  body.home-page #top .proof-section .proof-grid > div:hover {
+    transform: translateY(-5px)!important;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  body.home-page #top .proof-section .proof-grid > div {
+    transition: none!important;
+  }
+}
+
+body.home-page #top .service-feature .service-feature-media:not(.elementor-widget) {
+  overflow: hidden!important;
+}
+
+body.home-page #top .service-feature .service-feature-media img {
+  transform: scale(1)!important;
+  transform-origin: center!important;
+  transition: transform 420ms cubic-bezier(.2,.65,.3,1)!important;
+}
+
+@media(hover:hover) and (prefers-reduced-motion:no-preference) {
+  body.home-page #top .service-feature .service-feature-media img:hover {
+    transform: scale(1.035)!important;
+  }
+}
+
+
+
+@media(prefers-reduced-motion:reduce) {
+  body.home-page #top .service-feature .service-feature-media img {
+    transition: none!important;
+  }
+}
+
+body.home-page #top .hero .hero-actions a {
+  transition: background-color 200ms ease,border-color 200ms ease,color 200ms ease!important;
+}
+
+body.home-page #top .hero .hero-actions a:is(:hover,:focus-visible) {
+  background: linear-gradient(135deg,var(--royal-blue,#003c8f),var(--royal-blue-2,#155fa8))!important;
+  border-color: #155fa8!important;
+  color: #fff!important;
+}
+
+body.home-page #top .industry-constellation-grid .industry-icon {
+  transition: none!important;
+}
+
+
+
+body.home-page #top .proof-section .proof-grid > div {
+  background: linear-gradient(165deg,#fff 65%,#eef5ff)!important;
+  border: 1px solid #c8d9ee!important;
+  border-top: 3px solid #155fa8!important;
+  border-radius: 16px!important;
+  box-shadow: 0 8px 24px rgba(0,43,104,.09)!important;
+}
+
+body.home-page #top .proof-section .proof-grid p {
+  color: #40516a!important;
+  line-height: 1.75!important;
+}
+
+body.home-page #top .proof-section .proof-grid strong {
+  color: #003c8f!important;
+}
+
+@media(hover:hover) and (prefers-reduced-motion:no-preference) {
+  body.home-page #top .proof-section .proof-grid > div:hover {
+    border-color: #79a5d5!important;
+    border-top-color: #003c8f!important;
+    box-shadow: 0 16px 34px rgba(0,43,104,.16)!important;
+  }
+}
+
+body.home-page #top .proof-section .proof-grid > div.benefit-reveal-pending {
+  opacity: 0!important;
+  translate: 0 24px;
+  transition: opacity 550ms ease var(--benefit-delay,0ms),translate 650ms cubic-bezier(.2,.7,.3,1) var(--benefit-delay,0ms),transform 240ms ease,box-shadow 240ms ease,border-color 240ms ease!important;
+}
+
+body.home-page #top .proof-section .proof-grid > div.benefit-reveal-shown {
+  opacity: 1!important;
+  translate: 0 0;
+}
+
+@media(prefers-reduced-motion:reduce) {
+  body.home-page #top .proof-section .proof-grid > div.benefit-reveal-pending {
+    opacity: 1!important;
+    translate: none!important;
+    transition: none!important;
+  }
+}
+
+body.home-page #top .proof-section .proof-grid > div.benefit-reveal-exiting {
+  opacity: 0!important;
+  translate: 0 -16px;
+  transition: opacity 320ms ease,translate 400ms ease,transform 240ms ease,box-shadow 240ms ease,border-color 240ms ease!important;
+}
+
+@media(prefers-reduced-motion:reduce) {
+  body.home-page #top .proof-section .proof-grid > div.benefit-reveal-exiting {
+    opacity: 1!important;
+    translate: none!important;
+    transition: none!important;
+  }
+}
+
+/* Native image links keep the existing media layout and keyboard focus. */
+body.home-page #top .service-feature-media .elementor-widget-image a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+body.home-page #top .service-feature-media .elementor-widget-image a:focus-visible {
+  outline: 3px solid #58a6ff;
+  outline-offset: -3px;
+}
