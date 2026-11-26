@@ -1,92 +1,66 @@
-# MBSI Official Website
+# MBSI Official Website — Public Static Site
 
-> This repository contains the public static version of the Millennium Business Services, Inc. (MBSI) website. It supports MBSI website publishing, maintenance, and technical documentation.
+> This is MBSI's public website publishing repository. It contains the static website output prepared for GitHub Pages, rather than the working WordPress application.
 
-## About This Repository
+Website address: **https://mbsi-ph.github.io/**. Availability depends on GitHub Pages being enabled and its deployment succeeding.
 
-The website presents MBSI services, company information, team profiles, resources, career opportunities, and contact details.
+## Repository Roles
 
-The original website is developed with WordPress and Elementor. This repository contains exported HTML, CSS, JavaScript, images, and other public assets for GitHub Pages. WordPress itself, its administration dashboard, PHP processing, and its database do not run in this static version.
+| Repository | Visibility | Purpose |
+| --- | --- | --- |
+| [mbsi-ph.github.io](https://github.com/mbsi-ph/mbsi-ph.github.io) | Public | Static website prepared for GitHub Pages |
+| MBSI-Website | Private | Backup snapshots of the exported static website |
+| MBSI | Private | Original WordPress application source and customizations |
 
-This repository is a publishing copy, not a complete WordPress backup. Website address: **https://mbsi-ph.github.io/**.
+The private repositories are accessible only to authorized accounts. Their names are listed here to explain the project structure.
 
-## Website Features
+## What This Repository Contains
 
-The website includes:
+- Public HTML pages for company information, services, team profiles, resources, careers, and contact information.
+- CSS, JavaScript, public images, fonts, and supporting assets.
+- Responsive layouts, appearance controls, navigation, and loading animations from the exported website.
+- `.nojekyll` for direct static publishing and `.gitignore` for common private-file exclusions.
 
-- Improving service pages, cards, typography, spacing, and calls to action.
-- Refining desktop and mobile navigation and responsive layouts.
-- Adding light and dark appearance settings and theme-aware logos.
-- Improving loading transitions, careers listings, and resource empty states.
-- Integrating Elementor layouts and organizing shared styles.
-- Optimizing images and preparing the static publishing copy.
+The `wp-content/` and `wp-includes/` names may appear because the assets originate from WordPress. PHP, the WordPress dashboard, and the database do not run here.
 
-Features must be tested in the published environment after each update.
+## Publishing
 
-## Files and Folders
+1. Keep `index.html` at the repository root.
+2. In **Settings > Pages**, choose **Deploy from a branch**, **main**, and **/ (root)**.
+3. Leave **Custom domain** blank when using `mbsi-ph.github.io`.
+4. Check the **Actions** tab and the published pages after deployment.
 
-| Location | Contents |
-| --- | --- |
-| `index.html` | Homepage |
-| `about-us/`, `our-services/`, `our-team/` | Company, service, and team pages |
-| `careers/` and job-detail folders | Exported career information |
-| `resources/`, `news/` | Exported resource and news pages |
-| `contact-us/`, `privacy-policy/` | Contact and privacy information |
-| `wp-content/`, `wp-includes/` | Exported public assets used by the pages; these names do not mean WordPress runs here |
-| `.nojekyll` | Publishes the static files without Jekyll processing |
-| `.gitignore` | Helps exclude private files, local backups, and test content from Git |
+Export links must use the root path `/`, not `/MBSI-Website/`.
 
-## Publishing with GitHub Pages
+## Update Workflow
 
-1. Upload this folder's contents to the approved public website repository. Keep `index.html` at the repository root.
-2. Open **Settings > Pages**.
-3. Choose **Deploy from a branch**, select **main**, and choose **/ (root)**.
-4. Save and check the **Actions** tab for the deployment result.
-5. Open the published website and test desktop/mobile layouts, navigation, images, logos, and both appearance modes.
+1. Make changes in the original WordPress development site.
+2. Generate a static export for the root website address.
+3. Exclude private applications, credentials, database exports, test pages, and local backup files.
+4. Test the export and store an approved snapshot in the private **MBSI-Website** repository.
+5. Publish the reviewed static files here, preserving `.git`, this README, `.gitignore`, and `.nojekyll`.
+6. Verify navigation, images, desktop/mobile layouts, appearance modes, and any public services.
 
-Exported links use the `/` path. Changing the repository name, publishing path, or domain requires updating the export settings and checking the generated links again.
+## Current Functional Limits
 
-## Forms and Other Limitations
+**The exported contact, application, and subscription forms are not connected to a working public submission service.** Some exported actions reference the local WordPress server. Do not use these forms to send personal information or documents. Connect an approved backend before enabling submissions; until then disable submission controls or provide a verified alternative contact method.
 
-**The exported contact, application, and subscription forms are not connected to a working public submission service. Do not use them to send personal information or documents.**
+WordPress-powered search, filtering, pagination, and other server-dependent features require separate handling and testing. Editing WordPress does not automatically update this published copy.
 
-Some exported form actions still reference the local WordPress server. These must be replaced with an approved hosted submission service or backend before the forms can be used publicly. Until that work is complete, remove or disable the submission controls on the public site, or clearly direct visitors to a verified alternative contact method.
+## Public Content Only
 
-WordPress-powered search, server-side filtering, pagination, and other dynamic behavior may also need separate handling. A feature that works locally must be tested again after static export. WordPress dashboard changes do not automatically update this repository.
+Do not publish SQL backups, `wp-config.php`, credentials, applicant documents, or private records. The cleaned initial export excluded `wp-content/uploads/mbsi-private/`, test pages, and author archives; repeat the review after every export. Ignore rules do not erase tracked files or earlier history and do not apply to uploads made directly through GitHub's website.
 
-## Updating the Website
+This repository is not a full WordPress backup.
 
-1. Make changes in the original WordPress development website.
-2. Generate a new static export with the `/` URL path.
-3. Remove private files, test content, and unnecessary backup assets before copying the export into this repository.
-4. Preserve this README, `.gitignore`, `.nojekyll`, and the repository's `.git` directory.
-5. Review the changed files and test the static copy before committing and pushing.
-6. Check the GitHub Pages deployment and verify the published pages.
+## Copyright and Third-Party Materials
 
-Do not use this public repository to store the WordPress database, `wp-config.php`, credentials, applicant files, or private company records. Keep the WordPress source in the separate private `MBSI` repository, with protected database, media, and configuration backups stored separately.
+This project supports the website of **Millennium Business Services, Inc. (MBSI)**. MBSI branding and company-provided materials remain subject to their applicable ownership and usage permissions. Public access does not grant permission to reuse company branding or confidential materials.
 
-## Privacy and Responsible Use
+WordPress, Elementor, plugins, themes, libraries, fonts, icons, images, and other third-party materials retain their respective copyright notices and licenses. Consult their original notices and distributions. This README does not replace those terms, relicense third-party components, or restrict rights already granted by their licenses.
 
-- Only approved public website content belongs in this repository.
-- Private application storage under `wp-content/uploads/mbsi-private/`, test pages, and author archives were excluded from the initial cleaned export. Repeat the checks after every new export.
-- `.gitignore` does not protect files uploaded through the GitHub website, remove files already tracked by Git, or erase earlier history.
-- If a secret or private file is published, remove it from public access, revoke affected credentials where applicable, and address any copies in repository history.
-- Share security concerns through an authorized private contact rather than including confidential details in public issues.
+Project-specific work and permitted reuse remain subject to applicable agreements and licenses. No individual ownership claim over the complete codebase is made by this documentation.
 
-These are project maintenance expectations, not a statement that a formal security, privacy, or legal review has been completed.
+## Contact
 
-## Copyright, Attribution, and Licensing
-
-### Company identity and materials
-
-The MBSI name, logos, company identity, and company-provided content remain attributable to MBSI and/or their respective rights holders. Public access to this repository does not grant permission to reuse company branding, confidential information, or materials outside their applicable permissions.
-
-### Third-party components
-
-The website uses output and assets from WordPress, Elementor, plugins, themes, libraries, fonts, icons, and other resources created by their respective contributors. Those components retain their existing copyright notices and applicable licenses. Consult the relevant component notices and original distributions for their terms.
-
-This README does not replace existing licenses, relicense third-party materials, or restrict rights granted by those licenses. Images and other media may have separate usage terms; their inclusion does not establish unrestricted reuse permission.
-
-## Project Contact
-
-For website maintenance, access, or company-related questions, use the official MBSI contact channels listed on the website.
+Use the official MBSI contact channels listed on the company website for company-related questions. Send sensitive maintenance or security information through approved private channels.
